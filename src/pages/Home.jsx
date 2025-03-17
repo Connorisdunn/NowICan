@@ -199,7 +199,7 @@ const Home = () => {
             Schedule a free consultation to learn how Now I Can can help your child reach their full potential.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/for-families/getting-started/free-consultation" className="btn bg-white text-blue-600 hover:bg-blue-50 shadow-lg shadow-blue-500/30 transform transition duration-300 hover:-translate-y-1">
+            <Link to="/for-families/getting-started/free-consultation" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-blue-500/20 transform transition duration-300 hover:-translate-y-1">
               Free Consultation
             </Link>
             <Link to="/therapy-services/therapy-schedule" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-blue-500/20 transform transition duration-300 hover:-translate-y-1">
