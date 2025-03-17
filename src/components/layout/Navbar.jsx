@@ -8,28 +8,25 @@ const Navbar = () => {
   const location = useLocation();
   const timeoutRef = useRef(null);
 
-  // Navigation items with dropdown menus
+  // Updated navigation items with simplified structure
   const navItems = [
     {
-      title: 'About Us',
+      title: 'About',
       path: '/about-us',
       dropdown: [
-        { name: 'Our Story', path: '/about-us/our-story' },
-        { name: 'Mission & Values', path: '/about-us/mission-values' },
-        { name: 'Therapy Team', path: '/about-us/therapy-team' },
-        { name: 'Board of Directors', path: '/about-us/board-of-directors' },
+        { name: 'Our Story & Mission', path: '/about-us/our-story-mission' },
+        { name: 'Our Team', path: '/about-us/our-team' },
         { name: 'Locations', path: '/about-us/locations' },
-        { name: 'Who We Serve', path: '/about-us/who-we-serve' },
       ]
     },
     {
       title: 'Therapy Services',
       path: '/therapy-services',
       dropdown: [
-        { name: 'Intensive Physical Therapy', path: '/therapy-services/intensive-physical-therapy' },
-        { name: 'Traditional Physical Therapy', path: '/therapy-services/traditional-physical-therapy' },
-        { name: 'Who We Serve', path: '/therapy-services/who-we-serve' },
+        { name: 'Intensive Therapy', path: '/therapy-services/intensive-physical-therapy' },
+        { name: 'Traditional Therapy', path: '/therapy-services/traditional-physical-therapy' },
         { name: 'Treatment Methods', path: '/therapy-services/treatment-methods' },
+        { name: 'Who We Serve', path: '/therapy-services/who-we-serve' },
         { name: 'Therapy Schedule', path: '/therapy-services/therapy-schedule' },
       ]
     },
@@ -38,24 +35,22 @@ const Navbar = () => {
       path: '/for-families',
       dropdown: [
         { name: 'Getting Started', path: '/for-families/getting-started' },
-        { name: 'Therapy Schedule', path: '/for-families/therapy-schedule' },
-        { name: 'Payment & Financial Aid', path: '/for-families/payment-financial-aid' },
+        { name: 'Payment & Financial Aid', path: '/for-families/financial-support' },
         { name: 'Accommodations', path: '/for-families/accommodations' },
-        { name: 'Testimonials', path: '/for-families/testimonials' },
-        { name: 'FAQs', path: '/for-families/faqs' },
+        { name: 'Family Resources', path: '/for-families/family-resources' },
       ]
     },
     {
-      title: 'Get Involved',
-      path: '/get-involved',
+      title: 'Support Us',
+      path: '/support-us',
       dropdown: [
-        { name: 'Donate', path: '/get-involved/donate' },
-        { name: 'Volunteer Opportunities', path: '/get-involved/volunteer-opportunities' },
-        { name: 'Our Donors', path: '/get-involved/our-donors' },
+        { name: 'Donate', path: '/support-us/donate' },
+        { name: 'Volunteer', path: '/support-us/volunteer' },
+        { name: 'Our Supporters', path: '/support-us/our-supporters' },
       ]
     },
     {
-      title: 'Contact Us',
+      title: 'Contact',
       path: '/contact-us',
       dropdown: null
     },

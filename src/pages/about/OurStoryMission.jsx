@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MissionValues = () => {
+const OurStoryMission = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold font-heading mb-6">Mission & Values</h1>
+          <h1 className="text-4xl font-bold font-heading mb-6">Our Story & Mission</h1>
           
+          {/* Mission Section */}
           <div className="bg-blue-50 rounded-lg p-8 border border-blue-100 mb-12">
             <h2 className="text-2xl font-bold mb-4 text-blue-800 text-center">Our Mission</h2>
             <p className="text-xl text-gray-700 mb-4 text-center italic">
@@ -15,6 +16,7 @@ const MissionValues = () => {
             </p>
           </div>
           
+          {/* Vision Section */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Our Vision</h2>
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -27,6 +29,7 @@ const MissionValues = () => {
             </div>
           </div>
           
+          {/* Values Section */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Our Core Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -116,6 +119,59 @@ const MissionValues = () => {
             </div>
           </div>
           
+          {/* Our Story Section */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Our Story</h2>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+              <div className="bg-blue-100 p-6">
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/3 flex justify-center">
+                    <div className="bg-gray-200 w-64 h-64 rounded-full flex items-center justify-center text-gray-500">Founders Image</div>
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold mb-4 text-blue-800">Tracey and Joel Christensen</h2>
+                    <h3 className="text-lg font-medium text-blue-600 mb-4">Now I Can Founders</h3>
+                    <p className="text-gray-700 mb-4">
+                      Tracey and Joel Christensen founded Now I Can Foundation in 2006. Inspired by their daughter, Colby, they wanted to bring the most effective physical therapy to Utah and surrounding states.
+                    </p>
+                    <p className="text-gray-700">
+                      The Christensen's appreciate the meaningful experiences and people that Now I Can has brought to their lives over the years.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-700 mb-4">
+                  Tracey is currently the Executive Director of Now I Can and she and Joel serve on the Board of Directors together. In his day job, Joel is the University Budget Director at BYU, but in his spare time he enjoys being active, having fun with family, and being Now I Can's premier handyman!
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Joel's educational background includes majoring in Exercise Science and an MBA from BYU. Tracey's degree is in Broadcast News, and she spent many years working in that field, and teaching scripture to high school students. She mostly loves being a Mom to her now young-adult kids.
+                </p>
+                <p className="text-gray-700">
+                  Joel and Tracey feel blessed to know the children and families of Now I Can!
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="p-6">
+                <h2 className="text-2xl font-bold mb-4">Colby's Story</h2>
+                <div className="italic text-gray-600 mb-6">
+                  In Colby's own words...
+                </div>
+                <p className="text-gray-700 mb-4">
+                  Hi, my name is Colby Christensen. I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  When I was a baby I was diagnosed with Hemiplegic Cerebral Palsy. Doctors told my parents that physical therapy could maybe help me, and I was referred to a local therapy office. In a couple years I was able to make small changes, but my parents couldn't help but wonder if maybe there was MORE? They did their homework and when I was four years old my Mom and Dad took me to Poland to try a "new" treatment. The treatment was called the Intensive Model of Therapy (IMOT for short). At home, in Utah, my traditional physical therapy sessions lasted 45-minutes, once a week. But the IMOT I received in Poland had me in innovative physical therapy sessions that were 3-hours long and occurred 5 days a week! The therapy was physically challenging, but it was also fun. The best part was that I could feel and see myself gaining strength fast. In just a few weeks I had discovered new ways to make my body move. It was so exciting!
+                </p>
+                <p className="text-gray-700">
+                  The results I got using IMOT were too good to ignore. That's why my Mom and Dad started an IMOT clinic in Utah to help me—and other kids like me--reach amazing goals that traditional PT would not have allowed. They named the clinic Now I Can.
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white">
             <h2 className="text-2xl font-bold mb-4 text-center">Our Commitment</h2>
             <p className="text-lg mb-6 text-center">
@@ -136,4 +192,4 @@ const MissionValues = () => {
   );
 };
 
-export default MissionValues;
+export default OurStoryMission;
