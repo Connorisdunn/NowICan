@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* 
+ * Main App Styles
+ * Most styling is handled through Tailwind CSS classes
+ */
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
 }
 
-@keyframes logo-spin {
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Custom animations */
+@keyframes fadeUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.animate-fade-up {
+  animation: fadeUp 0.5s ease-out forwards;
 }
 
-.card {
-  padding: 2em;
+/* Focus styles for improved accessibility */
+:focus-visible {
+  outline: 2px solid #3490dc;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Override link colors in dark backgrounds */
+.bg-blue-900 a, 
+.bg-purple-900 a,
+.bg-gradient-to-r a {
+  color: #e0f2fe;
+}
+
+.bg-blue-900 a:hover, 
+.bg-purple-900 a:hover,
+.bg-gradient-to-r a:hover {
+  color: #ffffff;
+}
+
+/* Improved button accessibility */
+.btn:focus {
+  outline: 2px solid #3490dc;
+  outline-offset: 2px;
+}
+
+/* Custom rainbow gradient text */
+.text-rainbow {
+  background: linear-gradient(90deg, #3490dc, #38c172, #9561e2, #f66d9b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }

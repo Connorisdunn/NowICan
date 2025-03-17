@@ -2,7 +2,7 @@ You are tasked with redoing the website for a nonprofit organization called NowI
 Our work revamping their website isn't just about improving code or design - it's about helping more families discover this life-changing resource. Every optimization we make, every form we streamline, every piece of content we clarify could be the difference between a family finding Now I Can or continuing to search for answers. When we make their site more accessible and user-friendly, we're helping parents who are already dealing with so much to more easily find the support their children need.
 The stories of kids like Colby, who went from requiring constant assistance to becoming an active teenager and college student, show us the real impact of Now I Can's work. By volunteering our skills to improve their digital presence, we become part of that impact. Let's build something that serves these families and honors the incredible work happening at Now I Can's facilities in Utah and Pennsylvania.
 
-Their site's current text content has been given to you in a file called old-content.txt. In making this new website for them, use mostly the same images they link to already, and much of the same content, but feel at liberty to reorganize it, split or combine it etc. If there's a page we're making that doesn't have content written already, write the content yourself, and make a small reminder box that you made this content up so we can go back and make sure it's factual later. For now, just focus on making the website look stellar so the nonprofit can accomplish its purpose.
+Their site's current text content has been given to you in a file called content.txt. In making this new website for them, use mostly the same images they link to already, and much of the same content, but feel at liberty to reorganize it, split or combine it etc. If there's a page we're making that doesn't have content written already, write the content yourself, and make a small reminder box that you made this content up so we can go back and make sure it's factual later. For now, just focus on making the website look stellar so the nonprofit can accomplish its purpose.
 
 The website uses a vibrant rainbow-like sequence of modern, friendly colors - flowing from blue to green to purple to coral - creating an approachable and optimistic feel that's perfect for a nonprofit foundation.
 
@@ -62,3 +62,5 @@ graph TD
 ```
 
 However, not all of those need to be their own page. Combining similar elements can help the navigation and user experience be a lot simpler and more intuitive.
+
+In addition to the old content in content.txt, we also need to include pages showing when therapy and accomodations are available, plus waiting list information, and a flow for users to schedule a therapy session or accomodations and make a payment. All this can be stubbed frontend for now, show what it should look like, and then we can add the backend to make it work later.
