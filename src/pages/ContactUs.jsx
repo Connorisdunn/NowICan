@@ -148,19 +148,6 @@ const ContactUs = () => {
               </div>
             </form>
           </div>
-          
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
-            <p className="text-lg mb-6">
-              Schedule a free consultation to learn how Now I Can can help your child reach their full potential.
-            </p>
-            <Link 
-              to="/for-families/getting-started/free-consultation" 
-              className="btn bg-blue-600 text-white hover:bg-blue-700 text-center"
-            >
-              Schedule a Free Consultation
-            </Link>
-          </div>
         </div>
       </div>
     </div>

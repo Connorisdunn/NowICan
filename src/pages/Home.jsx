@@ -20,60 +20,72 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                </svg>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/925c9c27-3b4a-4b66-a4ee-8acf79695199/HP-Therapy-Schedule.jpg" 
+                  alt="Intensive Therapy Model" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Intensive Therapy Model</h3>
-              <p className="text-gray-600 mb-4">
-                Our intensive model provides 4 hours of therapy per day, 5 days a week, resulting in gains that might take months or years in traditional therapy.
-              </p>
-              <Link to="/therapy-services/intensive-physical-therapy" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Intensive Therapy Model</h3>
+                <p className="text-gray-600 mb-4">
+                  Our intensive model provides 4 hours of therapy per day, 5 days a week, resulting in gains that might take months or years in traditional therapy.
+                </p>
+                <Link to="/therapy-services/intensive-physical-therapy" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
             
             {/* Card 2 */}
-            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/1647216189569-8OCPNKIVC8MYZL30181M/Suit-Therapy-Page-Spot1.jpg" 
+                  alt="Innovative Treatment Methods" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Innovative Treatment Methods</h3>
-              <p className="text-gray-600 mb-4">
-                We utilize cutting-edge techniques including Orthotic Suit Therapy, Universal Exercise Unit, and specialized manual therapy approaches.
-              </p>
-              <Link to="/therapy-services/treatment-methods" className="text-green-600 font-medium hover:text-green-800 flex items-center">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Innovative Treatment Methods</h3>
+                <p className="text-gray-600 mb-4">
+                  We utilize cutting-edge techniques including Orthotic Suit Therapy, Universal Exercise Unit, and specialized manual therapy approaches.
+                </p>
+                <Link to="/therapy-services/treatment-methods" className="text-green-600 font-medium hover:text-green-800 flex items-center">
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
             
             {/* Card 3 */}
-            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
-              <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8b9b155b-8374-41c9-b6be-b6a3418f09c4/H-Therapy-Team.jpg" 
+                  alt="Expert Therapy Team" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Expert Therapy Team</h3>
-              <p className="text-gray-600 mb-4">
-                Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
-              </p>
-              <Link to="/about-us/therapy-team" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
-                Meet Our Team
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Expert Therapy Team</h3>
+                <p className="text-gray-600 mb-4">
+                  Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
+                </p>
+                <Link to="/about-us/therapy-team" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                  Meet Our Team
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -91,7 +103,14 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Story 1 */}
-            <div className="bg-blue-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="h-56 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/685d3859-6826-45eb-88ad-6f6bad55abae/Colby.jpg" 
+                  alt="Colby's Journey" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3">Colby's Journey</h3>
                 <p className="text-gray-700 mb-4">
@@ -109,7 +128,14 @@ const Home = () => {
             </div>
             
             {/* Story 2 */}
-            <div className="bg-purple-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="h-56 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/39fc64f9-31df-4b8a-87e3-5898cdb8a92d/H-Testimonials.jpg" 
+                  alt="Success Stories" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3">More Success Stories</h3>
                 <p className="text-gray-700 mb-4">
@@ -142,11 +168,12 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Utah Location */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="h-48 bg-gray-300">
-                {/* Replace with actual image */}
-                <div className="w-full h-full flex items-center justify-center bg-blue-100 text-blue-500">
-                  <span className="text-lg font-medium">Utah Location Image</span>
-                </div>
+              <div className="h-56 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/ec1b1f37-f43a-4de4-9896-bfe25e818846/HP-Orem-Utah-Location.jpg" 
+                  alt="Orem, Utah Location" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Orem, Utah</h3>
@@ -166,11 +193,12 @@ const Home = () => {
             
             {/* Pennsylvania Location */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="h-48 bg-gray-300">
-                {/* Replace with actual image */}
-                <div className="w-full h-full flex items-center justify-center bg-purple-100 text-purple-500">
-                  <span className="text-lg font-medium">Pennsylvania Location Image</span>
-                </div>
+              <div className="h-56 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/9dbc12c5-d60c-4d84-b414-b06039299c7f/HP-Lititz-Listrak.jpg" 
+                  alt="Lititz, Pennsylvania Location" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Lititz, Pennsylvania</h3>
