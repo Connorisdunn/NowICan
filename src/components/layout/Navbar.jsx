@@ -26,7 +26,6 @@ const Navbar = () => {
         { name: 'Intensive Therapy', path: '/therapy-services/intensive-physical-therapy' },
         { name: 'Traditional Therapy', path: '/therapy-services/traditional-physical-therapy' },
         { name: 'Treatment Methods', path: '/therapy-services/treatment-methods' },
-        { name: 'Who We Serve', path: '/therapy-services/who-we-serve' },
         { name: 'Therapy Schedule', path: '/therapy-services/therapy-schedule' },
       ]
     },

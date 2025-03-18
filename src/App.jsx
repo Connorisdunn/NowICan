@@ -19,7 +19,6 @@ import OurStory from './pages/about/OurStory'
 import Locations from './pages/about/Locations'
 import UtahLocation from './pages/about/UtahLocation'
 import PennsylvaniaLocation from './pages/about/PennsylvaniaLocation'
-import WhoWeServe from './pages/about/WhoWeServe'
 
 import IntensivePhysicalTherapy from './pages/therapy/IntensivePhysicalTherapy'
 import TraditionalPhysicalTherapy from './pages/therapy/TraditionalPhysicalTherapy'
@@ -70,7 +69,6 @@ function App() {
             <Route path="/about-us/locations" element={<Locations />} />
             <Route path="/about-us/locations/utah" element={<UtahLocation />} />
             <Route path="/about-us/locations/pennsylvania" element={<PennsylvaniaLocation />} />
-            <Route path="/about-us/who-we-serve" element={<WhoWeServe />} />
             
             {/* About Us Sub-pages - New Consolidated */}
             <Route path="/about-us/our-story-mission" element={<OurStoryMission />} />
@@ -80,7 +78,6 @@ function App() {
             {/* Therapy Services Sub-pages - Original */}
             <Route path="/therapy-services/intensive-physical-therapy" element={<IntensivePhysicalTherapy />} />
             <Route path="/therapy-services/traditional-physical-therapy" element={<TraditionalPhysicalTherapy />} />
-            <Route path="/therapy-services/who-we-serve" element={<WhoWeServe />} />
             <Route path="/therapy-services/treatment-methods" element={<TreatmentMethods />} />
             <Route path="/therapy-services/therapy-schedule" element={<TherapySchedule />} />
             <Route path="/therapy-services/treatment-methods/orthotic-suit-therapy" element={<Navigate to="/therapy-services/consolidated-treatment-methods" replace />} />
