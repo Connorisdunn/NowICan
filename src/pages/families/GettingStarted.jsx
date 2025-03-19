@@ -114,7 +114,7 @@ const GettingStarted = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
-              to="/for-families/faqs" 
+              to="/for-families" 
               className="btn bg-white border border-blue-500 text-blue-600 hover:bg-blue-50"
             >
               View FAQs

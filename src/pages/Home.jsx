@@ -79,7 +79,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">
                   Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
                 </p>
-                <Link to="/about-us/therapy-team" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                <Link to="/about-us/our-team" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
                   Meet Our Team
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -117,7 +117,7 @@ const Home = () => {
                   From requiring constant assistance to becoming an active teenager and college student, Colby's story showcases the transformative power of intensive therapy.
                 </p>
                 <div className="flex justify-between items-center">
-                  <Link to="/about-us/our-story" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                  <Link to="/about-us/our-story-mission" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
                     Read Colby's Story
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -142,7 +142,7 @@ const Home = () => {
                   Discover how intensive therapy has helped children take their first steps, gain independence, and achieve milestones their families never thought possible.
                 </p>
                 <div className="flex justify-between items-center">
-                  <Link to="/for-families/testimonials" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                  <Link to="/for-families" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
                     Read More Stories
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -182,7 +182,7 @@ const Home = () => {
                   <p>Orem, UT 84058</p>
                   <p className="mt-2">(801) 228-1935</p>
                 </address>
-                <Link to="/about-us/locations/utah" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                <Link to="/about-us/locations" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -207,7 +207,7 @@ const Home = () => {
                   <p>Lititz, PA 17543</p>
                   <p className="mt-2">(717) 269-5829</p>
                 </address>
-                <Link to="/about-us/locations/pennsylvania" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                <Link to="/about-us/locations" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

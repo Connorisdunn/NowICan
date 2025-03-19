@@ -32,13 +32,13 @@ const ContactUs = () => {
               
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <Link 
-                  to="/about-us/locations/utah" 
+                  to="/about-us/locations" 
                   className="btn bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 text-center"
                 >
                   View Location
                 </Link>
                 <Link 
-                  to="/contact-us/free-consultation" 
+                  to="/for-families/free-consultation" 
                   className="btn bg-blue-600 text-white hover:bg-blue-700 text-center"
                 >
                   Free Consultation
@@ -66,13 +66,13 @@ const ContactUs = () => {
               
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <Link 
-                  to="/about-us/locations/pennsylvania" 
+                  to="/about-us/locations" 
                   className="btn bg-white border border-purple-600 text-purple-600 hover:bg-purple-50 text-center"
                 >
                   View Location
                 </Link>
                 <Link 
-                  to="/contact-us/free-consultation" 
+                  to="/for-families/free-consultation" 
                   className="btn bg-purple-600 text-white hover:bg-purple-700 text-center"
                 >
                   Free Consultation

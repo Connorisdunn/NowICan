@@ -8,8 +8,10 @@ for analysis, questions, or to propose code modifications.
 
 # Configuration
 INCLUDED_FILE_TYPES = {
+    "js": "javascript",
     "jsx": "javascript",
     "css": "css",
+    "json": "json",
 }
 
 EXCLUDED_DIRECTORIES = {"node_modules", ".git", "dist", "build", "coverage"}

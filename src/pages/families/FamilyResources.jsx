@@ -222,7 +222,7 @@ const FamilyResources = () => {
                 </p>
                 <div className="flex justify-center mt-4">
                   <Link 
-                    to="/about-us/our-story" 
+                    to="/about-us/our-story-mission" 
                     className="btn bg-blue-600 text-white hover:bg-blue-700"
                   >
                     Read Colby's Full Story

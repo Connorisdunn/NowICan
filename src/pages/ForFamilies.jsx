@@ -29,7 +29,7 @@ const ForFamilies = () => {
             <p className="text-gray-600">Find information about lodging and activities during your stay.</p>
           </Link>
           
-          <Link to="/for-families/testimonials" className="card p-6 hover:bg-blue-50">
+          <Link to="/for-families" className="card p-6 hover:bg-blue-50">
             <h3 className="text-xl font-bold mb-2">Testimonials</h3>
             <p className="text-gray-600">Read success stories from families who have participated in our therapy programs.</p>
           </Link>
