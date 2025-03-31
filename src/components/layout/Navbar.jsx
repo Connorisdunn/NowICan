@@ -17,7 +17,8 @@ const Navbar = () => {
         { name: 'Our Story & Mission', path: '/about-us/our-story-mission' },
         { name: 'Our Team', path: '/about-us/our-team' },
         { name: 'Locations', path: '/about-us/locations' },
-      ]
+      ],
+      clickable: false  // Not clickable
     },
     {
       title: 'Therapy Services',
@@ -27,7 +28,8 @@ const Navbar = () => {
         { name: 'Traditional Therapy', path: '/therapy-services/traditional-physical-therapy' },
         { name: 'Treatment Methods', path: '/therapy-services/treatment-methods' },
         { name: 'Therapy Schedule', path: '/therapy-services/therapy-schedule' },
-      ]
+      ],
+      clickable: false  // Not clickable
     },
     {
       title: 'For Families',
@@ -37,21 +39,20 @@ const Navbar = () => {
         { name: 'Payment & Financial Aid', path: '/for-families/financial-support' },
         { name: 'Accommodations', path: '/for-families/accommodations' },
         { name: 'Family Resources', path: '/for-families/family-resources' },
-      ]
+      ],
+      clickable: false  // Not clickable
     },
     {
       title: 'Support Us',
       path: '/support-us',
-      dropdown: [
-        { name: 'Donate', path: '/support-us/donate' },
-        { name: 'Volunteer', path: '/support-us/volunteer' },
-        { name: 'Our Supporters', path: '/support-us/our-supporters' },
-      ]
+      dropdown: null,  // No dropdown for Support Us
+      clickable: true  // Keep this clickable
     },
     {
       title: 'Contact',
       path: '/contact-us',
-      dropdown: null
+      dropdown: null,
+      clickable: true  // Keep this clickable
     },
   ];
 
@@ -94,6 +95,13 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
+  // Function to handle nav item click
+  const handleNavItemClick = (e, item) => {
+    if (!item.clickable && item.dropdown) {
+      e.preventDefault(); // Prevent navigation for non-clickable items
+    }
+  };
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-gray-50/80 py-4'}`}>
       <div className="container-custom mx-auto px-4">
@@ -114,29 +122,56 @@ const Navbar = () => {
                   onMouseEnter={() => handleNavItemMouseEnter(index)}
                   onMouseLeave={handleNavMouseLeave}
                 >
-                  <Link
-                    to={item.path}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center
-                      ${location.pathname === item.path || location.pathname.startsWith(item.path + '/') 
-                        ? 'text-blue-600' 
-                        : 'text-gray-700 hover:text-blue-600'}`}
-                    aria-expanded={activeDropdown === index}
-                    aria-haspopup={item.dropdown ? "true" : "false"}
-                  >
-                    {item.title}
-                    {item.dropdown && (
-                      <svg
-                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                          activeDropdown === index ? 'transform rotate-180' : ''
-                        }`}
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    )}
-                  </Link>
+                  {item.clickable ? (
+                    // Clickable nav item (for Support Us and Contact)
+                    <Link
+                      to={item.path}
+                      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center
+                        ${location.pathname === item.path || location.pathname.startsWith(item.path + '/') 
+                          ? 'text-blue-600' 
+                          : 'text-gray-700 hover:text-blue-600'}`}
+                      aria-expanded={activeDropdown === index}
+                      aria-haspopup={item.dropdown ? "true" : "false"}
+                    >
+                      {item.title}
+                      {item.dropdown && (
+                        <svg
+                          className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                            activeDropdown === index ? 'transform rotate-180' : ''
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      )}
+                    </Link>
+                  ) : (
+                    // Non-clickable nav item (for About, Therapy Services, For Families)
+                    <div
+                      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center cursor-pointer
+                        ${location.pathname === item.path || location.pathname.startsWith(item.path + '/') 
+                          ? 'text-blue-600' 
+                          : 'text-gray-700 hover:text-blue-600'}`}
+                      aria-expanded={activeDropdown === index}
+                      aria-haspopup={item.dropdown ? "true" : "false"}
+                    >
+                      {item.title}
+                      {item.dropdown && (
+                        <svg
+                          className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                            activeDropdown === index ? 'transform rotate-180' : ''
+                          }`}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      )}
+                    </div>
+                  )}
 
                   {item.dropdown && (
                     <div 
@@ -210,17 +245,29 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <div key={index}>
               <div className="flex justify-between items-center">
-                <Link
-                  to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
-                    location.pathname === item.path
-                      ? 'bg-blue-50 text-blue-600'
-                      : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
-                  }`}
-                  onClick={() => !item.dropdown && setIsMenuOpen(false)}
-                >
-                  {item.title}
-                </Link>
+                {item.clickable ? (
+                  <Link
+                    to={item.path}
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      location.pathname === item.path
+                        ? 'bg-blue-50 text-blue-600'
+                        : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                    }`}
+                    onClick={() => !item.dropdown && setIsMenuOpen(false)}
+                  >
+                    {item.title}
+                  </Link>
+                ) : (
+                  <div
+                    className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer ${
+                      location.pathname === item.path
+                        ? 'bg-blue-50 text-blue-600'
+                        : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                    }`}
+                  >
+                    {item.title}
+                  </div>
+                )}
                 {item.dropdown && (
                   <button
                     onClick={() => toggleMobileDropdown(index)}
