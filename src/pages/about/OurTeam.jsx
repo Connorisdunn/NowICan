@@ -29,17 +29,6 @@ const OurTeam = () => {
       ]
     },
     {
-      name: 'BRITTANY WALKER',
-      title: 'Physical Therapist Assistant',
-      location: 'utah',
-      bio: [
-        "Brittany grew up in Sandy, UT where she graduated from Jordan High School, and will forever be a Beetdigger!",
-        "She received her Bachelor's degree in Exercise and Sport Science from the University of Utah, and her Physical Therapist Assistant degree from Provo College.",
-        "Brittany has worked as a PTA in many different settings, but pediatrics is her favorite! She loves seeing people get better and achieve their goals, especially the little ones!",
-        "Brittany is very patient and creative, and has a huge heart for helping children."
-      ]
-    },
-    {
       name: 'MEGAN MERRILL, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
@@ -50,30 +39,49 @@ const OurTeam = () => {
       ]
     },
     {
-      name: "JEANE' BOWERMAN",
-      title: 'Physical Therapist',
-      location: 'pennsylvania',
+      name: 'David Landeen, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
       bio: [
-        "Jeane' graduated from the University of the Sciences in Philadelphia with her master's degree in Physical Therapy in 2003. She has worked in a variety of settings including pediatrics, outpatient orthopedics, and inpatient rehab. With approximately 10 years of pediatric experience, Jeane' had the opportunity to work in early intervention, preschool based therapy, and outpatient pediatrics. Working with kids has always been her passion and most rewarding occupational setting. She has taken continuing education classes in various topics including NDT, pediatric gait, and infant development. She has also received on-the-job training in pediatric aquatics and myofascial release. Jeane' lives in Lancaster County with her husband, 2 kids, and a black lab. In her free time, she enjoys running, reading, being outside in nature, and spending time with her family."
+        "David recently graduated from the University of Utah with a Doctor of Physical Therapy degree. Originally from Utah, he spent 10 years in video production before transitioning to a career as a Physical Therapist.",
+        "David's decision was inspired by witnessing a pediatric PT help his oldest daughter, who has special needs, learn to walk. Witnessing the profound impact of physical therapy on his daughter and their family motivated David to pursue the same transformative work for others.",
+        "Outside of work, David treasures time with his wife and four daughters, and enjoys running marathons, hiking, paddle boarding, and exploring the outdoors. He is excited about joining the Now I Can team!",
       ]
     },
     {
-      name: 'ANGIE SIEBER',
-      title: 'PTA, Clinic Manager',
-      location: 'pennsylvania',
+      name: 'Brooke Winter, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
       bio: [
-        "Angie graduated from Alvernia University and has been a PTA for 30 years. She has worked in a variety of settings, but her heart always pulled her back to pediatrics. Angie has her certification in introductory levels A, B and C in DMI. She has completed TASES for upper and lower extremities, has completed TMR Tots Levels 1 and 2 and several primitive reflex integration courses. She will be a certified Thera Togs fitter upon completing the Togs labs in February 2025. She studied NDT pediatric handling skills with Lois Bly in addition to many other pediatric based continuing education classes over the years. She has worked in an early intervention preschool, an inpatient rehab on the pediatric core team, ortho outpatient with student athletes, and school based PT making the move to pediatric intensive PT in 2022 when Now I Can Northeast opened a natural fit for her career.",
-        "Angie is also a certified group fitness instructor and has pediatric yoga/pilates certification and Generation Pound certification. Angie also coached boys soccer for 11 years at club and travel levels.",
-        "Angie lives in Lititz, PA with her husband Craig and has two grown children. Angie enjoys gardening in her spare time and loves to travel and vacation anywhere that involves a beach and is an avid seashell collector."
+        "Brooke Winter is a 36-year-old mother of three amazing kids. Her husband is her number one supporter, and she is grateful for his help in juggling everything life throws her way.",
+        "Brooke attended the University of Utah for both her bachelor's and doctorate degrees. She has been a practicing physical therapist for 11 years, spending most of her career working in the neurologic and pediatric settings. She loves her job and finds fulfillment in helping people accomplish their goals.",
+        "Outside of work, Brooke enjoys being outdoors or in the kitchen—whether running, road biking, hiking, gardening, baking, or listening to an audiobook.",
       ]
     },
     {
-      name: 'RANDI SHENBERGER',
-      title: 'Office Manager',
-      location: 'pennsylvania',
+      name: 'Brooke Winter, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
       bio: [
-        "Randi Shenberger is a native to Pennsylvania. She loves to travel. She has been to Africa, Costa Rica, Dominican Republic, England, Mexico, Sweden and Wales. A few of her hobbies are: reading, listening to music, drinking coffee and running. Her absolute favorite part of Now I Can is the children! She loves watching the children progress from when they first begin treatment to then witnessing the growth and changes that have been made by the end of their therapy at Now I Can! She feels it is an amazing and beautiful thing to be a part of! Randi keeps the whole Now I Can Northeast crew organized!",
-        "Randi looks forward to scheduling your child for a session at Now I Can!"
+        "Brooke Winter is a 36-year-old mother of three amazing kids. Her husband is her number one supporter, and she is grateful for his help in juggling everything life throws her way.",
+        "Brooke attended the University of Utah for both her bachelor's and doctorate degrees. She has been a practicing physical therapist for 11 years, spending most of her career working in the neurologic and pediatric settings. She loves her job and finds fulfillment in helping people accomplish their goals.",
+        "Outside of work, Brooke enjoys being outdoors or in the kitchen—whether running, road biking, hiking, gardening, baking, or listening to an audiobook.",
+      ]
+    },
+    {
+      name: 'Ali Barney, PTA',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      bio: [
+       "Ali is.."
+      ]
+    },
+    {
+      name: 'Jessica Butler, PTA',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      bio: [
+       "Jessica is.."
       ]
     },
     {
