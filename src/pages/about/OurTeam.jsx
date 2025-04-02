@@ -111,9 +111,11 @@ const OurTeam = () => {
       name: 'ALLISON EBERSOLE',
       title: 'General Manager, Northeast',
       location: 'pennsylvania',
-      image: '/images/allison-ebersole.png', // Added image path
+      image: '/images/Allison.jpg', // Added image path
       bio: [
-        "Allison Ebersole graduated from Penn State University with a BS degree in Recreation and Parks Management. She then earned her Masters Degree in Elementary Education. She is a former first grade teacher. She has always had a heart for helping children develop, grow and reach for the stars! Having a daughter with cerebral palsy, she knew first hand the time, dedication and hard work that goes into raising a child with special needs. Allison has a passion for helping special needs kids achieve their greatest potential. Her dream of opening an intensive physical therapy center has now become a reality! Her motto for the center is making miracles happen step by step!! She is excited to watch how children's lives will be positively impacted by the center."
+        "Allison Ebersole graduated from Penn State University with a BS degree in Recreation and Parks Management. She then earned her Masters Degree in Elementary Education. She is a former first grade teacher. She has always had a heart for helping children develop, grow and reach for the stars!",
+        "Having a daughter with cerebral palsy, she knew first hand the time, dedication and hard work that goes into raising a child with special needs. Allison has a passion for helping special needs kids achieve their greatest potential.",
+        "Her dream of opening an intensive physical therapy center has now become a reality! Her motto for the center is making miracles happen step by step!! She is excited to watch how children's lives will be positively impacted by the center.",
       ]
     }
   ];
