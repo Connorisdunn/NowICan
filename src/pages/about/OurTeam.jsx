@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const OurTeam = () => {
   const [activeTab, setActiveTab] = useState('therapists');
-  const [selectedLocation, setSelectedLocation] = useState('utah'); // Changed from 'all' to 'utah'
+  const [selectedLocation, setSelectedLocation] = useState('utah');
   
   const therapists = [
     {
       name: 'MARK BARNEY, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/mark-barney.jpg', // Added image path
+      image: '/images/mark-barney.jpg',
       bio: [
         "Mark graduated from Southern Utah University in 2002 with a Bachelors of Science in Physical Education/emphasis in Athletic training and Health Education. He received his Doctorate of Physical Therapy degree from the University of Saint Augustine for Health Sciences in 2008.",
         "After graduation Mark had the opportunity to work in many different clinical settings including orthopedic outpatient, skilled nursing, and home health. It wasn't long before his career route took a dramatic turn into the field of Pediatrics. Mark finds great satisfaction in assisting children to realize their potential with improved motor function and mobility.",
@@ -22,7 +22,7 @@ const OurTeam = () => {
       name: 'NACOLE JACKSON',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/nacole-jackson.jpg', // Added image path
+      image: '/images/nacole-jackson.jpg',
       bio: [
         "Nacole Jackson graduated from Provo College as a Physical Therapist Assistant with high honors.",
         "Nacole has worked in many physical therapy settings including acute care, inpatient, outpatient orthopedics, industrial PT, and pediatrics. She also has more than 10 years of experience working with children in various teaching settings prior to coming to Now I Can in 2008.",
@@ -34,7 +34,7 @@ const OurTeam = () => {
       name: 'MEGAN MERRILL, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/megan-merrill.jpg', // Added image path
+      image: '/images/megan-merrill.jpg',
       bio: [
         "Megan grew up in Pocatello, Idaho, and moved to Provo to study at BYU. She earned her BS in Exercise Science in 2013, and started her Doctorate in Physical Therapy one week later at Rocky Mountain University of Health Professions.",
         "Megan has known she wanted to work with kiddos from the very beginning. She volunteered at Now I Can for 3 years during college and returned as a therapist in 2019: truly a dream come true!",
@@ -45,7 +45,7 @@ const OurTeam = () => {
       name: 'David Landeen, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/david-landeen.jpeg', // Added image path
+      image: '/images/david-landeen.jpeg',
       bio: [
         "David recently graduated from the University of Utah with a Doctor of Physical Therapy degree. Originally from Utah, he spent 10 years in video production before transitioning to a career as a Physical Therapist.",
         "David's decision was inspired by witnessing a pediatric PT help his oldest daughter, who has special needs, learn to walk. Witnessing the profound impact of physical therapy on his daughter and their family motivated David to pursue the same transformative work for others.",
@@ -56,7 +56,7 @@ const OurTeam = () => {
       name: 'Brooke Winter, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/brooke-winter.png', // Added image path
+      image: '/images/brooke-winter.png',
       bio: [
         "Brooke Winter is a 36-year-old mother of three amazing kids. Her husband is her number one supporter, and she is grateful for his help in juggling everything life throws her way.",
         "Brooke attended the University of Utah for both her bachelor's and doctorate degrees. She has been a practicing physical therapist for 11 years, spending most of her career working in the neurologic and pediatric settings. She loves her job and finds fulfillment in helping people accomplish their goals.",
@@ -67,7 +67,7 @@ const OurTeam = () => {
       name: 'Ali Barney, PTA',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/ali-barney.jpg', // Added image path
+      image: '/images/ali-barney.jpg',
       bio: [
        "Ali grew up in Nebraska and attended Southern Utah University where she earned a bachelor's degree in Exercise Science. She then earned her Physical Therapist Assistant degree from Provo College and began working at Now I Can in 2023.",
        "Ali volunteered and worked in a few different settings, but knew her heart was set on working with kids. She loves working in pediatrics, connecting with the kids and families, and seeing patients achieve their goals.",
@@ -78,7 +78,7 @@ const OurTeam = () => {
       name: 'Jessica Butler, PTA',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/jessica-butler.png', // Added image path
+      image: '/images/jessica-butler.png',
       bio: [
        "Jessica was born and raised in Orem, Utah. She grew up playing sports and was always interested in joining the healthcare community. She holds a bachelor's degree in Exercise Physiology and also became a PTA at BYU - Idaho so she could help others improve through physical therapy.",
        "After graduation, Jessica found her passion in pediatrics and has been loving meeting and helping all of the wonderful kids at Now I Can!",
@@ -89,7 +89,7 @@ const OurTeam = () => {
       name: 'MELISSA CHALK',
       title: 'Managing Director',
       location: 'utah',
-      image: '/images/melissa-chalk.jpg', // Added image path
+      image: '/images/melissa-chalk.jpg',
       bio: [
         "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is excited to be a part of the Now I Can team!",
         "Melissa has been Now I Can's Director of Operations since 2013. She brings extensive clinical management experience, as well as her special blend of magic to keep everything running smoothly. If you call, you will likely hear Melissa's cheerful voice! She helps keep patients, volunteers, and therapists' schedules on track, as well as handling all day-to-day operations and accounting.",
@@ -100,7 +100,7 @@ const OurTeam = () => {
       name: 'TRACEY CHRISTENSEN',
       title: 'Executive Director, Utah and Co-Founder',
       location: 'utah',
-      image: '/images/tracey-christensen.jpg', // Added image path
+      image: '/images/tracey-christensen.jpg',
       bio: [
         "Joel and Tracey Christensen are founders and board members of Now I Can Foundation. Tracey has been the Executive Director for most all of Now I Can's 16 years. She enjoys working with the amazing Now I Can team, cheering on our patients, and learning from their great parents.",
         "Tracey is responsible for Development, Community Outreach and Marketing. She really loves cheering on the kids and being their friend.",
@@ -111,7 +111,7 @@ const OurTeam = () => {
       name: 'ALLISON EBERSOLE',
       title: 'General Manager, Northeast',
       location: 'pennsylvania',
-      image: '/images/Allison.jpg', // Added image path
+      image: '/images/Allison.jpg',
       bio: [
         "Allison Ebersole graduated from Penn State University with a BS degree in Recreation and Parks Management. She then earned her Masters Degree in Elementary Education. She is a former first grade teacher. She has always had a heart for helping children develop, grow and reach for the stars!",
         "Having a daughter with cerebral palsy, she knew first hand the time, dedication and hard work that goes into raising a child with special needs. Allison has a passion for helping special needs kids achieve their greatest potential.",
@@ -123,37 +123,37 @@ const OurTeam = () => {
   const boardMembers = [
     {
       name: 'JOEL AND TRACEY CHRISTENSEN',
-      image: '/images/joel-tracey-christensen.png', // Added image path
+      image: '/images/joel-tracey-christensen.png',
       bio: "Joel and Tracey Christensen are the founders of Now I Can Foundation. Both Joel and Tracey graduated from Brigham Young University. They have three children and enjoy spending time together as a family and doing home renovation projects."
     },
     {
       name: 'LARRY MCFERSON',
-      image: '/images/larry-mcferson.png', // Added image path
+      image: '/images/larry-mcferson.png',
       bio: "Larry McFerson is a Financial Accountant, working at Brigham Young University. He is a graduate of Accounting from BYU and earned an MBA with an Accounting Emphasis from Utah State University. He grew up in Clearfield, UT, but has lived in Utah County for many years, and now lives in American Fork. He was recently married to Sarah, his eternal love, and they are looking forward to having a family together. He has more interests and hobbies than he has time and money to support. He loves anything BYU, anything athletic, and anything with the arts. He loves music, all-things Disney, and tries to stay active. He is grateful to Now I Can's \"Run to Walk,\" which is the first 5K he ever ran. He has done many races since (and has only missed one Now I Can race)."
     },
     {
       name: 'JOHN LIVINGSTON',
-      image: '/images/john-livingston.png', // Added image path
+      image: '/images/john-livingston.png',
       bio: "John P. Livingstone is a Canadian who came to BYU in 1998 following his service as President of the Michigan Detroit Mission. John and his wife Linda are the parents of six daughters and one son and an ever-growing number of grandchildren. He began employment with the Church Educational System in 1972 and is a retired Associate Professor of Church History and Doctrine. He serves as a sealer in the Provo Temple currently. John is a past president of the Association of Mormon Counselors and Psychotherapists (AMCAP). John and Linda became Americans in May of 2005."
     },
     {
       name: 'NEIL LEBARON',
-      image: '/images/neil-lebaron.png', // Added image path
+      image: '/images/neil-lebaron.png',
       bio: "Neil LeBaron has owned LeBaron & Associated, Inc., a Utah advertising agency for forty-five years. He has served on the executive board and as the vice president of American Indian Services for over twenty years. It is a 501 (C) (3) corporation providing scholarships for Native Americans. Neil has also served several missions for the Church of Jesus Christ of Latter-day Saints in Australia, Texas, and Utah including two educational service missions and a Humanitarian Service Mission which benefited non-profit walk-in clinics, community gardens, the education of school children and adults, homeless shelters, women's shelters, ESL education, and private schools. Neil married Ruth Ann Adams in 1971. Together they have eight children, thirty-six grandchildren and one great granddaughter."
     },
     {
       name: 'REBECCA SWINDLE',
-      image: '/images/rebecca-swindle.png', // Added image path
+      image: '/images/rebecca-swindle.png',
       bio: "Rebecca is a native to Utah County. She spent much of her youth outdoors with her family working in a large yard, playing sports, or exploring the backside of Mt. Timpanogos. In her teens, she participated in many sports with most of her efforts being focused on Track and Field as a high jumper. After completing a mission for The Church of Jesus Christ of Latter-Day Saints in Montreal, Quebec, Rebecca received her Bachelor's Degree in Mass Media Communications from Brigham Young University. She married Seth Franklin Swindle and they enjoy being parents of five children. She has spent a joyful amount of time raising their kids! Rebecca has enjoyed working with groups ranging from a few people to thousands in schools, community activities, non-profits, and church settings. Currently, she is a real estate professional along the Wasatch Front in Utah and has found a lot of joy serving as a board member for the Timpanogos Storytelling Festival and the Now I Can Foundation."
     },
     {
       name: 'LIZ LIVINGSTON',
-      image: '/images/liz-livingston.png', // Added image path
+      image: '/images/liz-livingston.png',
       bio: "Liz Livingston is the mother of seven children. She graduated in Secondary and Special Education from BYU and has a particular interest in all things that impact children and the family. She has taught French, music and special education seminary. Liz enjoys partnering with her husband, Lane, in a small real estate business. She also loves to help literacy flourish in her \"Friendship Library Project.\" She is so grateful to be involved with the nurturing of the exciting physical growth and joy that happens at Now I Can!"
     },
     {
       name: 'MELISSA CHALK',
-      image: '/images/melissa-chalk.jpg', // Added image path
+      image: '/images/melissa-chalk.jpg',
       bio: "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is happy to be a part of the Now I Can team!"
     }
   ];
