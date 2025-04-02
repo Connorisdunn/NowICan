@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PaymentProcessor from '../../components/families/PaymentProcessor';
 
 const FinancialSupport = () => {
   const [activeTab, setActiveTab] = useState('payment-options');
-  const [showPaymentForm, setShowPaymentForm] = useState(false);
   const [showGrantForm, setShowGrantForm] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState('utah');
+  
+  // Payment form URL
+  const paymentFormUrl = "https://secure.lglforms.com/form_engine/s/bt5gHYdbJSqj7-OB4eA91Q";
   
   return (
     <div className="min-h-screen pt-24 pb-16">
@@ -43,130 +44,66 @@ const FinancialSupport = () => {
         
         {/* Payment Options Content */}
         {activeTab === 'payment-options' && (
-          <>
-            {!showPaymentForm ? (
-              <>
-                <section className="mb-8">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="bg-white rounded-lg shadow-md p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="bg-blue-100 p-3 rounded-full mr-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                          </svg>
-                        </div>
-                        <h3 className="text-xl font-bold">Credit Card</h3>
-                      </div>
-                      <p className="text-gray-700">
-                        We accept all major credit cards including Visa, MasterCard, American Express, and Discover.
-                        Payments can be made online, by phone, or in person.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg shadow-md p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="bg-blue-100 p-3 rounded-full mr-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                          </svg>
-                        </div>
-                        <h3 className="text-xl font-bold">Check / ACH</h3>
-                      </div>
-                      <p className="text-gray-700">
-                        Personal checks are accepted for payment. We also offer electronic ACH transfers directly from your 
-                        bank account for convenient, recurring payments.
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg shadow-md p-6">
-                      <div className="flex items-center mb-4">
-                        <div className="bg-blue-100 p-3 rounded-full mr-4">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z" />
-                          </svg>
-                        </div>
-                        <h3 className="text-xl font-bold">HSA / FSA</h3>
-                      </div>
-                      <p className="text-gray-700">
-                        Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA) can be used for our therapy 
-                        services. We can provide all necessary documentation for your records.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-                
-                <section className="mb-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-white rounded-lg shadow-md p-6">
-                      <h3 className="text-xl font-bold mb-4">Payment Plans</h3>
-                      <p className="text-gray-700 mb-4">
-                        We offer customized payment plans to help spread the cost of therapy over time. Our payment plans are 
-                        designed to be flexible and accommodate various financial situations.
-                      </p>
-                      <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                        <li>No interest payment plans</li>
-                        <li>Flexible payment schedules</li>
-                        <li>Customized to your financial situation</li>
-                        <li>Easy automated payments</li>
-                      </ul>
-                    </div>
-                    
-                    <div className="bg-white rounded-lg shadow-md p-6">
-                      <h3 className="text-xl font-bold mb-4">Insurance Information</h3>
-                      <p className="text-gray-700 mb-4">
-                        While Now I Can does not directly bill insurance companies, many families have been successful in 
-                        obtaining partial reimbursement from their insurance providers.
-                      </p>
-                      <p className="text-gray-700 mb-4">
-                        We provide detailed documentation to help you submit claims:
-                      </p>
-                      <ul className="list-disc pl-6 space-y-1 text-gray-700 mb-4">
-                        <li>Superbills with appropriate CPT codes</li>
-                        <li>Detailed treatment notes</li>
-                        <li>Therapy progress reports</li>
-                        <li>Letters of medical necessity (upon request)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-                
-                <section className="mb-8">
-                  <div className="bg-white rounded-lg shadow-md p-6">
-                    <div className="flex justify-between items-center flex-wrap mb-6">
-                      <h2 className="text-2xl font-bold">Make a Payment</h2>
-                      <button 
-                        onClick={() => setShowPaymentForm(true)} 
-                        className="btn bg-blue-600 text-white hover:bg-blue-700 text-center"
-                      >
-                        Access Payment Portal
-                      </button>
-                    </div>
-                    <p className="text-gray-700">
-                      Ready to make a payment for your child's therapy session? We've made it simple and secure 
-                      to pay online through our payment portal. If you need assistance with your payment, please 
-                      contact our financial team.
-                    </p>
-                  </div>
-                </section>
-              </>
-            ) : (
-              <div>
-                <div className="mb-6 flex justify-between items-center">
-                  <h2 className="text-2xl font-bold">Payment Portal</h2>
-                  <button 
-                    onClick={() => setShowPaymentForm(false)}
-                    className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-md text-gray-800 flex items-center"
+          <section className="mb-8">
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-2xl font-bold mb-6 text-center">Make a Payment</h2>
+              <p className="text-gray-700 mb-8 text-center">
+                Ready to make a payment for your child's therapy session? First, select which Now I Can location you're paying for:
+              </p>
+              
+              <div className="mb-8 flex justify-center">
+                <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                  {/* Utah Button */}
+                  <button
+                    className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                      selectedLocation === 'utah' 
+                      ? 'text-white' 
+                      : 'text-gray-700'
+                    }`}
+                    onClick={() => setSelectedLocation('utah')}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    Back to Payment Options
+                    Utah
                   </button>
+                  
+                  {/* Pennsylvania Button */}
+                  <button
+                    className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                      selectedLocation === 'pennsylvania' 
+                      ? 'text-white' 
+                      : 'text-gray-700'
+                    }`}
+                    onClick={() => setSelectedLocation('pennsylvania')}
+                  >
+                    Pennsylvania
+                  </button>
+                  
+                  {/* Sliding Background */}
+                  <span 
+                    className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                      selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                    }`}
+                  ></span>
                 </div>
-                <PaymentProcessor />
               </div>
-            )}
-          </>
+              
+              <div className="flex justify-center">
+                <a 
+                  href={paymentFormUrl}
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className={`btn text-white text-lg px-8 py-3 ${
+                    selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                  }`}
+                >
+                  Proceed to Payment Portal
+                </a>
+              </div>
+              
+              <p className="text-gray-500 text-sm italic text-center mt-6">
+                You will be redirected to our secure payment processor to complete your transaction.
+              </p>
+            </div>
+          </section>
         )}
         
         {/* Therapy Grants Content */}
@@ -407,17 +344,20 @@ const FinancialSupport = () => {
         )}
         
         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">Need Help with Financial Options?</h2>
+          <h2 className="text-2xl font-bold mb-4">Learn About Financial Assistance</h2>
           <p className="text-lg mb-6">
-            Our team is here to help you navigate your financial options and find the best solution for your family.
-            Contact us today to discuss your specific needs.
+            Need help with therapy costs? Our Ability Fund provides grants to eligible families to help cover treatment expenses.<br></br>
+            Click below to explore our grant program and learn how to apply.
           </p>
-          <Link 
-            to="/contact-us" 
+          <button 
+            onClick={() => {
+              setActiveTab('therapy-grants');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }} 
             className="btn bg-white text-blue-600 hover:bg-blue-50"
           >
-            Contact Our Financial Team
-          </Link>
+            Explore Grant Opportunities
+          </button>
         </div>
       </div>
     </div>
