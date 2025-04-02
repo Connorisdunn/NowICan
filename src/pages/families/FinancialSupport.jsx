@@ -6,6 +6,29 @@ const FinancialSupport = () => {
   const [showGrantForm, setShowGrantForm] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState('utah');
   
+  // File state management
+  const [introLetterFileName, setIntroLetterFileName] = useState('No file chosen');
+  const [w2FileName, setW2FileName] = useState('No file chosen');
+  const [unemploymentFileName, setUnemploymentFileName] = useState('No file chosen');
+  const [additionalIncomeFiles, setAdditionalIncomeFiles] = useState('No files chosen');
+  
+  // Handle file selection
+  const handleFileChange = (e, setFileName) => {
+    if (e.target.files.length > 0) {
+      if (e.target.multiple) {
+        setFileName(`${e.target.files.length} files selected`);
+      } else {
+        setFileName(e.target.files[0].name);
+      }
+    } else {
+      if (e.target.multiple) {
+        setFileName('No files chosen');
+      } else {
+        setFileName('No file chosen');
+      }
+    }
+  };
+  
   // Payment form URL
   const paymentFormUrl = "https://secure.lglforms.com/form_engine/s/bt5gHYdbJSqj7-OB4eA91Q";
   
@@ -161,19 +184,39 @@ const FinancialSupport = () => {
                     
                     <div className="mb-6">
                       <h3 className="text-lg font-bold mb-3">Select a Location:</h3>
-                      <div className="flex space-x-4">
-                        <button 
-                          className={`px-4 py-2 rounded-lg border ${selectedLocation === 'utah' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
-                          onClick={() => setSelectedLocation('utah')}
-                        >
-                          Utah
-                        </button>
-                        <button 
-                          className={`px-4 py-2 rounded-lg border ${selectedLocation === 'pennsylvania' ? 'bg-purple-600 text-white border-purple-600' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
-                          onClick={() => setSelectedLocation('pennsylvania')}
-                        >
-                          Pennsylvania
-                        </button>
+                      <div className="flex justify-center">
+                        <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                          {/* Utah Button */}
+                          <button
+                            className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                              selectedLocation === 'utah' 
+                              ? 'text-white' 
+                              : 'text-gray-700'
+                            }`}
+                            onClick={() => setSelectedLocation('utah')}
+                          >
+                            Utah
+                          </button>
+                          
+                          {/* Pennsylvania Button */}
+                          <button
+                            className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                              selectedLocation === 'pennsylvania' 
+                              ? 'text-white' 
+                              : 'text-gray-700'
+                            }`}
+                            onClick={() => setSelectedLocation('pennsylvania')}
+                          >
+                            Pennsylvania
+                          </button>
+                          
+                          {/* Sliding Background */}
+                          <span 
+                            className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                              selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                            }`}
+                          ></span>
+                        </div>
                       </div>
                     </div>
                     
@@ -207,158 +250,334 @@ const FinancialSupport = () => {
                       <h3 className="text-xl font-bold mb-4 text-center">
                         Grant Application for Now I Can - {selectedLocation === 'utah' ? 'Utah' : 'Pennsylvania'}
                       </h3>
-                      <p className="text-gray-700 italic mb-6 text-center">
-                        Note: This is a demonstration form. In the real application, this would be a fully functional grant application form.
-                      </p>
-                      <form className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Patient Name *</label>
-                            <div className="grid grid-cols-2 gap-4">
-                              <input 
-                                type="text" 
-                                placeholder="First Name" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                              />
-                              <input 
-                                type="text" 
-                                placeholder="Last Name" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      
+                      <form className="space-y-6" encType="multipart/form-data">
+                        {/* Patient Information Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Patient Information</h4>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Patient Name <span className="text-red-500">*</span>
+                              </label>
+                              <div className="grid grid-cols-2 gap-2">
+                                <input
+                                  type="text"
+                                  placeholder="First Name"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                                <input
+                                  type="text"
+                                  placeholder="Last Name"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Date of Birth <span className="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="date"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
                               />
                             </div>
                           </div>
                           
                           <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Date of Birth *</label>
-                            <input 
-                              type="date" 
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Parent/Guardian Name *</label>
-                            <div className="grid grid-cols-2 gap-4">
-                              <input 
-                                type="text" 
-                                placeholder="First Name" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Parent/Guardian Name <span className="text-red-500">*</span>
+                            </label>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                              <input
+                                type="text"
+                                placeholder="First Name"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
                               />
-                              <input 
-                                type="text" 
-                                placeholder="Last Name" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                              />
-                            </div>
-                          </div>
-                          
-                          <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Contact Information *</label>
-                            <div className="grid grid-cols-2 gap-4">
-                              <input 
-                                type="email" 
-                                placeholder="Email" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                              />
-                              <input 
-                                type="tel" 
-                                placeholder="Phone" 
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                              <input
+                                type="text"
+                                placeholder="Last Name"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
                               />
                             </div>
                           </div>
                         </div>
                         
-                        <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">Briefly describe why you're applying for financial assistance:</label>
-                          <textarea 
-                            rows={4} 
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                            placeholder="Please share your situation and needs..."
-                          />
+                        {/* Contact Information Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Contact Information</h4>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Phone <span className="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="tel"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                            
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Email <span className="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="email"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                          </div>
+                          
+                          <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Mailing Address <span className="text-red-500">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              placeholder="Address Line 1"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md mb-2"
+                              required
+                            />
+                            <input
+                              type="text"
+                              placeholder="Address Line 2"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md mb-2"
+                            />
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                              <input
+                                type="text"
+                                placeholder="City"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                              <input
+                                type="text"
+                                placeholder="State"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                              <input
+                                type="text"
+                                placeholder="ZIP Code"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                          </div>
                         </div>
-
+                        
+                        {/* File Upload Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Supporting Documents</h4>
+                          
+                          <p className="text-sm text-gray-700 mb-4">
+                            Please attach the following required documents to support your application:
+                          </p>
+                          
+                          {/* Introduction Letter Upload */}
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Introduction Letter <span className="text-red-500">*</span>
+                            </label>
+                            <p className="text-xs text-gray-600 mb-2">
+                              A letter introducing yourselves to the review committee. Please include a brief patient history, 
+                              household financial circumstances including significant financial events/situations (loss of employment, 
+                              medical bills, etc), and any other factors you would like to have considered.
+                            </p>
+                            <div className="flex items-center">
+                              <input
+                                type="file"
+                                id="letter-upload"
+                                className="hidden"
+                                accept=".pdf,.doc,.docx,.txt"
+                                required
+                                onChange={(e) => handleFileChange(e, setIntroLetterFileName)}
+                              />
+                              <label
+                                htmlFor="letter-upload"
+                                className="cursor-pointer px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                              >
+                                Choose File
+                              </label>
+                              <span className="ml-3 text-sm text-gray-500">
+                                {introLetterFileName}
+                              </span>
+                            </div>
+                          </div>
+                          
+                          {/* W-2 Statement Upload */}
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Most Recent W-2 Statement(s) <span className="text-red-500">*</span>
+                            </label>
+                            <div className="flex items-center">
+                              <input
+                                type="file"
+                                id="w2-upload"
+                                className="hidden"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                required
+                                multiple
+                                onChange={(e) => handleFileChange(e, setW2FileName)}
+                              />
+                              <label
+                                htmlFor="w2-upload"
+                                className="cursor-pointer px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                              >
+                                Choose Files
+                              </label>
+                              <span className="ml-3 text-sm text-gray-500">
+                                {w2FileName}
+                              </span>
+                            </div>
+                          </div>
+                          
+                          {/* Unemployment Documentation Upload */}
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Unemployment Benefit Documentation (if applicable)
+                            </label>
+                            <p className="text-xs text-gray-600 mb-2">
+                              Unemployment benefit determination letter or most recent check stub.
+                            </p>
+                            <div className="flex items-center">
+                              <input
+                                type="file"
+                                id="unemployment-upload"
+                                className="hidden"
+                                accept=".pdf,.jpg,.jpeg,.png"
+                                onChange={(e) => handleFileChange(e, setUnemploymentFileName)}
+                              />
+                              <label
+                                htmlFor="unemployment-upload"
+                                className="cursor-pointer px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                              >
+                                Choose File
+                              </label>
+                              <span className="ml-3 text-sm text-gray-500">
+                                {unemploymentFileName}
+                              </span>
+                            </div>
+                          </div>
+                          
+                          {/* Additional Income Documentation Upload */}
+                          <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Documentation of Other Income (if applicable)
+                            </label>
+                            <p className="text-xs text-gray-600 mb-2">
+                              Documentation of any other income sources such as child support, disability benefits, social security, etc.
+                            </p>
+                            <div className="flex items-center">
+                              <input
+                                type="file"
+                                id="additional-income-upload"
+                                className="hidden"
+                                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                                multiple
+                                onChange={(e) => handleFileChange(e, setAdditionalIncomeFiles)}
+                              />
+                              <label
+                                htmlFor="additional-income-upload"
+                                className="cursor-pointer px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                              >
+                                Choose Files
+                              </label>
+                              <span className="ml-3 text-sm text-gray-500">
+                                {additionalIncomeFiles}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Agreement */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <p className="text-sm text-gray-700 mb-4">
+                            By typing my name below, I indicate that the information I have provided is true and 
+                            accurate to the best of my knowledge, and I provide permission for this data to be 
+                            utilized for evaluation and promotional purposes.
+                          </p>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Parent/Guardian Name <span className="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                            
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Date <span className="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="date"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Submit Buttons */}
                         <div className="flex justify-center space-x-4">
                           <button 
                             type="button" 
-                            className="btn bg-gray-500 text-white hover:bg-gray-600"
+                            className="px-6 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
                             onClick={() => setShowGrantForm(false)}
                           >
                             Cancel
                           </button>
                           <button 
-                            type="button" 
-                            className={`btn text-white ${
+                            type="submit" 
+                            className={`px-6 py-2 rounded-md text-white ${
                               selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
                             }`}
-                            onClick={() => {
-                              alert("This is a demonstration form. In a real application, your information would be submitted for review.");
-                              setShowGrantForm(false);
-                            }}
                           >
                             Submit Application
                           </button>
                         </div>
-                        
-                        <p className="text-sm text-gray-600 italic text-center">
-                          * Required fields. Additional documentation will be requested after initial application submission.
-                        </p>
                       </form>
                     </div>
                   </div>
                 )}
               </div>
             </section>
-            
-            <section className="mb-8">
-              <div className={`${selectedLocation === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
-                <h2 className={`text-2xl font-bold mb-4 ${selectedLocation === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Additional Financial Resources</h2>
-                <p className="text-gray-700 mb-6">
-                  In addition to our Ability Fund grants, we encourage families to explore these other potential sources of funding:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                      <li>State-specific disability support programs</li>
-                      <li>Local charitable organizations</li>
-                      <li>Disease-specific foundations that provide grants</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                      <li>Community fundraising options</li>
-                      <li>Corporate assistance programs</li>
-                      <li>Advocacy organizations</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-700 mt-4">
-                  Our team is happy to provide guidance on exploring these additional funding sources. 
-                  Please contact us if you would like more information.
-                </p>
-              </div>
-            </section>
           </>
         )}
         
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">Learn About Financial Assistance</h2>
-          <p className="text-lg mb-6">
-            Need help with therapy costs? Our Ability Fund provides grants to eligible families to help cover treatment expenses.<br></br>
-            Click below to explore our grant program and learn how to apply.
-          </p>
-          <button 
-            onClick={() => {
-              setActiveTab('therapy-grants');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }} 
-            className="btn bg-white text-blue-600 hover:bg-blue-50"
-          >
-            Explore Grant Opportunities
-          </button>
-        </div>
+        {activeTab === 'payment-options' && (
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
+            <h2 className="text-2xl font-bold mb-4">Learn About Financial Assistance</h2>
+            <p className="text-lg mb-6">
+              Need help with therapy costs? Our Ability Fund provides grants to eligible families to help cover treatment expenses.
+              Click below to explore our grant program and learn how to apply.
+            </p>
+            <button 
+              onClick={() => {
+                setActiveTab('therapy-grants');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }} 
+              className="btn bg-white text-blue-600 hover:bg-blue-50"
+            >
+              Explore Grant Opportunities
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
