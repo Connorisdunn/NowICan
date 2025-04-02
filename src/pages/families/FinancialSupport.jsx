@@ -256,56 +256,62 @@ const FinancialSupport = () => {
                         <div className="border border-gray-200 rounded-md p-4 mb-6">
                           <h4 className="text-lg font-medium mb-4">Patient Information</h4>
                           
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Patient Name <span className="text-red-500">*</span>
-                              </label>
-                              <div className="grid grid-cols-2 gap-2">
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Patient Name <span className="text-red-500">*</span>
+                            </label>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">First Name</label>
                                 <input
                                   type="text"
-                                  placeholder="First Name"
                                   className="w-full px-3 py-2 border border-gray-300 rounded-md"
                                   required
                                 />
+                              </div>
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">Last Name</label>
                                 <input
                                   type="text"
-                                  placeholder="Last Name"
                                   className="w-full px-3 py-2 border border-gray-300 rounded-md"
                                   required
                                 />
                               </div>
                             </div>
-                            
-                            <div>
-                              <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Date of Birth <span className="text-red-500">*</span>
-                              </label>
-                              <input
-                                type="date"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
-                              />
-                            </div>
                           </div>
                           
-                          <div>
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Date of Birth <span className="text-red-500">*</span>
+                            </label>
+                            <input
+                              type="date"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              required
+                            />
+                          </div>
+                          
+                          <div className="mb-4">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                               Parent/Guardian Name <span className="text-red-500">*</span>
                             </label>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                              <input
-                                type="text"
-                                placeholder="First Name"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
-                              />
-                              <input
-                                type="text"
-                                placeholder="Last Name"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
-                              />
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">First Name</label>
+                                <input
+                                  type="text"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">Last Name</label>
+                                <input
+                                  type="text"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -314,7 +320,66 @@ const FinancialSupport = () => {
                         <div className="border border-gray-200 rounded-md p-4 mb-6">
                           <h4 className="text-lg font-medium mb-4">Contact Information</h4>
                           
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                          <div className="mb-6">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Mailing Address <span className="text-red-500">*</span>
+                            </label>
+                            <div className="mb-2">
+                              <label className="block text-xs text-gray-500 mb-1">Country</label>
+                              <select className="w-full px-3 py-2 border border-gray-300 rounded-md" required>
+                                <option value="">Select a country</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Åland Islands">Åland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="United States">United States</option>
+                                {/* More countries would be listed here */}
+                              </select>
+                            </div>
+                            <div className="mb-2">
+                              <label className="block text-xs text-gray-500 mb-1">Address Line 1</label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                required
+                              />
+                            </div>
+                            <div className="mb-2">
+                              <label className="block text-xs text-gray-500 mb-1">Address Line 2</label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">City</label>
+                                <input
+                                  type="text"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">State</label>
+                                <input
+                                  type="text"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs text-gray-500 mb-1">ZIP Code</label>
+                                <input
+                                  type="text"
+                                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                               <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Phone <span className="text-red-500">*</span>
@@ -337,42 +402,288 @@ const FinancialSupport = () => {
                               />
                             </div>
                           </div>
+                        </div>
+                        
+                        {/* Insurance Information Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Insurance Information</h4>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Name and Address of Insurance Provider
+                            </label>
+                            <textarea
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              rows="3"
+                            ></textarea>
+                          </div>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Group or Plan #
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Policy #
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Subscriber ID# (Social Security #)
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                          </div>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Annual Deductible
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Co-Pay
+                              </label>
+                              <input
+                                type="text"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                          </div>
                           
                           <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                              If you have insurance, please indicate the reason for the financial aid application
+                            </label>
+                            <div className="space-y-2">
+                              <div className="flex items-center">
+                                <input
+                                  type="radio"
+                                  id="reason-not-covered"
+                                  name="insurance-reason"
+                                  className="mr-2"
+                                />
+                                <label htmlFor="reason-not-covered" className="text-sm text-gray-700">
+                                  Services and/or diagnosis is not covered
+                                </label>
+                              </div>
+                              <div className="flex items-center">
+                                <input
+                                  type="radio"
+                                  id="reason-limited"
+                                  name="insurance-reason"
+                                  className="mr-2"
+                                />
+                                <label htmlFor="reason-limited" className="text-sm text-gray-700">
+                                  Benefits are limited
+                                </label>
+                              </div>
+                              <div className="flex items-center">
+                                <input
+                                  type="radio"
+                                  id="reason-deductible"
+                                  name="insurance-reason"
+                                  className="mr-2"
+                                />
+                                <label htmlFor="reason-deductible" className="text-sm text-gray-700">
+                                  Need assistance with deductible and/or co-pay
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Household Income Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Monthly Household Income</h4>
+                          
+                          <div className="mb-4">
                             <label className="block text-sm font-medium text-gray-700 mb-1">
-                              Mailing Address <span className="text-red-500">*</span>
+                              Primary wage earner's name and occupation
                             </label>
                             <input
                               type="text"
-                              placeholder="Address Line 1"
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md mb-2"
-                              required
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
                             />
-                            <input
-                              type="text"
-                              placeholder="Address Line 2"
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md mb-2"
-                            />
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                          </div>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Monthly gross pay
+                            </label>
+                            <div className="flex items-center">
+                              <span className="mr-2">$</span>
                               <input
-                                type="text"
-                                placeholder="City"
+                                type="number"
                                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
-                              />
-                              <input
-                                type="text"
-                                placeholder="State"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
-                              />
-                              <input
-                                type="text"
-                                placeholder="ZIP Code"
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                                required
                               />
                             </div>
+                          </div>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Secondary wage earner's name and occupation
+                            </label>
+                            <input
+                              type="text"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            />
+                          </div>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Monthly gross pay
+                            </label>
+                            <div className="flex items-center">
+                              <span className="mr-2">$</span>
+                              <input
+                                type="number"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                          </div>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Number of adults in household
+                              </label>
+                              <input
+                                type="number"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Number of children in household
+                              </label>
+                              <input
+                                type="number"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Patient Statistics Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Patient Statistics (for statistical and grant review purposes only)</h4>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Patient Age
+                              </label>
+                              <input
+                                type="number"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Gender
+                              </label>
+                              <select className="w-full px-3 py-2 border border-gray-300 rounded-md">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Ethnicity
+                            </label>
+                            <select className="w-full px-3 py-2 border border-gray-300 rounded-md">
+                              <option value="">Select ethnicity</option>
+                              <option value="caucasian">Caucasian</option>
+                              <option value="american-indian">American Indian</option>
+                              <option value="african-american">African American</option>
+                              <option value="asian">Asian</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          
+                          <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              City and Country of residence
+                            </label>
+                            <input
+                              type="text"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            />
+                          </div>
+                        </div>
+                        
+                        {/* Parent/Guardian Statistics Section */}
+                        <div className="border border-gray-200 rounded-md p-4 mb-6">
+                          <h4 className="text-lg font-medium mb-4">Parent/Guardian Statistics (for statistical and grant review purposes only)</h4>
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Parent/Guardian Age
+                              </label>
+                              <input
+                                type="number"
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Gender
+                              </label>
+                              <select className="w-full px-3 py-2 border border-gray-300 rounded-md">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              Ethnicity
+                            </label>
+                            <select className="w-full px-3 py-2 border border-gray-300 rounded-md">
+                              <option value="">Select ethnicity</option>
+                              <option value="caucasian">Caucasian</option>
+                              <option value="american-indian">American Indian</option>
+                              <option value="african-american">African American</option>
+                              <option value="asian">Asian</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          
+                          <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                              City and Country of residence
+                            </label>
+                            <input
+                              type="text"
+                              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            />
                           </div>
                         </div>
                         
