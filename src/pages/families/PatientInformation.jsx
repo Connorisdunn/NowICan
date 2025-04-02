@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const PatientInformation = () => {
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState('UT');
   
   const handleLocationChange = (selectedLocation) => {
     setLocation(selectedLocation);
@@ -20,30 +20,38 @@ const PatientInformation = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-xl font-semibold text-blue-800 mb-6">Select Location</h2>
             
-            <div className="flex flex-col items-center mb-8">
-              <div className="relative flex items-center justify-center">
-                <div className="mr-3 text-lg font-medium text-gray-700">Utah (UT)</div>
-                
-                <div 
-                  onClick={() => handleLocationChange(location === 'UT' ? 'PA' : 'UT')}
-                  className={`relative h-8 w-16 rounded-full cursor-pointer transition-colors ${
-                    location === 'PA' ? 'bg-purple-600' : 'bg-blue-600'
+            <div className="mb-8 flex justify-center">
+              <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                {/* Utah Button */}
+                <button
+                  className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    location === 'UT' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
                   }`}
+                  onClick={() => handleLocationChange('UT')}
                 >
-                  <span 
-                    className={`absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition-transform transform ${
-                      location === 'PA' ? 'translate-x-8' : ''
-                    }`}
-                  />
-                </div>
+                  Utah
+                </button>
                 
-                <div className="ml-3 text-lg font-medium text-gray-700">Pennsylvania (PA)</div>
-              </div>
-              
-              <div className="text-center mt-2">
-                <span className="text-sm text-gray-500">
-                  Selected: {location === 'PA' ? 'Pennsylvania' : location === 'UT' ? 'Utah' : 'Please select a location'}
-                </span>
+                {/* Pennsylvania Button */}
+                <button
+                  className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    location === 'PA' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
+                  }`}
+                  onClick={() => handleLocationChange('PA')}
+                >
+                  Pennsylvania
+                </button>
+                
+                {/* Sliding Background */}
+                <span 
+                  className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                    location === 'UT' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                  }`}
+                ></span>
               </div>
             </div>
             
@@ -79,25 +87,43 @@ const PatientInformation = () => {
             )}
           </div>
           
-          <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-            <h3 className="text-lg font-medium text-blue-800 mb-3">Need Assistance?</h3>
+          <div className={`bg-${location === 'UT' ? 'blue' : 'purple'}-50 rounded-lg p-6 border border-${location === 'UT' ? 'blue' : 'purple'}-100`}>
+            <h3 className={`text-lg font-medium text-${location === 'UT' ? 'blue' : 'purple'}-800 mb-3`}>Need Assistance?</h3>
             <p className="text-gray-700 mb-4">
               If you have any questions about the patient information form or need help completing it, please contact us:
             </p>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span>Utah: (801) 228-1935 | Pennsylvania: (717) 269-5829</span>
-              </li>
-              <li className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <span>Email: info@nowican.org</span>
-              </li>
-            </ul>
+            
+            {location === 'UT' ? (
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>Utah: (801) 228-1935</span>
+                </li>
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>Email: allison@nowican.org</span>
+                </li>
+              </ul>
+            ) : (
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>Pennsylvania: (717) 269-5829</span>
+                </li>
+                <li className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>Email: allison@nowican.org</span>
+                </li>
+              </ul>
+            )}
           </div>
         </div>
       </div>
