@@ -10,7 +10,7 @@ const OurTeam = () => {
       name: 'MARK BARNEY, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/mark-barney.png',
+      image: '/images/mark-barney.png', // Added image path
       bio: [
         "Mark graduated from Southern Utah University in 2002 with a Bachelors of Science in Physical Education/emphasis in Athletic training and Health Education. He received his Doctorate of Physical Therapy degree from the University of Saint Augustine for Health Sciences in 2008.",
         "After graduation Mark had the opportunity to work in many different clinical settings including orthopedic outpatient, skilled nursing, and home health. It wasn't long before his career route took a dramatic turn into the field of Pediatrics. Mark finds great satisfaction in assisting children to realize their potential with improved motor function and mobility.",
@@ -22,7 +22,7 @@ const OurTeam = () => {
       name: 'NACOLE JACKSON',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/nacole-jackson.png',
+      image: '/images/nacole-jackson.png', // Added image path
       bio: [
         "Nacole Jackson graduated from Provo College as a Physical Therapist Assistant with high honors.",
         "Nacole has worked in many physical therapy settings including acute care, inpatient, outpatient orthopedics, industrial PT, and pediatrics. She also has more than 10 years of experience working with children in various teaching settings prior to coming to Now I Can in 2008.",
@@ -34,7 +34,7 @@ const OurTeam = () => {
       name: 'MEGAN MERRILL, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/megan-merrill.png',
+      image: '/images/megan-merrill.png', // Added image path
       bio: [
         "Megan grew up in Pocatello, Idaho, and moved to Provo to study at BYU. She earned her BS in Exercise Science in 2013, and started her Doctorate in Physical Therapy one week later at Rocky Mountain University of Health Professions.",
         "Megan has known she wanted to work with kiddos from the very beginning. She volunteered at Now I Can for 3 years during college and returned as a therapist in 2019: truly a dream come true!",
@@ -45,7 +45,7 @@ const OurTeam = () => {
       name: 'David Landeen, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/david-landeen.jpeg',
+      image: '/images/david-landeen.png', // Added image path
       bio: [
         "David recently graduated from the University of Utah with a Doctor of Physical Therapy degree. Originally from Utah, he spent 10 years in video production before transitioning to a career as a Physical Therapist.",
         "David's decision was inspired by witnessing a pediatric PT help his oldest daughter, who has special needs, learn to walk. Witnessing the profound impact of physical therapy on his daughter and their family motivated David to pursue the same transformative work for others.",
@@ -56,7 +56,7 @@ const OurTeam = () => {
       name: 'Brooke Winter, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/brooke-winter.png',
+      image: '/images/brooke-winter.png', // Added image path
       bio: [
         "Brooke Winter is a 36-year-old mother of three amazing kids. Her husband is her number one supporter, and she is grateful for his help in juggling everything life throws her way.",
         "Brooke attended the University of Utah for both her bachelor's and doctorate degrees. She has been a practicing physical therapist for 11 years, spending most of her career working in the neurologic and pediatric settings. She loves her job and finds fulfillment in helping people accomplish their goals.",
@@ -67,7 +67,7 @@ const OurTeam = () => {
       name: 'Ali Barney, PTA',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/ali-barney.jpg',
+      image: '/images/ali-barney.png', // Added image path
       bio: [
        "Ali grew up in Nebraska and attended Southern Utah University where she earned a bachelor's degree in Exercise Science. She then earned her Physical Therapist Assistant degree from Provo College and began working at Now I Can in 2023.",
        "Ali volunteered and worked in a few different settings, but knew her heart was set on working with kids. She loves working in pediatrics, connecting with the kids and families, and seeing patients achieve their goals.",
@@ -78,7 +78,7 @@ const OurTeam = () => {
       name: 'Jessica Butler, PTA',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/jessica-butler.png',
+      image: '/images/jessica-butler.png', // Added image path
       bio: [
        "Jessica was born and raised in Orem, Utah. She grew up playing sports and was always interested in joining the healthcare community. She holds a bachelor's degree in Exercise Physiology and also became a PTA at BYU - Idaho so she could help others improve through physical therapy.",
        "After graduation, Jessica found her passion in pediatrics and has been loving meeting and helping all of the wonderful kids at Now I Can!",
@@ -89,7 +89,7 @@ const OurTeam = () => {
       name: 'MELISSA CHALK',
       title: 'Managing Director',
       location: 'utah',
-      image: '/images/melissa-chalk.png',
+      image: '/images/melissa-chalk.png', // Added image path
       bio: [
         "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is excited to be a part of the Now I Can team!",
         "Melissa has been Now I Can's Director of Operations since 2013. She brings extensive clinical management experience, as well as her special blend of magic to keep everything running smoothly. If you call, you will likely hear Melissa's cheerful voice! She helps keep patients, volunteers, and therapists' schedules on track, as well as handling all day-to-day operations and accounting.",
@@ -100,7 +100,7 @@ const OurTeam = () => {
       name: 'TRACEY CHRISTENSEN',
       title: 'Executive Director, Utah and Co-Founder',
       location: 'utah',
-      image: '/images/tracey-christensen.png',
+      image: '/images/tracey-christensen.png', // Added image path
       bio: [
         "Joel and Tracey Christensen are founders and board members of Now I Can Foundation. Tracey has been the Executive Director for most all of Now I Can's 16 years. She enjoys working with the amazing Now I Can team, cheering on our patients, and learning from their great parents.",
         "Tracey is responsible for Development, Community Outreach and Marketing. She really loves cheering on the kids and being their friend.",
@@ -151,7 +151,7 @@ const OurTeam = () => {
     },
     {
       name: 'MELISSA CHALK',
-      image: '/images/test-melissa-chalk.png', // Added image path
+      image: '/images/melissa-chalk.png', // Added image path
       bio: "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is happy to be a part of the Now I Can team!"
     }
   ];
@@ -195,31 +195,39 @@ const OurTeam = () => {
         {/* Therapy Team Content */}
         {activeTab === 'therapists' && (
           <>
-            <div className="mb-8 flex flex-wrap gap-4 justify-center">
-              <button
-                className={`px-4 py-2 rounded-full ${selectedLocation === 'all' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                onClick={() => setSelectedLocation('all')}
-              >
-                All Locations
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full ${selectedLocation === 'utah' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                onClick={() => setSelectedLocation('utah')}
-              >
-                Utah (Orem)
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full ${selectedLocation === 'pennsylvania' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                onClick={() => setSelectedLocation('pennsylvania')}
-              >
-                Pennsylvania (Lititz)
-              </button>
+            <div className="mb-8 flex justify-center">
+              <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                {/* Utah Button */}
+                <button
+                  className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    selectedLocation === 'utah' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
+                  }`}
+                  onClick={() => setSelectedLocation('utah')}
+                >
+                  Utah
+                </button>
+                
+                {/* Pennsylvania Button */}
+                <button
+                  className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    selectedLocation === 'pennsylvania' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
+                  }`}
+                  onClick={() => setSelectedLocation('pennsylvania')}
+                >
+                  Pennsylvania
+                </button>
+                
+                {/* Sliding Background */}
+                <span 
+                  className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                    selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                  }`}
+                ></span>
+              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
