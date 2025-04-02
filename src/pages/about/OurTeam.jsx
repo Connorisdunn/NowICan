@@ -45,7 +45,7 @@ const OurTeam = () => {
       name: 'David Landeen, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/david-landeen.png', // Added image path
+      image: '/images/david-landeen.jpeg', // Added image path
       bio: [
         "David recently graduated from the University of Utah with a Doctor of Physical Therapy degree. Originally from Utah, he spent 10 years in video production before transitioning to a career as a Physical Therapist.",
         "David's decision was inspired by witnessing a pediatric PT help his oldest daughter, who has special needs, learn to walk. Witnessing the profound impact of physical therapy on his daughter and their family motivated David to pursue the same transformative work for others.",
@@ -67,7 +67,7 @@ const OurTeam = () => {
       name: 'Ali Barney, PTA',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/ali-barney.png', // Added image path
+      image: '/images/ali-barney.jpg', // Added image path
       bio: [
        "Ali grew up in Nebraska and attended Southern Utah University where she earned a bachelor's degree in Exercise Science. She then earned her Physical Therapist Assistant degree from Provo College and began working at Now I Can in 2023.",
        "Ali volunteered and worked in a few different settings, but knew her heart was set on working with kids. She loves working in pediatrics, connecting with the kids and families, and seeing patients achieve their goals.",

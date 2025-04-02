@@ -173,13 +173,13 @@ const VolunteerOpportunities = () => {
                   className={`px-6 py-3 rounded-lg text-lg ${location === 'utah' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
                   onClick={() => setLocation('utah')}
                 >
-                  Utah (Orem) Location
+                  Utah
                 </button>
                 <button 
-                  className={`px-6 py-3 rounded-lg text-lg ${location === 'pennsylvania' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                  className={`px-6 py-3 rounded-lg text-lg ${location === 'pennsylvania' ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
                   onClick={() => setLocation('pennsylvania')}
                 >
-                  Pennsylvania (Lititz) Location
+                  Pennsylvania
                 </button>
               </div>
               
@@ -357,16 +357,13 @@ const VolunteerOpportunities = () => {
                   <div className="flex justify-center mt-8">
                     <button
                       type="submit"
-                      className="btn bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-3 rounded-lg"
+                      className={`btn text-white text-lg px-8 py-3 rounded-lg ${
+                        location === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                      }`}
                     >
                       Submit Volunteer Application
                     </button>
                   </div>
-                  
-                  <p className="text-sm text-center mt-4 text-gray-600">
-                    Note: This is a demonstration form. In a real application, your information would be securely stored 
-                    and reviewed by our volunteer coordinator.
-                  </p>
                 </form>
               </div>
             </section>
@@ -375,22 +372,22 @@ const VolunteerOpportunities = () => {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-4 text-center">Volunteer Benefits</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                    <h3 className="text-lg font-bold mb-2 text-blue-800">Make a Difference</h3>
+                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Make a Difference</h3>
                     <p>
                       Directly contribute to improving the lives of children with disabilities and their families. 
                       See firsthand the progress and joy that intensive therapy brings.
                     </p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                    <h3 className="text-lg font-bold mb-2 text-blue-800">Gain Experience</h3>
+                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Gain Experience</h3>
                     <p>
                       Develop valuable skills and experience in healthcare, nonprofit operations, or your area of 
                       expertise. Perfect for students in related fields.
                     </p>
                   </div>
-                  <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                    <h3 className="text-lg font-bold mb-2 text-blue-800">Join Our Community</h3>
+                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Join Our Community</h3>
                     <p>
                       Become part of the Now I Can family—a community of dedicated professionals, volunteers, 
                       and families working together to change lives.
@@ -398,9 +395,9 @@ const VolunteerOpportunities = () => {
                   </div>
                 </div>
                 <p className="text-lg text-center mt-8">
-                  Have questions about volunteering? Contact our Volunteer Coordinator at{' '}
-                  <a href="mailto:volunteer@nowican.org" className="text-blue-600 hover:text-blue-800">
-                    volunteer@nowican.org
+                  Have questions about volunteering? Contact us at{' '}
+                  <a href={`mailto:${location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}`} className={`${location === 'utah' ? 'text-blue-600 hover:text-blue-800' : 'text-purple-600 hover:text-purple-800'}`}>
+                    {location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}
                   </a>{' '}
                   or call {location === 'utah' ? '(801) 228-1935' : '(717) 269-5829'}.
                 </p>
