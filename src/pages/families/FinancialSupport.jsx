@@ -229,20 +229,22 @@ const FinancialSupport = () => {
                           className={`px-4 py-2 rounded-lg border ${selectedLocation === 'utah' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
                           onClick={() => setSelectedLocation('utah')}
                         >
-                          Utah (Orem)
+                          Utah
                         </button>
                         <button 
-                          className={`px-4 py-2 rounded-lg border ${selectedLocation === 'pennsylvania' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
+                          className={`px-4 py-2 rounded-lg border ${selectedLocation === 'pennsylvania' ? 'bg-purple-600 text-white border-purple-600' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
                           onClick={() => setSelectedLocation('pennsylvania')}
                         >
-                          Pennsylvania (Lititz)
+                          Pennsylvania
                         </button>
                       </div>
                     </div>
                     
                     <div className="flex justify-center">
                       <button 
-                        className="btn bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-3"
+                        className={`btn text-white text-lg px-8 py-3 ${
+                          selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                        }`}
                         onClick={() => setShowGrantForm(true)}
                       >
                         Start Grant Application
@@ -351,7 +353,9 @@ const FinancialSupport = () => {
                           </button>
                           <button 
                             type="button" 
-                            className="btn bg-blue-600 text-white hover:bg-blue-700"
+                            className={`btn text-white ${
+                              selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                            }`}
                             onClick={() => {
                               alert("This is a demonstration form. In a real application, your information would be submitted for review.");
                               setShowGrantForm(false);
@@ -372,8 +376,8 @@ const FinancialSupport = () => {
             </section>
             
             <section className="mb-8">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                <h2 className="text-2xl font-bold mb-4 text-blue-800">Additional Financial Resources</h2>
+              <div className={`${selectedLocation === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
+                <h2 className={`text-2xl font-bold mb-4 ${selectedLocation === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Additional Financial Resources</h2>
                 <p className="text-gray-700 mb-6">
                   In addition to our Ability Fund grants, we encourage families to explore these other potential sources of funding:
                 </p>

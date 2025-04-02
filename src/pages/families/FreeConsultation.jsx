@@ -3,14 +3,20 @@ import ConsultationFlowChart from '../../components/families/ConsultationFlowCha
 
 const FreeConsultation = () => {
   const [formData, setFormData] = useState({
-    patientFirstName: '',
-    patientLastName: '',
-    patientDOB: { month: '', day: '', year: '' },
-    patientDiagnosis: '',
-    parentFirstName: '',
-    parentLastName: '',
-    parentPhone: { area: '', prefix: '', line: '' },
-    parentEmail: '',
+    childName: '',
+    dob: '',
+    parentNames: '',
+    email: '',
+    phone: '',
+    address: '',
+    medicalConditions: '',
+    pastTherapies: '',
+    equipment: '',
+    shoeSize: '',
+    shoeSizeBraces: '',
+    hearAboutUs: '',
+    socialMediaSource: '',
+    therapistReferral: '',
     location: 'utah', // default selection
     submitted: false
   });
@@ -20,22 +26,10 @@ const FreeConsultation = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    
-    if (name.includes('.')) {
-      const [parent, child] = name.split('.');
-      setFormData(prevData => ({
-        ...prevData,
-        [parent]: {
-          ...prevData[parent],
-          [child]: value
-        }
-      }));
-    } else {
-      setFormData(prevData => ({
-        ...prevData,
-        [name]: value
-      }));
-    }
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
   };
 
   const handleLocationChange = (location) => {
@@ -77,118 +71,107 @@ const FreeConsultation = () => {
               Please provide information about the patient requiring therapy services.
             </p>
             
+            <div>
+              <label htmlFor="childName" className="block text-sm font-medium text-gray-700 mb-1">
+                Child's Name: *
+              </label>
+              <input
+                type="text"
+                id="childName"
+                name="childName"
+                value={formData.childName}
+                onChange={handleInputChange}
+                className="form-input rounded-md shadow-sm w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="dob" className="block text-sm font-medium text-gray-700 mb-1">
+                DOB: *
+              </label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                value={formData.dob}
+                onChange={handleInputChange}
+                className="form-input rounded-md shadow-sm w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="medicalConditions" className="block text-sm font-medium text-gray-700 mb-1">
+                Current Medical Conditions/Surgeries: *
+              </label>
+              <textarea
+                id="medicalConditions"
+                name="medicalConditions"
+                value={formData.medicalConditions}
+                onChange={handleInputChange}
+                rows={3}
+                className="form-textarea rounded-md shadow-sm w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="pastTherapies" className="block text-sm font-medium text-gray-700 mb-1">
+                Past/Current Therapies:
+              </label>
+              <textarea
+                id="pastTherapies"
+                name="pastTherapies"
+                value={formData.pastTherapies}
+                onChange={handleInputChange}
+                rows={3}
+                className="form-textarea rounded-md shadow-sm w-full"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="equipment" className="block text-sm font-medium text-gray-700 mb-1">
+                Equipment Used:
+              </label>
+              <textarea
+                id="equipment"
+                name="equipment"
+                value={formData.equipment}
+                onChange={handleInputChange}
+                rows={2}
+                className="form-textarea rounded-md shadow-sm w-full"
+              />
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="patientFirstName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Patient First Name *
+                <label htmlFor="shoeSize" className="block text-sm font-medium text-gray-700 mb-1">
+                  Shoe size:
                 </label>
                 <input
                   type="text"
-                  id="patientFirstName"
-                  name="patientFirstName"
-                  value={formData.patientFirstName}
+                  id="shoeSize"
+                  name="shoeSize"
+                  value={formData.shoeSize}
                   onChange={handleInputChange}
                   className="form-input rounded-md shadow-sm w-full"
-                  required
                 />
               </div>
               
               <div>
-                <label htmlFor="patientLastName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Patient Last Name *
+                <label htmlFor="shoeSizeBraces" className="block text-sm font-medium text-gray-700 mb-1">
+                  Shoe size with braces:
                 </label>
                 <input
                   type="text"
-                  id="patientLastName"
-                  name="patientLastName"
-                  value={formData.patientLastName}
+                  id="shoeSizeBraces"
+                  name="shoeSizeBraces"
+                  value={formData.shoeSizeBraces}
                   onChange={handleInputChange}
                   className="form-input rounded-md shadow-sm w-full"
-                  required
                 />
               </div>
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Patient Date of Birth *
-              </label>
-              <div className="grid grid-cols-3 gap-2">
-                <div>
-                  <select
-                    name="patientDOB.month"
-                    value={formData.patientDOB.month}
-                    onChange={handleInputChange}
-                    className="form-select rounded-md shadow-sm w-full"
-                    required
-                  >
-                    <option value="">Month</option>
-                    <option value="01">January</option>
-                    <option value="02">February</option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                  </select>
-                </div>
-                <div>
-                  <select
-                    name="patientDOB.day"
-                    value={formData.patientDOB.day}
-                    onChange={handleInputChange}
-                    className="form-select rounded-md shadow-sm w-full"
-                    required
-                  >
-                    <option value="">Day</option>
-                    {[...Array(31)].map((_, i) => (
-                      <option key={i + 1} value={String(i + 1).padStart(2, '0')}>
-                        {i + 1}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <select
-                    name="patientDOB.year"
-                    value={formData.patientDOB.year}
-                    onChange={handleInputChange}
-                    className="form-select rounded-md shadow-sm w-full"
-                    required
-                  >
-                    <option value="">Year</option>
-                    {[...Array(30)].map((_, i) => {
-                      const year = new Date().getFullYear() - i;
-                      return (
-                        <option key={year} value={year}>
-                          {year}
-                        </option>
-                      );
-                    })}
-                  </select>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <label htmlFor="patientDiagnosis" className="block text-sm font-medium text-gray-700 mb-1">
-                Patient Diagnosis *
-              </label>
-              <input
-                type="text"
-                id="patientDiagnosis"
-                name="patientDiagnosis"
-                value={formData.patientDiagnosis}
-                onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
-                required
-                placeholder="e.g., Cerebral Palsy, Developmental Delay, etc."
-              />
             </div>
           </div>
         );
@@ -201,96 +184,119 @@ const FreeConsultation = () => {
               Please provide contact information for the child's parent or guardian.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="parentFirstName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Parent/Guardian First Name *
-                </label>
-                <input
-                  type="text"
-                  id="parentFirstName"
-                  name="parentFirstName"
-                  value={formData.parentFirstName}
-                  onChange={handleInputChange}
-                  className="form-input rounded-md shadow-sm w-full"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="parentLastName" className="block text-sm font-medium text-gray-700 mb-1">
-                  Parent/Guardian Last Name *
-                </label>
-                <input
-                  type="text"
-                  id="parentLastName"
-                  name="parentLastName"
-                  value={formData.parentLastName}
-                  onChange={handleInputChange}
-                  className="form-input rounded-md shadow-sm w-full"
-                  required
-                />
-              </div>
-            </div>
-            
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Parent/Guardian Phone *
-              </label>
-              <div className="grid grid-cols-3 gap-2">
-                <div>
-                  <input
-                    type="text"
-                    name="parentPhone.area"
-                    value={formData.parentPhone.area}
-                    onChange={handleInputChange}
-                    className="form-input rounded-md shadow-sm w-full"
-                    placeholder="(###)"
-                    maxLength="3"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="parentPhone.prefix"
-                    value={formData.parentPhone.prefix}
-                    onChange={handleInputChange}
-                    className="form-input rounded-md shadow-sm w-full"
-                    placeholder="###"
-                    maxLength="3"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="parentPhone.line"
-                    value={formData.parentPhone.line}
-                    onChange={handleInputChange}
-                    className="form-input rounded-md shadow-sm w-full"
-                    placeholder="####"
-                    maxLength="4"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <label htmlFor="parentEmail" className="block text-sm font-medium text-gray-700 mb-1">
-                Parent/Guardian Email *
+              <label htmlFor="parentNames" className="block text-sm font-medium text-gray-700 mb-1">
+                Parent Names: *
               </label>
               <input
-                type="email"
-                id="parentEmail"
-                name="parentEmail"
-                value={formData.parentEmail}
+                type="text"
+                id="parentNames"
+                name="parentNames"
+                value={formData.parentNames}
                 onChange={handleInputChange}
                 className="form-input rounded-md shadow-sm w-full"
                 required
               />
             </div>
+            
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                Email Address: *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                className="form-input rounded-md shadow-sm w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                Phone Number: *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                className="form-input rounded-md shadow-sm w-full"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-1">
+                Address:
+              </label>
+              <textarea
+                id="address"
+                name="address"
+                value={formData.address}
+                onChange={handleInputChange}
+                rows={3}
+                className="form-textarea rounded-md shadow-sm w-full"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="hearAboutUs" className="block text-sm font-medium text-gray-700 mb-1">
+                How did you hear about us? *
+              </label>
+              <select
+                id="hearAboutUs"
+                name="hearAboutUs"
+                value={formData.hearAboutUs}
+                onChange={handleInputChange}
+                className="form-select rounded-md shadow-sm w-full"
+                required
+              >
+                <option value="">Please select</option>
+                <option value="Search Engine">Search Engine (Google, Bing, etc.)</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Friend or Family">Friend or Family Referral</option>
+                <option value="Medical Professional">Medical Professional</option>
+                <option value="Therapist">Therapist</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            {formData.hearAboutUs === 'Social Media' && (
+              <div>
+                <label htmlFor="socialMediaSource" className="block text-sm font-medium text-gray-700 mb-1">
+                  If Social Media – Please let us know where:
+                </label>
+                <input
+                  type="text"
+                  id="socialMediaSource"
+                  name="socialMediaSource"
+                  value={formData.socialMediaSource}
+                  onChange={handleInputChange}
+                  placeholder="Facebook, Instagram, TikTok, etc."
+                  className="form-input rounded-md shadow-sm w-full"
+                />
+              </div>
+            )}
+            
+            {formData.hearAboutUs === 'Therapist' && (
+              <div>
+                <label htmlFor="therapistReferral" className="block text-sm font-medium text-gray-700 mb-1">
+                  If a therapist recommended us to you, please list the therapist and the agency:
+                </label>
+                <input
+                  type="text"
+                  id="therapistReferral"
+                  name="therapistReferral"
+                  value={formData.therapistReferral}
+                  onChange={handleInputChange}
+                  className="form-input rounded-md shadow-sm w-full"
+                />
+              </div>
+            )}
           </div>
         );
       
@@ -389,29 +395,67 @@ const FreeConsultation = () => {
             <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-gray-700 mb-2">Patient Information</h4>
+                  <h4 className="font-semibold text-gray-700 mb-2">Child Information</h4>
                   <p className="text-gray-600">
-                    <span className="font-medium">Name:</span> {formData.patientFirstName} {formData.patientLastName}
+                    <span className="font-medium">Name:</span> {formData.childName}
                   </p>
                   <p className="text-gray-600">
-                    <span className="font-medium">Date of Birth:</span> {formData.patientDOB.month}/{formData.patientDOB.day}/{formData.patientDOB.year}
+                    <span className="font-medium">Date of Birth:</span> {formData.dob}
                   </p>
                   <p className="text-gray-600">
-                    <span className="font-medium">Diagnosis:</span> {formData.patientDiagnosis}
+                    <span className="font-medium">Medical Conditions:</span> {formData.medicalConditions}
                   </p>
+                  {formData.pastTherapies && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Past/Current Therapies:</span> {formData.pastTherapies}
+                    </p>
+                  )}
+                  {formData.equipment && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Equipment Used:</span> {formData.equipment}
+                    </p>
+                  )}
+                  {formData.shoeSize && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Shoe Size:</span> {formData.shoeSize}
+                    </p>
+                  )}
+                  {formData.shoeSizeBraces && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Shoe Size with Braces:</span> {formData.shoeSizeBraces}
+                    </p>
+                  )}
                 </div>
                 
                 <div>
                   <h4 className="font-semibold text-gray-700 mb-2">Parent/Guardian Information</h4>
                   <p className="text-gray-600">
-                    <span className="font-medium">Name:</span> {formData.parentFirstName} {formData.parentLastName}
+                    <span className="font-medium">Name:</span> {formData.parentNames}
                   </p>
                   <p className="text-gray-600">
-                    <span className="font-medium">Phone:</span> ({formData.parentPhone.area}) {formData.parentPhone.prefix}-{formData.parentPhone.line}
+                    <span className="font-medium">Email:</span> {formData.email}
                   </p>
                   <p className="text-gray-600">
-                    <span className="font-medium">Email:</span> {formData.parentEmail}
+                    <span className="font-medium">Phone:</span> {formData.phone}
                   </p>
+                  {formData.address && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Address:</span> {formData.address}
+                    </p>
+                  )}
+                  <p className="text-gray-600">
+                    <span className="font-medium">How you heard about us:</span> {formData.hearAboutUs}
+                  </p>
+                  {formData.socialMediaSource && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Social Media Source:</span> {formData.socialMediaSource}
+                    </p>
+                  )}
+                  {formData.therapistReferral && (
+                    <p className="text-gray-600">
+                      <span className="font-medium">Therapist Referral:</span> {formData.therapistReferral}
+                    </p>
+                  )}
                 </div>
               </div>
               
@@ -471,8 +515,8 @@ const FreeConsultation = () => {
                   )}
                 </div>
                 <span className="mt-2 text-xs text-gray-500">
-                  {step === 1 && 'Patient Info'}
-                  {step === 2 && 'Guardian Info'}
+                  {step === 1 && 'Child Info'}
+                  {step === 2 && 'Parent Info'}
                   {step === 3 && 'Location'}
                   {step === 4 && 'Review'}
                   {step === 5 && 'Complete'}
