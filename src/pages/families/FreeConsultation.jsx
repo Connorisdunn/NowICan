@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ConsultationFlowChart from '../../components/families/ConsultationFlowChart';
 
 const FreeConsultation = () => {
   const [formData, setFormData] = useState({
@@ -542,7 +541,7 @@ const FreeConsultation = () => {
               </div>
               <h2 className="text-3xl font-bold font-heading text-gray-900 mb-4">Thank You!</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Your consultation request has been successfully submitted. A member of our team from Now I Can - {formData.location === 'utah' ? 'Utah' : 'Pennsylvania'} will contact you within 24-48 business hours to schedule your free consultation.
+                Your consultation request has been successfully submitted.<br></br> A member of our team from Now I Can - {formData.location === 'utah' ? 'Utah' : 'Pennsylvania'} will contact you within <br></br> 24-48 business hours to schedule your free consultation.
               </p>
               
               <div className="mt-8 bg-blue-50 border border-blue-100 rounded-lg p-6 text-left">
@@ -584,17 +583,11 @@ const FreeConsultation = () => {
       <div className="container-custom mx-auto">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4 text-center">Schedule a Free Consultation</h1>
-          <p className="text-lg text-gray-600 mb-8 text-center">
-            The team at Now I Can looks forward to speaking with you to discuss how your child can reach their highest potential.
+          <p className="text-lg text-gray-600 mb-6 text-center">
+            Complete this form to request a free consultation with our therapy team.
           </p>
           
-          {/* Consultation Process Flow Chart */}
-          <div className="mb-10">
-            <ConsultationFlowChart />
-          </div>
-          
-          <h2 className="text-2xl font-bold text-center mb-8">Complete Your Consultation Request</h2>
-          
+          {/* Process Flow */}
           {renderProcessFlow()}
           
           <div className="bg-white rounded-lg shadow-lg p-8">
