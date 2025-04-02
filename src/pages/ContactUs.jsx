@@ -11,7 +11,7 @@ const ContactUs = () => {
             We're here to answer your questions and help your child reach their full potential.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Utah Location */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <h2 className="text-2xl font-bold mb-4">Now I Can - Utah</h2>
@@ -29,21 +29,6 @@ const ContactUs = () => {
                   </a>
                 </p>
               </address>
-              
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                <Link 
-                  to="/about-us/locations" 
-                  className="btn bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 text-center"
-                >
-                  View Location
-                </Link>
-                <Link 
-                  to="/for-families/free-consultation" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 text-center"
-                >
-                  Free Consultation
-                </Link>
-              </div>
             </div>
             
             {/* Pennsylvania Location */}
@@ -63,22 +48,17 @@ const ContactUs = () => {
                   </a>
                 </p>
               </address>
-              
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                <Link 
-                  to="/about-us/locations" 
-                  className="btn bg-white border border-purple-600 text-purple-600 hover:bg-purple-50 text-center"
-                >
-                  View Location
-                </Link>
-                <Link 
-                  to="/for-families/free-consultation" 
-                  className="btn bg-purple-600 text-white hover:bg-purple-700 text-center"
-                >
-                  Free Consultation
-                </Link>
-              </div>
             </div>
+          </div>
+          
+          {/* Centralized Free Consultation Button */}
+          <div className="flex justify-center mb-12">
+            <Link 
+              to="/for-families/getting-started/free-consultation" 
+              className="btn bg-blue-600 text-white hover:bg-blue-700 text-center px-8 py-3 text-lg"
+            >
+              Schedule a Free Consultation
+            </Link>
           </div>
           
           <div className="bg-white rounded-lg shadow-md p-8 mb-12">
@@ -138,7 +118,7 @@ const ContactUs = () => {
                 ></textarea>
               </div>
               
-              <div>
+              <div className="flex justify-center">
                 <button
                   type="submit"
                   className="btn bg-blue-600 text-white hover:bg-blue-700 w-full sm:w-auto"
