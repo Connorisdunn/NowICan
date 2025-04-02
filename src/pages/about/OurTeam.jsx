@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const OurTeam = () => {
   const [activeTab, setActiveTab] = useState('therapists');
-  const [selectedLocation, setSelectedLocation] = useState('all');
+  const [selectedLocation, setSelectedLocation] = useState('utah'); // Changed from 'all' to 'utah'
   
   const therapists = [
     {
