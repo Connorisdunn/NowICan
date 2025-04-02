@@ -61,7 +61,7 @@ const GettingStarted = () => {
                   Review our therapy schedule and work with our team to find the best time for your child's intensive or traditional therapy sessions.
                 </p>
                 <Link 
-                  to="/for-families/therapy-schedule" 
+                  to="/therapy-services/therapy-schedule" 
                   className="btn bg-green-600 text-white hover:bg-green-700"
                 >
                   View Therapy Schedule
@@ -79,7 +79,7 @@ const GettingStarted = () => {
                   Learn about our payment options and financial assistance programs to help make therapy services more affordable.
                 </p>
                 <Link 
-                  to="/for-families/payment-financial-aid" 
+                  to="/for-families/financial-support" 
                   className="btn bg-coral-500 text-white hover:bg-coral-600"
                 >
                   Payment & Financial Aid
