@@ -168,19 +168,41 @@ const VolunteerOpportunities = () => {
             
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6">Volunteer at Your Preferred Location</h2>
-              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center mb-8">
-                <button 
-                  className={`px-6 py-3 rounded-lg text-lg ${location === 'utah' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
-                  onClick={() => setLocation('utah')}
-                >
-                  Utah
-                </button>
-                <button 
-                  className={`px-6 py-3 rounded-lg text-lg ${location === 'pennsylvania' ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
-                  onClick={() => setLocation('pennsylvania')}
-                >
-                  Pennsylvania
-                </button>
+              
+              {/* NEW TOGGLE SWITCH */}
+              <div className="mb-8 flex justify-center">
+                <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                  {/* Utah Button */}
+                  <button
+                    className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                      location === 'utah' 
+                      ? 'text-white' 
+                      : 'text-gray-700'
+                    }`}
+                    onClick={() => setLocation('utah')}
+                  >
+                    Utah
+                  </button>
+                  
+                  {/* Pennsylvania Button */}
+                  <button
+                    className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                      location === 'pennsylvania' 
+                      ? 'text-white' 
+                      : 'text-gray-700'
+                    }`}
+                    onClick={() => setLocation('pennsylvania')}
+                  >
+                    Pennsylvania
+                  </button>
+                  
+                  {/* Sliding Background */}
+                  <span 
+                    className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                      location === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                    }`}
+                  ></span>
+                </div>
               </div>
               
               <div className="bg-white rounded-lg shadow-md p-8">
