@@ -10,7 +10,7 @@ const OurTeam = () => {
       name: 'MARK BARNEY, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/mark-barney.png', // Added image path
+      image: '/images/mark-barney.jpg', // Added image path
       bio: [
         "Mark graduated from Southern Utah University in 2002 with a Bachelors of Science in Physical Education/emphasis in Athletic training and Health Education. He received his Doctorate of Physical Therapy degree from the University of Saint Augustine for Health Sciences in 2008.",
         "After graduation Mark had the opportunity to work in many different clinical settings including orthopedic outpatient, skilled nursing, and home health. It wasn't long before his career route took a dramatic turn into the field of Pediatrics. Mark finds great satisfaction in assisting children to realize their potential with improved motor function and mobility.",
@@ -22,7 +22,7 @@ const OurTeam = () => {
       name: 'NACOLE JACKSON',
       title: 'Physical Therapist Assistant',
       location: 'utah',
-      image: '/images/nacole-jackson.png', // Added image path
+      image: '/images/nacole-jackson.jpg', // Added image path
       bio: [
         "Nacole Jackson graduated from Provo College as a Physical Therapist Assistant with high honors.",
         "Nacole has worked in many physical therapy settings including acute care, inpatient, outpatient orthopedics, industrial PT, and pediatrics. She also has more than 10 years of experience working with children in various teaching settings prior to coming to Now I Can in 2008.",
@@ -34,7 +34,7 @@ const OurTeam = () => {
       name: 'MEGAN MERRILL, DPT',
       title: 'Doctor of Physical Therapy',
       location: 'utah',
-      image: '/images/megan-merrill.png', // Added image path
+      image: '/images/megan-merrill.jpg', // Added image path
       bio: [
         "Megan grew up in Pocatello, Idaho, and moved to Provo to study at BYU. She earned her BS in Exercise Science in 2013, and started her Doctorate in Physical Therapy one week later at Rocky Mountain University of Health Professions.",
         "Megan has known she wanted to work with kiddos from the very beginning. She volunteered at Now I Can for 3 years during college and returned as a therapist in 2019: truly a dream come true!",
@@ -89,7 +89,7 @@ const OurTeam = () => {
       name: 'MELISSA CHALK',
       title: 'Managing Director',
       location: 'utah',
-      image: '/images/melissa-chalk.png', // Added image path
+      image: '/images/melissa-chalk.jpg', // Added image path
       bio: [
         "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is excited to be a part of the Now I Can team!",
         "Melissa has been Now I Can's Director of Operations since 2013. She brings extensive clinical management experience, as well as her special blend of magic to keep everything running smoothly. If you call, you will likely hear Melissa's cheerful voice! She helps keep patients, volunteers, and therapists' schedules on track, as well as handling all day-to-day operations and accounting.",
@@ -100,7 +100,7 @@ const OurTeam = () => {
       name: 'TRACEY CHRISTENSEN',
       title: 'Executive Director, Utah and Co-Founder',
       location: 'utah',
-      image: '/images/tracey-christensen.png', // Added image path
+      image: '/images/tracey-christensen.jpg', // Added image path
       bio: [
         "Joel and Tracey Christensen are founders and board members of Now I Can Foundation. Tracey has been the Executive Director for most all of Now I Can's 16 years. She enjoys working with the amazing Now I Can team, cheering on our patients, and learning from their great parents.",
         "Tracey is responsible for Development, Community Outreach and Marketing. She really loves cheering on the kids and being their friend.",
