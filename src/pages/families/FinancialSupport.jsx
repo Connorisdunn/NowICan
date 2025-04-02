@@ -35,7 +35,7 @@ const FinancialSupport = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
-        <h1 className="text-4xl font-bold font-heading mb-6">Financial Support</h1>
+        <h1 className="text-4xl font-bold font-heading mb-6">Payment & Financial Aid</h1>
         <p className="text-lg mb-8">
           At Now I Can, we understand that investing in your child's therapy is a significant financial commitment.
           We're committed to making our services accessible to as many families as possible.
