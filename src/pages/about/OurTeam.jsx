@@ -153,7 +153,7 @@ const OurTeam = () => {
     },
     {
       name: 'MELISSA CHALK',
-      image: '/images/melissa-chalk.png', // Added image path
+      image: '/images/melissa-chalk.jpg', // Added image path
       bio: "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is happy to be a part of the Now I Can team!"
     }
   ];
