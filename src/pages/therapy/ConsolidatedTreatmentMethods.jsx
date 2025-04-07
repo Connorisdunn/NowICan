@@ -12,7 +12,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/2aeb5562-0d40-4389-a339-b425dc9bb5a0/Suit-Therapy-Page-Spot1.jpg" 
                 alt="Child in orthotic suit during therapy" 
@@ -97,7 +97,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/334e7c4c-6c44-4327-baa4-8e0bdf38fd9e/nowican-17.jpg" 
                 alt="Child in Universal Exercise Unit" 
@@ -180,7 +180,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/7c930347-20ac-4125-9cb6-d9fc7d7f7499/C-Manual-Myofascial.jpg" 
                 alt="Manual therapy techniques" 
@@ -264,7 +264,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/2da88116-077a-4715-8869-30841d6966cd/C-estim-close-up.gif" 
                 alt="Functional E-Stim therapy" 
@@ -348,7 +348,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8f0c5037-f94f-461d-8fdb-4e1f401adf57/Vibration-Plate-Page-Spot1.jpg" 
                 alt="Full body vibration therapy" 
@@ -432,7 +432,7 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
-            <div className="h-64 overflow-hidden">
+            <div className="h-96 overflow-hidden">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b094f921-0803-41f7-b754-413d78dcae28/K-Tape-Vert.png" 
                 alt="Additional techniques including kinesiotape" 
@@ -521,86 +521,19 @@ const ConsolidatedTreatmentMethods = () => {
         </p>
         
         {/* Method Tabs */}
-        <div className="flex flex-wrap gap-2 mb-8 overflow-x-auto pb-2">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 overflow-x-auto pb-2 border-b border-gray-200">
           {treatmentMethods.map((method) => (
             <button
               key={method.id}
-              className={`px-4 py-2 rounded-full whitespace-nowrap text-sm font-medium transition-colors ${
+              className={`px-4 py-3 whitespace-nowrap text-sm font-medium transition-colors rounded-t-lg ${
                 activeTab === method.id
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-blue-600 text-white border-b-2 border-blue-600'
+                  : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
               }`}
               onClick={() => setActiveTab(method.id)}
             >
               {method.name}
             </button>
-          ))}
-        </div>
-        
-        {/* Method Overview Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {treatmentMethods.map((method) => (
-            <div 
-              key={method.id}
-              className={`bg-white rounded-lg shadow-md overflow-hidden transition-all ${
-                activeTab === method.id 
-                  ? 'ring-2 ring-blue-600 transform scale-105 z-10' 
-                  : 'opacity-70 hover:opacity-100 cursor-pointer'
-              }`}
-              onClick={() => setActiveTab(method.id)}
-            >
-              <div className={`h-2 ${activeTab === method.id ? 'bg-blue-600' : 'bg-gray-200'}`}></div>
-              <div className="h-48 overflow-hidden">
-                {method.id === 'orthotic-suit' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8e22fc86-bcc5-46d9-9f66-6221d1b3f577/H-Suit-therapy.jpg" 
-                    alt="Orthotic Suit Therapy" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-                {method.id === 'universal-exercise' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3b820391-8062-4b3c-a82e-bef7df3691f2/H-Cage-therapy.jpg" 
-                    alt="Universal Exercise Unit" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-                {method.id === 'manual-therapy' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/db6cd4b0-2346-4e1a-9172-f5e762b78278/H-Manual-Therapy.jpg" 
-                    alt="Manual Therapy" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-                {method.id === 'functional-estim' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/900cecc4-2538-4841-9e95-8eed1273ba31/H-Funtional-Estim-take3.jpg" 
-                    alt="Functional E-Stim" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-                {method.id === 'vibration' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/9c6fc513-1de0-45f8-ad5b-487480a0ac64/H-Whole-body-vibration.jpg" 
-                    alt="Full Body Vibration" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-                {method.id === 'additional' && (
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b2c625fa-f41f-418a-aae5-bea1168e4f65/H-Lauren-with-ball.jpg" 
-                    alt="Additional Techniques" 
-                    className="w-full h-full object-cover"
-                  />
-                )}
-              </div>
-              <div className="p-6">
-                <h2 className="text-xl font-bold mb-3">{method.name}</h2>
-                <p className="text-gray-700 mb-4">
-                  {method.description}
-                </p>
-              </div>
-            </div>
           ))}
         </div>
         
@@ -610,31 +543,7 @@ const ConsolidatedTreatmentMethods = () => {
           {currentMethod.content}
         </div>
         
-        {/* Parent Testimonial */}
-        <div className="mb-12">
-          <div className="bg-blue-50 rounded-lg overflow-hidden border border-blue-100">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="md:col-span-1 h-full overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/31762d9a-35b9-48c7-aa72-7468a61a1f7f/Giles-Family.png" 
-                  alt="Family testimonial" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="md:col-span-2 p-8 flex flex-col justify-center">
-                <h2 className="text-2xl font-bold text-blue-800 mb-3">Parent Testimonial</h2>
-                <p className="text-lg italic">
-                  "I can't say enough about Now I Can! We have been going annually for several years. 
-                  Not only do you get top quality intensive therapy but you are treated like family! 
-                  The staff and volunteers are top notch. My daughter has made tremendous progress and 
-                  she has so much fun she forgets how hard she is working. An intensive at Now I Can 
-                  is an opportunity not to be missed."
-                </p>
-                <p className="text-gray-700 mt-2">- Now I Can Parent</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
         
         {/* Our Approach Section */}
         <section className="mb-12">
