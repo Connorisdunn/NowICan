@@ -48,12 +48,6 @@ const SimpleLocations = () => {
                   Our on-site family suites are available for only $35 a night, making your stay both comfortable and affordable.
                 </p>
               </div>
-              <Link 
-                to="/for-families/getting-started/free-consultation" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
-              >
-                Schedule a Consultation
-              </Link>
             </div>
           </div>
           
@@ -94,14 +88,18 @@ const SimpleLocations = () => {
                   The area offers many family-friendly activities and attractions to enjoy during your therapy stay.
                 </p>
               </div>
-              <Link 
-                to="/for-families/getting-started/free-consultation" 
-                className="btn bg-purple-600 text-white hover:bg-purple-700 w-full text-center"
-              >
-                Schedule a Consultation
-              </Link>
             </div>
           </div>
+        </div>
+        
+        {/* Centralized consultation button */}
+        <div className="text-center mb-12">
+          <Link 
+            to="/for-families/getting-started/free-consultation" 
+            className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg inline-block font-medium shadow-md"
+          >
+            Schedule a Consultation
+          </Link>
         </div>
         
         <div className="bg-blue-50 rounded-lg p-8 mb-12">
