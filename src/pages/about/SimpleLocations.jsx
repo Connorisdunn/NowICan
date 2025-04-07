@@ -98,7 +98,7 @@ const SimpleLocations = () => {
             to="/for-families/getting-started/free-consultation" 
             className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg inline-block font-medium shadow-md"
           >
-            Schedule a Consultation
+            Schedule a Free Consultation
           </Link>
         </div>
         

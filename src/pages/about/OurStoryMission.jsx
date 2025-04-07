@@ -204,7 +204,7 @@ const OurStoryMission = () => {
                 to="/for-families/getting-started/free-consultation" 
                 className="btn bg-white text-blue-600 hover:bg-blue-50"
               >
-                Schedule a Consultation
+                Schedule a Free Consultation
               </Link>
             </div>
           </div>
