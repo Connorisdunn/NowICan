@@ -582,6 +582,13 @@ const FreeConsultation = () => {
     <div className="min-h-screen pt-24 pb-16 px-4">
       <div className="container-custom mx-auto">
         <div className="max-w-3xl mx-auto">
+          <div className="mb-8 overflow-hidden rounded-lg">
+            <img 
+              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/ea7fade6-2887-41a3-a09b-ebd0cb3f523a/C-FAQ2.jpg" 
+              alt="Free Consultation with Now I Can Therapists" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 mb-4 text-center">Schedule a Free Consultation</h1>
           <p className="text-lg text-gray-600 mb-6 text-center">
             Complete this form to request a free consultation with our therapy team.

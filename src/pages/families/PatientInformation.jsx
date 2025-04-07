@@ -12,6 +12,13 @@ const PatientInformation = () => {
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
         <div className="max-w-3xl mx-auto">
+          <div className="mb-8 overflow-hidden rounded-lg">
+            <img 
+              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/39fc64f9-31df-4b8a-87e3-5898cdb8a92d/H-Testimonials.jpg" 
+              alt="Patient Information at Now I Can" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold font-heading mb-4 text-center">Patient Information</h1>
           <p className="text-lg text-gray-600 mb-8 text-center">
             Please select your location to proceed with the patient information form.

@@ -5,6 +5,13 @@ const TraditionalPhysicalTherapy = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/6861c38a-ebdf-4fe0-8c3c-7dcd2ddc40f3/H-Traditional-Therapy.jpg" 
+            alt="Traditional Physical Therapy at Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Traditional Physical Therapy</h1>
         
         <section className="mb-12">
@@ -31,28 +38,46 @@ const TraditionalPhysicalTherapy = () => {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Traditional Therapy Options</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h3 className="text-xl font-bold mb-4">Regular Sessions</h3>
-              <p className="text-lg mb-4">
-                Our traditional therapy sessions provide consistent, ongoing care for children who need regular support.
-                Sessions can be scheduled on a weekly, bi-weekly, or monthly basis, depending on your child's needs and goals.
-              </p>
-              <p className="text-lg">
-                These regular sessions help maintain progress made during intensive therapy periods and continue working 
-                toward long-term developmental milestones.
-              </p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/e68d6c63-dddb-46a7-a0af-e33aee339b3d/Traditional2.jpeg" 
+                  alt="Regular therapy sessions" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-4">Regular Sessions</h3>
+                <p className="text-lg mb-4">
+                  Our traditional therapy sessions provide consistent, ongoing care for children who need regular support.
+                  Sessions can be scheduled on a weekly, bi-weekly, or monthly basis, depending on your child's needs and goals.
+                </p>
+                <p className="text-lg">
+                  These regular sessions help maintain progress made during intensive therapy periods and continue working 
+                  toward long-term developmental milestones.
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h3 className="text-xl font-bold mb-4">Extended Treatment Time</h3>
-              <p className="text-lg mb-4">
-                Unlike standard therapy sessions that typically last 30-45 minutes, our traditional therapy 
-                sessions are longer, allowing for more comprehensive treatment and progress.
-              </p>
-              <p className="text-lg">
-                The additional time gives your child's brain more opportunity to create new pathways and learn new skills, 
-                while allowing our therapists to use a wider range of techniques during each session.
-              </p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/92400a06-7978-4ed7-9ed3-087006b83cdc/C-Traditional-4.jpg" 
+                  alt="Extended treatment time" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-4">Extended Treatment Time</h3>
+                <p className="text-lg mb-4">
+                  Unlike standard therapy sessions that typically last 30-45 minutes, our traditional therapy 
+                  sessions are longer, allowing for more comprehensive treatment and progress.
+                </p>
+                <p className="text-lg">
+                  The additional time gives your child's brain more opportunity to create new pathways and learn new skills, 
+                  while allowing our therapists to use a wider range of techniques during each session.
+                </p>
+              </div>
             </div>
           </div>
         </section>

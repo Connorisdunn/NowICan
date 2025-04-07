@@ -6,6 +6,13 @@ const OurStoryMission = () => {
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+          <div className="mb-8 overflow-hidden rounded-lg">
+            <img 
+              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/e4b949a5-642c-4bcf-974e-183be7a17bf1/H-Foundation.jpg" 
+              alt="Now I Can Foundation" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h1 className="text-4xl font-bold font-heading mb-6">Our Story & Mission</h1>
           
           {/* Mission Section */}
@@ -126,7 +133,11 @@ const OurStoryMission = () => {
               <div className="bg-blue-100 p-6">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3 flex justify-center">
-                    <div className="bg-gray-200 w-64 h-64 rounded-full flex items-center justify-center text-gray-500">Founders Image</div>
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/c5dd170d-0caf-4531-ac2a-44fa9d5c4379/Tracey+and+Joel-2.jpg" 
+                      alt="Tracey and Joel Christensen - Now I Can Founders" 
+                      className="w-64 h-64 rounded-full object-cover"
+                    />
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-2xl font-bold mb-4 text-blue-800">Tracey and Joel Christensen</h2>
@@ -155,9 +166,20 @@ const OurStoryMission = () => {
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="p-6">
-                <h2 className="text-2xl font-bold mb-4">Colby's Story</h2>
-                <div className="italic text-gray-600 mb-6">
-                  In Colby's own words...
+                <div className="flex flex-col md:flex-row gap-6 mb-6">
+                  <div className="md:w-1/3 flex justify-center">
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/685d3859-6826-45eb-88ad-6f6bad55abae/Colby.jpg" 
+                      alt="Colby Christensen" 
+                      className="w-64 h-64 rounded-lg object-cover"
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold mb-4">Colby's Story</h2>
+                    <div className="italic text-gray-600 mb-6">
+                      In Colby's own words...
+                    </div>
+                  </div>
                 </div>
                 <p className="text-gray-700 mb-4">
                   Hi, my name is Colby Christensen. I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.

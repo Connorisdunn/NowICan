@@ -226,6 +226,13 @@ const TherapySchedule = () => {
               <h2 className="text-2xl font-bold text-blue-800 mb-4">About Our Therapy Sessions</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
+                  <div className="mb-4 h-48 overflow-hidden rounded-lg">
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/925c9c27-3b4a-4b66-a4ee-8acf79695199/HP-Therapy-Schedule.jpg" 
+                      alt="Intensive Therapy Model" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <h3 className="text-lg font-medium mb-2">Intensive Therapy Model</h3>
                   <p className="text-gray-700 mb-4">
                     Our intensive therapy sessions run for three weeks, with therapy provided 4 hours per day, 5 days a week.
@@ -240,6 +247,13 @@ const TherapySchedule = () => {
                 </div>
                 
                 <div>
+                  <div className="mb-4 h-48 overflow-hidden rounded-lg">
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/dfbfc6b8-d061-455f-b6a4-5ad4a1f9568e/Intensive.jpg" 
+                      alt="Traditional Therapy Options" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <h3 className="text-lg font-medium mb-2">Traditional Therapy Options</h3>
                   <p className="text-gray-700 mb-4">
                     We also offer traditional therapy appointments for ongoing care.

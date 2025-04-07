@@ -31,6 +31,13 @@ const VolunteerOpportunities = () => {
           </div>
         ) : (
           <>
+            <div className="mb-8 overflow-hidden rounded-lg">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/d65809af-9b44-476b-94b9-3fc7d6723bd6/H-Volunteer.jpg" 
+                alt="Volunteer Opportunities at Now I Can" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
             <h1 className="text-4xl font-bold font-heading mb-6">Volunteer Opportunities</h1>
             
             <section className="mb-12">

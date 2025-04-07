@@ -7,6 +7,13 @@ const LocalActivities = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/640dd434-8c50-4ddd-92b6-6390019b6355/C-FAQ-UT.jpg" 
+            alt="Local activities near Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Local Activities</h1>
         
         <section className="mb-12">

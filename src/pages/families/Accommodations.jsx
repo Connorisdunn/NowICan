@@ -5,6 +5,13 @@ const Accommodations = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
+            alt="Accommodations at Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Accommodations</h1>
         
         <section className="mb-12">
@@ -26,6 +33,13 @@ const Accommodations = () => {
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
+                  alt="Where to stay at Now I Can" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-4">Where to Stay</h3>
                 <p className="text-lg mb-4">
@@ -43,6 +57,13 @@ const Accommodations = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/f9aff50e-900f-4b67-be05-40d54c2c187f/C-FAQ-LTZ.jpg" 
+                  alt="Local activities near Now I Can" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-4">Local Activities</h3>
                 <p className="text-lg mb-4">

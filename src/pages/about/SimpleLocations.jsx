@@ -108,6 +108,13 @@ const SimpleLocations = () => {
           <h2 className="text-2xl font-bold mb-6 text-center">Accommodations & Local Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="mb-4 h-48 overflow-hidden rounded-lg">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
+                  alt="On-site family suite at Utah location" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-xl font-bold mb-4">Where to Stay</h3>
               <p className="text-gray-700 mb-4">
                 Both locations offer comfortable accommodation options to suit various budgets and preferences:
@@ -130,6 +137,13 @@ const SimpleLocations = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="mb-4 h-48 overflow-hidden rounded-lg">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/640dd434-8c50-4ddd-92b6-6390019b6355/C-FAQ-UT.jpg" 
+                  alt="Activities near Now I Can locations" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-xl font-bold mb-4">Things to Do</h3>
               <p className="text-gray-700 mb-4">
                 Highlights of activities near our locations:

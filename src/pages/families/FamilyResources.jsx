@@ -129,6 +129,13 @@ const FamilyResources = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/39fc64f9-31df-4b8a-87e3-5898cdb8a92d/H-Testimonials.jpg" 
+            alt="Family Stories at Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Family Resources</h1>
         <p className="text-lg mb-8">
           Resources to help you navigate your journey with Now I Can, including family stories,
@@ -166,17 +173,37 @@ const FamilyResources = () => {
               <h2 className="text-2xl font-bold mb-6">Featured Family Stories</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {featuredTestimonials.map(testimonial => (
-                  <div key={testimonial.id} className="bg-blue-50 rounded-lg shadow-md p-6 border border-blue-100">
-                    <div className="mb-4">
-                      <p className="text-gray-700 italic">
-                        "{testimonial.content.length > 250 ? `${testimonial.content.substring(0, 250)}...` : testimonial.content}"
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-gray-800 font-bold">— {testimonial.family}</p>
-                      {testimonial.child && (
-                        <p className="text-blue-600">{testimonial.child}'s Journey</p>
-                      )}
+                  <div key={testimonial.id} className="bg-blue-50 rounded-lg shadow-md overflow-hidden border border-blue-100">
+                    {testimonial.id === 1 && (
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/30720756-654f-4a48-b511-611806843f53/Reta-family.png" 
+                          alt="Featured family testimonial" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    {testimonial.id === 4 && (
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/17e1ce8e-4b86-4a98-b7a7-cd25702d8556/Testimonials-Anderson.png" 
+                          alt="Featured family testimonial" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="p-6">
+                      <div className="mb-4">
+                        <p className="text-gray-700 italic">
+                          "{testimonial.content.length > 250 ? `${testimonial.content.substring(0, 250)}...` : testimonial.content}"
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-gray-800 font-bold">— {testimonial.family}</p>
+                        {testimonial.child && (
+                          <p className="text-blue-600">{testimonial.child}'s Journey</p>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -187,17 +214,41 @@ const FamilyResources = () => {
               <h2 className="text-2xl font-bold mb-6">More Family Experiences</h2>
               <div className="space-y-4">
                 {otherTestimonials.map(testimonial => (
-                  <div key={testimonial.id} className="bg-white rounded-lg shadow-md p-6">
-                    <div className="mb-4">
-                      <p className="text-gray-700 italic">
-                        "{testimonial.content.length > 200 ? `${testimonial.content.substring(0, 200)}...` : testimonial.content}"
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-gray-800 font-bold">— {testimonial.family}</p>
-                      {testimonial.child && (
-                        <p className="text-blue-600">{testimonial.child}'s Journey</p>
-                      )}
+                  <div key={testimonial.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div className="flex flex-col md:flex-row">
+                      <div className="md:w-1/4">
+                        {testimonial.id === 2 && (
+                          <div className="h-full overflow-hidden">
+                            <img 
+                              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/31762d9a-35b9-48c7-aa72-7468a61a1f7f/Giles-Family.png" 
+                              alt="Giles Family" 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                        {testimonial.id === 3 && (
+                          <div className="h-full overflow-hidden">
+                            <img 
+                              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/30720756-654f-4a48-b511-611806843f53/Reta-family.png" 
+                              alt="Reta Family" 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                      </div>
+                      <div className="md:w-3/4 p-6">
+                        <div className="mb-4">
+                          <p className="text-gray-700 italic">
+                            "{testimonial.content.length > 200 ? `${testimonial.content.substring(0, 200)}...` : testimonial.content}"
+                          </p>
+                        </div>
+                        <div className="text-right">
+                          <p className="text-gray-800 font-bold">— {testimonial.family}</p>
+                          {testimonial.child && (
+                            <p className="text-blue-600">{testimonial.child}'s Journey</p>
+                          )}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -206,20 +257,31 @@ const FamilyResources = () => {
             
             <section className="mb-8">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                <h2 className="text-2xl font-bold text-blue-800 mb-4 text-center">Colby's Story</h2>
-                <p className="text-gray-700 mb-4">
-                  Colby Christensen, the daughter of Now I Can founders Joel and Tracey Christensen, was the inspiration 
-                  behind our foundation. Diagnosed with Hemiplegic Cerebral Palsy as a baby, Colby's journey with intensive 
-                  therapy led to remarkable progress that traditional therapy alone couldn't provide.
-                </p>
-                <p className="text-gray-700 italic text-center mt-4">
-                  "The intensive physical therapy I received as a child at Now I Can boosted my ability and impacted my life 
-                  in many wonderful ways. I'm so glad my parents didn't settle for 'average' therapy, but instead they searched 
-                  for MORE and they gave me MORE at Now I Can."
-                </p>
-                <p className="text-gray-700 font-bold text-right mt-2">
-                  — Colby Christensen
-                </p>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/3">
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/685d3859-6826-45eb-88ad-6f6bad55abae/Colby.jpg" 
+                      alt="Colby Christensen" 
+                      className="w-full rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold text-blue-800 mb-4">Colby's Story</h2>
+                    <p className="text-gray-700 mb-4">
+                      Colby Christensen, the daughter of Now I Can founders Joel and Tracey Christensen, was the inspiration 
+                      behind our foundation. Diagnosed with Hemiplegic Cerebral Palsy as a baby, Colby's journey with intensive 
+                      therapy led to remarkable progress that traditional therapy alone couldn't provide.
+                    </p>
+                    <p className="text-gray-700 italic mt-4">
+                      "The intensive physical therapy I received as a child at Now I Can boosted my ability and impacted my life 
+                      in many wonderful ways. I'm so glad my parents didn't settle for 'average' therapy, but instead they searched 
+                      for MORE and they gave me MORE at Now I Can."
+                    </p>
+                    <p className="text-gray-700 font-bold text-right mt-2">
+                      — Colby Christensen
+                    </p>
+                  </div>
+                </div>
                 <div className="flex justify-center mt-4">
                   <Link 
                     to="/about-us/our-story-mission" 
@@ -269,12 +331,23 @@ const FamilyResources = () => {
             
             <section className="mb-8">
               <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                <h2 className="text-2xl font-bold text-blue-800 mb-4">Still Have Questions?</h2>
-                <p className="text-gray-700 mb-6">
-                  We're here to help! If you have questions that aren't answered above, please reach out to our team. 
-                  We're happy to provide more information about our therapy programs, financial options, or any other 
-                  aspect of Now I Can.
-                </p>
+                <div className="flex flex-col md:flex-row gap-6">
+                  <div className="md:w-1/3">
+                    <img 
+                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/0e517959-5a2a-4ce7-95f6-d0c6e2eef69f/H-FAQ-for-families.jpg" 
+                      alt="Frequently Asked Questions" 
+                      className="w-full rounded-lg shadow-md"
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold text-blue-800 mb-4">Still Have Questions?</h2>
+                    <p className="text-gray-700 mb-6">
+                      We're here to help! If you have questions that aren't answered above, please reach out to our team. 
+                      We're happy to provide more information about our therapy programs, financial options, or any other 
+                      aspect of Now I Can.
+                    </p>
+                  </div>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h3 className="text-lg font-bold mb-2">Utah Location</h3>
@@ -299,11 +372,19 @@ const FamilyResources = () => {
         <section>
           <h2 className="text-2xl font-bold mb-6">Helpful Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Therapy Information</h3>
-              <p className="text-gray-700 mb-4">
-                Learn more about our intensive therapy approach, treatment methods, and what to expect during your child's therapy sessions.
-              </p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/dfbfc6b8-d061-455f-b6a4-5ad4a1f9568e/Intensive.jpg" 
+                  alt="Intensive therapy at Now I Can" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">Therapy Information</h3>
+                <p className="text-gray-700 mb-4">
+                  Learn more about our intensive therapy approach, treatment methods, and what to expect during your child's therapy sessions.
+                </p>
               <Link 
                 to="/therapy-services/intensive-physical-therapy" 
                 className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
@@ -312,11 +393,19 @@ const FamilyResources = () => {
               </Link>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Financial Support</h3>
-              <p className="text-gray-700 mb-4">
-                Discover payment options, insurance information, and financial assistance through our Ability Fund grant program.
-              </p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b55c7694-f32a-4da9-9266-cfb53d817a8d/H-Therapy-Schedule.jpg" 
+                  alt="Financial support at Now I Can" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">Financial Support</h3>
+                <p className="text-gray-700 mb-4">
+                  Discover payment options, insurance information, and financial assistance through our Ability Fund grant program.
+                </p>
               <Link 
                 to="/for-families/payment-financial-aid" 
                 className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
@@ -325,11 +414,19 @@ const FamilyResources = () => {
               </Link>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Accommodations</h3>
-              <p className="text-gray-700 mb-4">
-                Find information about lodging options, local activities, and planning your stay near our therapy centers.
-              </p>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
+                  alt="Accommodations at Now I Can" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">Accommodations</h3>
+                <p className="text-gray-700 mb-4">
+                  Find information about lodging options, local activities, and planning your stay near our therapy centers.
+                </p>
               <Link 
                 to="/for-families/accommodations" 
                 className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"

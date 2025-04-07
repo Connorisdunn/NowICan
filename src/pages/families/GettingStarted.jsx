@@ -5,6 +5,13 @@ const GettingStarted = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/0e517959-5a2a-4ce7-95f6-d0c6e2eef69f/H-FAQ-for-families.jpg" 
+            alt="Getting Started with Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Getting Started</h1>
         <p className="text-lg mb-8">
           We're excited to help your child reach their full potential through our innovative therapy services. 

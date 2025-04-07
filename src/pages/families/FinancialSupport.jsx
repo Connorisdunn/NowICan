@@ -35,6 +35,13 @@ const FinancialSupport = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b55c7694-f32a-4da9-9266-cfb53d817a8d/H-Therapy-Schedule.jpg" 
+            alt="Financial Support at Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Payment & Financial Aid</h1>
         <p className="text-lg mb-8">
           At Now I Can, we understand that investing in your child's therapy is a significant financial commitment.

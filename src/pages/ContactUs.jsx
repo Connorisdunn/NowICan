@@ -6,6 +6,13 @@ const ContactUs = () => {
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+          <div className="mb-8 overflow-hidden rounded-lg">
+            <img 
+              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b4c8215b-7666-466f-9cbb-681d523f871c/H-Utah-location.jpg" 
+              alt="Contact Now I Can" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
           <h1 className="text-4xl font-bold font-heading mb-6 text-center">Contact Us</h1>
           <p className="text-lg mb-8 text-center">
             We're here to answer your questions and help your child reach their full potential.

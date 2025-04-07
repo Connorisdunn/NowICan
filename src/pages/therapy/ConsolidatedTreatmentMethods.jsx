@@ -12,6 +12,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/2aeb5562-0d40-4389-a339-b425dc9bb5a0/Suit-Therapy-Page-Spot1.jpg" 
+                alt="Child in orthotic suit during therapy" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">Just Like Superheroes, Our Kids Wear Suits and Achieve Great Feats!</h3>
               <p className="text-gray-700 mb-4">
@@ -90,6 +97,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/334e7c4c-6c44-4327-baa4-8e0bdf38fd9e/nowican-17.jpg" 
+                alt="Child in Universal Exercise Unit" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">Achieving New Milestones</h3>
               <p className="text-gray-700 mb-4">
@@ -166,6 +180,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/7c930347-20ac-4125-9cb6-d9fc7d7f7499/C-Manual-Myofascial.jpg" 
+                alt="Manual therapy techniques" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">The Power of Hands-On Treatment</h3>
               <p className="text-gray-700 mb-4">
@@ -243,6 +264,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/2da88116-077a-4715-8869-30841d6966cd/C-estim-close-up.gif" 
+                alt="Functional E-Stim therapy" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">Awakening Muscles</h3>
               <p className="text-gray-700 mb-4">
@@ -320,6 +348,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8f0c5037-f94f-461d-8fdb-4e1f401adf57/Vibration-Plate-Page-Spot1.jpg" 
+                alt="Full body vibration therapy" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">Enhancing Body-Brain Communication</h3>
               <p className="text-gray-700 mb-4">
@@ -397,6 +432,13 @@ const ConsolidatedTreatmentMethods = () => {
       content: (
         <div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div className="h-64 overflow-hidden">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b094f921-0803-41f7-b754-413d78dcae28/K-Tape-Vert.png" 
+                alt="Additional techniques including kinesiotape" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="p-6">
               <h3 className="text-xl font-bold mb-4">Complementary Therapeutic Approaches</h3>
               <p className="text-gray-700 mb-4">
@@ -465,6 +507,13 @@ const ConsolidatedTreatmentMethods = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b2c625fa-f41f-418a-aae5-bea1168e4f65/H-Lauren-with-ball.jpg" 
+            alt="Innovative treatment methods at Now I Can" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Treatment Methods</h1>
         <p className="text-lg mb-8">
           Now I Can therapists have extensive training in cutting edge methods, models and techniques 
@@ -501,6 +550,50 @@ const ConsolidatedTreatmentMethods = () => {
               onClick={() => setActiveTab(method.id)}
             >
               <div className={`h-2 ${activeTab === method.id ? 'bg-blue-600' : 'bg-gray-200'}`}></div>
+              <div className="h-48 overflow-hidden">
+                {method.id === 'orthotic-suit' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8e22fc86-bcc5-46d9-9f66-6221d1b3f577/H-Suit-therapy.jpg" 
+                    alt="Orthotic Suit Therapy" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {method.id === 'universal-exercise' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3b820391-8062-4b3c-a82e-bef7df3691f2/H-Cage-therapy.jpg" 
+                    alt="Universal Exercise Unit" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {method.id === 'manual-therapy' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/db6cd4b0-2346-4e1a-9172-f5e762b78278/H-Manual-Therapy.jpg" 
+                    alt="Manual Therapy" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {method.id === 'functional-estim' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/900cecc4-2538-4841-9e95-8eed1273ba31/H-Funtional-Estim-take3.jpg" 
+                    alt="Functional E-Stim" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {method.id === 'vibration' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/9c6fc513-1de0-45f8-ad5b-487480a0ac64/H-Whole-body-vibration.jpg" 
+                    alt="Full Body Vibration" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {method.id === 'additional' && (
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b2c625fa-f41f-418a-aae5-bea1168e4f65/H-Lauren-with-ball.jpg" 
+                    alt="Additional Techniques" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
               <div className="p-6">
                 <h2 className="text-xl font-bold mb-3">{method.name}</h2>
                 <p className="text-gray-700 mb-4">
@@ -521,8 +614,12 @@ const ConsolidatedTreatmentMethods = () => {
         <div className="mb-12">
           <div className="bg-blue-50 rounded-lg overflow-hidden border border-blue-100">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="md:col-span-1 h-full bg-gray-200 flex items-center justify-center text-gray-500">
-                Testimonial Photo
+              <div className="md:col-span-1 h-full overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/31762d9a-35b9-48c7-aa72-7468a61a1f7f/Giles-Family.png" 
+                  alt="Family testimonial" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="md:col-span-2 p-8 flex flex-col justify-center">
                 <h2 className="text-2xl font-bold text-blue-800 mb-3">Parent Testimonial</h2>

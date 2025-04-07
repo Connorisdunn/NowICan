@@ -21,6 +21,14 @@ const WhereToStay = () => {
               </button>
             </div>
             
+            <div className="mb-8 overflow-hidden rounded-lg">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b4c8215b-7666-466f-9cbb-681d523f871c/H-Utah-location.jpg" 
+                alt="Now I Can accommodations" 
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            
             <section className="mb-12">
               <div className="bg-white rounded-lg shadow-md p-8 mb-8">
                 <h2 className="text-2xl font-bold mb-4">Lodging Options for Therapy Families</h2>

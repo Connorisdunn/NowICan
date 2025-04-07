@@ -9,6 +9,13 @@ const Donate = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        <div className="mb-8 overflow-hidden rounded-lg">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/03c7afca-b61c-457f-b5e4-7a8f9fd2e078/H-Donate.jpg" 
+            alt="Donate to Now I Can Foundation" 
+            className="w-full h-64 object-cover"
+          />
+        </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Donate to Now I Can</h1>
         
         <section className="mb-12">
@@ -30,6 +37,13 @@ const Donate = () => {
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
+              <div className="mb-4 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3bdc3ee2-ef3f-4f0b-8661-3eae1b2233ba/AveryNIC.jpg" 
+                  alt="Child benefiting from donation at Now I Can" 
+                  className="w-full h-48 object-cover"
+                />
+              </div>
               <h2 className="text-2xl font-bold text-blue-800 mb-4">Your Donation Makes a Difference</h2>
               <p className="mb-4">
                 When you donate to Now I Can Foundation, your contribution goes directly toward:
