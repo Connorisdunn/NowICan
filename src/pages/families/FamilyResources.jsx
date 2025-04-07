@@ -385,12 +385,13 @@ const FamilyResources = () => {
                 <p className="text-gray-700 mb-4">
                   Learn more about our intensive therapy approach, treatment methods, and what to expect during your child's therapy sessions.
                 </p>
-              <Link 
-                to="/therapy-services/intensive-physical-therapy" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
-              >
-                Explore Therapy Services
-              </Link>
+                <Link 
+                  to="/therapy-services/intensive-physical-therapy" 
+                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                >
+                  Explore Therapy Services
+                </Link>
+              </div>
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -406,12 +407,13 @@ const FamilyResources = () => {
                 <p className="text-gray-700 mb-4">
                   Discover payment options, insurance information, and financial assistance through our Ability Fund grant program.
                 </p>
-              <Link 
-                to="/for-families/payment-financial-aid" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
-              >
-                Payment Options
-              </Link>
+                <Link 
+                  to="/for-families/payment-financial-aid" 
+                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                >
+                  Payment Options
+                </Link>
+              </div>
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -427,12 +429,13 @@ const FamilyResources = () => {
                 <p className="text-gray-700 mb-4">
                   Find information about lodging options, local activities, and planning your stay near our therapy centers.
                 </p>
-              <Link 
-                to="/for-families/accommodations" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
-              >
-                Accommodations Info
-              </Link>
+                <Link 
+                  to="/for-families/accommodations" 
+                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                >
+                  Accommodations Info
+                </Link>
+              </div>
             </div>
           </div>
         </section>
