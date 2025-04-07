@@ -39,7 +39,7 @@ import FamilyResources from './pages/families/FamilyResources'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/nowican">
       <div className="flex flex-col min-h-screen bg-white">
         <Navbar />
         <main className="flex-grow">
