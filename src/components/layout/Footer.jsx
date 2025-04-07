@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex flex-col items-start">
               <img 
-                src="/images/now-i-can-logo.png" 
+                src={`${import.meta.env.BASE_URL}/images/now-i-can-logo.png`}
                 alt="Now I Can Foundation" 
                 className="h-12 w-auto mb-2"
               />
