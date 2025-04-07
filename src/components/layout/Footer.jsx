@@ -9,8 +9,11 @@ const Footer = () => {
           {/* Logo & Tagline */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex flex-col items-start">
-              <span className="text-2xl font-bold font-heading text-white">Now I Can</span>
-              <span className="text-sm font-medium text-blue-200">Foundation</span>
+              <img 
+                src="/images/now-i-can-logo.png" 
+                alt="Now I Can Foundation" 
+                className="h-12 w-auto mb-2"
+              />
             </Link>
             <p className="mt-3 text-blue-100 text-sm max-w-md">
               Our mission at Now I Can is to help children with disabilities reach their full potential and greatest independence through innovative physical therapy.
