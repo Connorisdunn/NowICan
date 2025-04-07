@@ -103,16 +103,10 @@ const IntensivePhysicalTherapy = () => {
                   and support to a patient. It helps their body find better alignment, while the bungee cords provide a 
                   comforting compression to the joints and distribute vertical weight-bearing to the entire body.
                 </p>
-                <p className="text-lg mb-6">
+                <p className="text-lg">
                   The bungees mimic the major muscle groups, and when skillfully applied, can help patients learn better 
                   patterns of movement and gain correct muscle memory that carries over even after the suit is removed.
                 </p>
-                <Link 
-                  to="/therapy-services/treatment-methods/orthotic-suit-therapy" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block"
-                >
-                  Learn More About Suit Therapy
-                </Link>
               </div>
             </div>
             
@@ -131,17 +125,20 @@ const IntensivePhysicalTherapy = () => {
                   This piece of equipment uses weights and pulleys to allow the therapist to facilitate different stretches and 
                   exercises while keeping their hands free to help their patient.
                 </p>
-                <p className="text-lg mb-6">
+                <p className="text-lg">
                   The UEU also helps children work on functional skills such as sit-to-stand, kneeling and jumping to name a few.
                 </p>
-                <Link 
-                  to="/therapy-services/treatment-methods/universal-exercise-unit" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block"
-                >
-                  Learn More About the UEU
-                </Link>
               </div>
             </div>
+          </div>
+          
+          <div className="text-center mt-8 mb-4">
+            <Link 
+              to="/therapy-services/treatment-methods" 
+              className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block px-6 py-3 text-lg"
+            >
+              Discover Our Complete Range of Treatment Methods
+            </Link>
           </div>
         </section>
         
@@ -169,68 +166,6 @@ const IntensivePhysicalTherapy = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-          </div>
-        </section>
-        
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Explore More Treatment Methods</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link 
-              to="/therapy-services/treatment-methods/manual-therapy"
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="h-40 overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/7c930347-20ac-4125-9cb6-d9fc7d7f7499/C-Manual-Myofascial.jpg" 
-                  alt="Manual Therapy" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Manual Therapy</h3>
-                <p className="text-gray-700">
-                  Our physical therapists use manual therapy to prepare the body to embrace fuller range of motion.
-                </p>
-              </div>
-            </Link>
-            
-            <Link 
-              to="/therapy-services/treatment-methods/functional-estim"
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="h-40 overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/900cecc4-2538-4841-9e95-8eed1273ba31/H-Funtional-Estim-take3.jpg" 
-                  alt="Functional E-Stim" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Functional E-Stim</h3>
-                <p className="text-gray-700">
-                  E-Stim is a dynamic technique that brings muscles back to life, stimulating muscle movement and resetting muscle memory.
-                </p>
-              </div>
-            </Link>
-            
-            <Link 
-              to="/therapy-services/treatment-methods/full-body-vibration"
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="h-40 overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/9c6fc513-1de0-45f8-ad5b-487480a0ac64/H-Whole-body-vibration.jpg" 
-                  alt="Full Body Vibration" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Full Body Vibration</h3>
-                <p className="text-gray-700">
-                  A type of neuro-muscular re-education that works to increase communication between the body and the brain.
-                </p>
-              </div>
-            </Link>
           </div>
         </section>
       </div>
