@@ -19,14 +19,14 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">Just Like Superheroes, Our Kids Wear Suits and Achieve Great Feats!</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">Just Like Superheroes, Our Kids Wear Suits and Achieve Great Feats!</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 Made of soft canvas, our suit is a breathable, dynamic orthotic that improves and changes proprioception 
                 (the brain's awareness of the position and movement of the body). It works by loading the entire body with 
                 weighted resistance bands that mimic real-life muscular reaction to gravitational forces.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-5">
                 Research shows that orthotic suits comprised of various resistance bands placed over major muscle groups, 
                 can greatly increase a child's mobility achievements. Now I Can therapists are experienced in accurately 
                 assessing where to place the bungees, which order to train the muscles, and the amount of resistance 
@@ -104,14 +104,14 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">Achieving New Milestones</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">Achieving New Milestones</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 The Universal Exercise Unit (UEU), sometimes called a "Spider Cage," is one of our most versatile therapy tools.
                 It allows children to exercise in any position (lying, sitting, kneeling, or standing) while being supported by a system
                 of bungee cords that connect to a belt around their waist.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-5">
                 This suspension system provides the perfect amount of support while still challenging the child to use their own
                 muscles. The bungees can be adjusted to provide assistance or resistance depending on the child's needs.
               </p>
@@ -187,14 +187,14 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">The Power of Hands-On Treatment</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">The Power of Hands-On Treatment</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 Manual therapy involves skilled, hands-on techniques that our therapists use to assess and treat soft tissues
                 and joint structures. These techniques help to modulate pain, reduce inflammation, increase range of motion,
                 induce relaxation, improve tissue repair, and facilitate movement.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-5">
                 Our physical therapists apply the newest innovations in manual therapy to prepare the body for greater
                 range of motion and enhanced functional abilities. These techniques are tailored to each child's specific
                 needs and are often used in preparation for other treatment methods.
@@ -271,14 +271,14 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">Awakening Muscles</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">Awakening Muscles</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 Functional Electrical Stimulation, more commonly called E-Stim, is a dynamic technique that brings muscles
                 back to life. The goal of E-Stim is to restore or improve function and strength of muscles that have
                 become weak or are not functioning properly due to neurological conditions.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-5">
                 Small electrodes are placed on the skin over the targeted muscles, and controlled electrical impulses
                 stimulate the nerves to activate these muscles. This helps train the muscles to contract properly and
                 can even help in reestablishing proper neural pathways to improve function.
@@ -355,14 +355,14 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">Enhancing Body-Brain Communication</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">Enhancing Body-Brain Communication</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 Vibration therapy is a type of neuro-muscular re-education that ultimately works to increase communication
                 between the body and the brain. This therapy provides mechanical stimulation that travels throughout the body,
                 stimulating muscle spindles and activating reflexive muscle contractions.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-lg text-gray-700 mb-5">
                 Our vibration platform delivers controlled, consistent vibration through the feet and legs that travels
                 throughout the body. The therapist can adjust the frequency and amplitude of the vibrations based on the
                 child's specific needs and goals.
@@ -439,9 +439,9 @@ const ConsolidatedTreatmentMethods = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-4">Complementary Therapeutic Approaches</h3>
-              <p className="text-gray-700 mb-4">
+            <div className="p-8">
+              <h3 className="text-2xl font-bold mb-5">Complementary Therapeutic Approaches</h3>
+              <p className="text-lg text-gray-700 mb-5">
                 Our therapists employ a wide range of additional specialized techniques to complement our core treatment
                 methods. Each of these approaches can be used individually or in combination to address specific needs
                 and enhance overall outcomes.
@@ -539,22 +539,20 @@ const ConsolidatedTreatmentMethods = () => {
         
         {/* Current Method Content */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">{currentMethod.name}</h2>
+          <h2 className="text-4xl font-bold mb-6">{currentMethod.name}</h2>
           {currentMethod.content}
         </div>
-        
-
         
         {/* Our Approach Section */}
         <section className="mb-12">
           <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-md">
-            <h2 className="text-3xl font-bold text-blue-800 mb-6">Our Comprehensive Approach</h2>
-            <p className="text-lg mb-6">
+            <h2 className="text-2xl font-bold text-blue-800 mb-4">Our Comprehensive Approach</h2>
+            <p className="text-base mb-4">
               At Now I Can, we believe in using a combination of treatment methods to achieve the best results for each child. 
               Our therapists are trained in multiple techniques and will create a customized treatment plan based on your child's 
               specific needs and goals.
             </p>
-            <p className="text-lg">
+            <p className="text-base">
               During your free consultation, we'll discuss which treatment methods might be most beneficial for your child 
               and how we can integrate them into a comprehensive therapy plan.
             </p>
@@ -564,8 +562,8 @@ const ConsolidatedTreatmentMethods = () => {
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold mb-4">Intensive Therapy Program</h2>
-              <p className="text-lg mb-6">
+              <h2 className="text-xl font-bold mb-3">Intensive Therapy Program</h2>
+              <p className="text-base mb-4">
                 Our intensive therapy program utilizes these treatment methods in a concentrated format, 
                 helping children achieve significant progress in a short period of time.
               </p>
@@ -578,8 +576,8 @@ const ConsolidatedTreatmentMethods = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold mb-4">Get Started Today</h2>
-              <p className="text-lg mb-6">
+              <h2 className="text-xl font-bold mb-3">Get Started Today</h2>
+              <p className="text-base mb-4">
                 The team at Now I Can looks forward to speaking with you to discuss how your child can reach their 
                 highest potential. Schedule a free consultation now.
               </p>
