@@ -36,53 +36,53 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Retrains central nervous system</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Retrains central nervous system</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Normalizes muscle tone</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Normalizes muscle tone</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Aligns the body and normalizes gait pattern</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Aligns the body and normalizes gait pattern</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Improves balance and coordination</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Improves balance and coordination</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Provides tactile stimulation</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Provides tactile stimulation</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Who Can Benefit</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Who Can Benefit</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Cerebral Palsy</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Cerebral Palsy</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Developmental Delays</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Developmental Delays</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Traumatic Brain Injury</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Traumatic Brain Injury</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Spasticity or Hypotonia</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Spasticity or Hypotonia</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Ataxia and Athethosis</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Ataxia and Athethosis</span>
                 </li>
               </ul>
             </div>
@@ -119,53 +119,53 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Strengthens weak muscles</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Strengthens weak muscles</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Improves balance and coordination</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Improves balance and coordination</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Increases range of motion and flexibility</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Increases range of motion and flexibility</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Promotes functional movements and skills</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Promotes functional movements and skills</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Provides sensory integration</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Provides sensory integration</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Applications</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Applications</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Isolated muscle strengthening</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Isolated muscle strengthening</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Balance and coordination training</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Balance and coordination training</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Functional movement practice</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Functional movement practice</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Weight-bearing activities</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Weight-bearing activities</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Transitional movement training</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Transitional movement training</span>
                 </li>
               </ul>
             </div>
@@ -203,53 +203,53 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Manual Techniques Used</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Manual Techniques Used</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Myofascial release</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Myofascial release</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Soft tissue mobilization</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Soft tissue mobilization</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Joint mobilization</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Joint mobilization</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Neurodevelopmental techniques</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Neurodevelopmental techniques</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Proprioceptive neuromuscular facilitation (PNF)</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Proprioceptive neuromuscular facilitation (PNF)</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Decreased muscle spasticity</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Decreased muscle spasticity</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Improved joint mobility</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Improved joint mobility</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Reduced pain and discomfort</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Reduced pain and discomfort</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Enhanced tissue flexibility</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Enhanced tissue flexibility</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Preparation for functional activities</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Preparation for functional activities</span>
                 </li>
               </ul>
             </div>
@@ -287,53 +287,53 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Strengthens weak muscles</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Strengthens weak muscles</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Increases blood flow to muscles</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Increases blood flow to muscles</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Prevents muscle atrophy</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Prevents muscle atrophy</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Improves muscle activation patterns</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Improves muscle activation patterns</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Enhances functional movements</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Enhances functional movements</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Who Can Benefit</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Who Can Benefit</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Children with weakness from cerebral palsy</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Children with weakness from cerebral palsy</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Spinal cord injuries</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Spinal cord injuries</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Stroke recovery</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Stroke recovery</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Muscular dystrophy</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Muscular dystrophy</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Other neuromuscular conditions</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Other neuromuscular conditions</span>
                 </li>
               </ul>
             </div>
@@ -371,53 +371,53 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Increases muscle strength and tone</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Increases muscle strength and tone</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Improves balance and proprioception</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Improves balance and proprioception</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Enhances circulation</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Enhances circulation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Promotes bone density</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Promotes bone density</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Reduces muscle spasticity</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Reduces muscle spasticity</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Applications</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Applications</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Pre-treatment warm-up</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Pre-treatment warm-up</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Standing tolerance and balance training</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Standing tolerance and balance training</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Spasticity management</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Spasticity management</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Strengthening exercises</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Strengthening exercises</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Sensory integration</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Sensory integration</span>
                 </li>
               </ul>
             </div>
@@ -450,49 +450,49 @@ const ConsolidatedTreatmentMethods = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Specialized Techniques</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Specialized Techniques</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span><strong>Kinesiotape:</strong> Elastic therapeutic tape that supports muscles while allowing full range of motion</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg"><strong>Kinesiotape:</strong> Elastic therapeutic tape that supports muscles while allowing full range of motion</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span><strong>Neuro-Developmental Treatment (NDT):</strong> Hands-on approach that facilitates more normal movement patterns</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg"><strong>Neuro-Developmental Treatment (NDT):</strong> Hands-on approach that facilitates more normal movement patterns</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span><strong>Proprioceptive Neuromuscular Facilitation (PNF):</strong> Techniques that enhance neuromuscular response</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg"><strong>Proprioceptive Neuromuscular Facilitation (PNF):</strong> Techniques that enhance neuromuscular response</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span><strong>Total Motion Release:</strong> Innovative approach using mirror movements to improve function</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg"><strong>Total Motion Release:</strong> Innovative approach using mirror movements to improve function</span>
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-bold mb-3">Benefits</h3>
-              <ul className="space-y-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105">
+              <h3 className="text-xl font-bold mb-4 text-blue-700 border-b-2 border-blue-500 pb-2">Benefits</h3>
+              <ul className="space-y-2">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Tailored approach for each child's unique needs</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Tailored approach for each child's unique needs</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Enhanced outcomes when combined with core treatment methods</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Enhanced outcomes when combined with core treatment methods</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Addresses specific functional limitations</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Addresses specific functional limitations</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Supports carryover of skills to daily activities</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Supports carryover of skills to daily activities</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>Provides additional tools for home program continuation</span>
+                  <span className="text-blue-600 text-xl mr-2">•</span>
+                  <span className="text-lg">Provides additional tools for home program continuation</span>
                 </li>
               </ul>
             </div>
@@ -545,9 +545,9 @@ const ConsolidatedTreatmentMethods = () => {
         
         {/* Our Approach Section */}
         <section className="mb-12">
-          <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-md">
-            <h2 className="text-2xl font-bold text-blue-800 mb-4">Our Comprehensive Approach</h2>
-            <p className="text-base mb-4">
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200 shadow-md">
+            <h2 className="text-xl font-bold text-blue-800 mb-3">Our Comprehensive Approach</h2>
+            <p className="text-base mb-3">
               At Now I Can, we believe in using a combination of treatment methods to achieve the best results for each child. 
               Our therapists are trained in multiple techniques and will create a customized treatment plan based on your child's 
               specific needs and goals.
@@ -561,29 +561,29 @@ const ConsolidatedTreatmentMethods = () => {
         
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-xl font-bold mb-3">Intensive Therapy Program</h2>
-              <p className="text-base mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2">Intensive Therapy Program</h2>
+              <p className="text-base mb-3">
                 Our intensive therapy program utilizes these treatment methods in a concentrated format, 
                 helping children achieve significant progress in a short period of time.
               </p>
               <Link 
                 to="/therapy-services/intensive-physical-therapy" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700"
+                className="inline-block px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Learn About Intensive Therapy
               </Link>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-xl font-bold mb-3">Get Started Today</h2>
-              <p className="text-base mb-4">
+            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2">Get Started Today</h2>
+              <p className="text-base mb-3">
                 The team at Now I Can looks forward to speaking with you to discuss how your child can reach their 
                 highest potential. Schedule a free consultation now.
               </p>
               <Link 
                 to="/for-families/getting-started/free-consultation" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700"
+                className="inline-block px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Schedule a Consultation
               </Link>
