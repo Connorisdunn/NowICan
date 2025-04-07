@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/now-i-can-logo.png';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex flex-col items-start">
               <img 
-                src={`${import.meta.env.BASE_URL}/images/now-i-can-logo.png`}
+                src={logo}
                 alt="Now I Can Foundation" 
                 className="h-12 w-auto mb-2"
               />
