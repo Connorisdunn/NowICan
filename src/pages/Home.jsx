@@ -48,7 +48,7 @@ const Home = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/1647216189569-8OCPNKIVC8MYZL30181M/Suit-Therapy-Page-Spot1.jpg" 
                   alt="Innovative Treatment Methods" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">
@@ -71,7 +71,7 @@ const Home = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8b9b155b-8374-41c9-b6be-b6a3418f09c4/H-Therapy-Team.jpg" 
                   alt="Expert Therapy Team" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">
@@ -133,7 +133,7 @@ const Home = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/39fc64f9-31df-4b8a-87e3-5898cdb8a92d/H-Testimonials.jpg" 
                   alt="Success Stories" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-bottom transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">

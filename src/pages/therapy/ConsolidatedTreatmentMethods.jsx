@@ -184,7 +184,7 @@ const ConsolidatedTreatmentMethods = () => {
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/7c930347-20ac-4125-9cb6-d9fc7d7f7499/C-Manual-Myofascial.jpg" 
                 alt="Manual therapy techniques" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_70%]"
               />
             </div>
             <div className="p-8">
@@ -436,7 +436,7 @@ const ConsolidatedTreatmentMethods = () => {
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b094f921-0803-41f7-b754-413d78dcae28/K-Tape-Vert.png" 
                 alt="Additional techniques including kinesiotape" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[center_75%]"
               />
             </div>
             <div className="p-8">

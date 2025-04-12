@@ -329,7 +329,8 @@ const OurTeam = () => {
                           <img 
                             src={member.image} 
                             alt={`${member.name}`} 
-                            className="w-full h-48 rounded-lg object-cover mb-4"
+                            className="w-full h-48 rounded-lg object-contain mb-4"
+                            //className="w-50 h-50 rounded-full object-contain border-4 border-blue-600"
                             onError={(e) => {
                               e.target.onerror = null;
                               e.target.src = defaultBoardImage;

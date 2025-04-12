@@ -17,7 +17,7 @@ const SimpleLocations = () => {
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b4c8215b-7666-466f-9cbb-681d523f871c/H-Utah-location.jpg" 
                 alt="Now I Can Utah Location" 
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full h-full object-cover object-bottom transition-transform duration-500 hover:scale-105"
               />
             </div>
             <div className="p-6">
@@ -57,7 +57,7 @@ const SimpleLocations = () => {
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/116b61c2-7b17-4b9e-9e45-53d3fd71f4b1/H-Lititz.jpg" 
                 alt="Now I Can Pennsylvania Location" 
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full h-full object-cover object-bottom transition-transform duration-500 hover:scale-105"
               />
             </div>
             <div className="p-6">
@@ -189,7 +189,7 @@ const SimpleLocations = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/for-families/getting-started/free-consultation" 
-              className="btn bg-white text-blue-600 hover:bg-blue-50"
+              className="btn bg-blue-500 text-blue-600 hover:bg-blue-600"
             >
               Schedule a Consultation
             </Link>

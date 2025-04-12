@@ -43,7 +43,7 @@ const TraditionalPhysicalTherapy = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/e68d6c63-dddb-46a7-a0af-e33aee339b3d/Traditional2.jpeg" 
                   alt="Regular therapy sessions" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_20%]"
                 />
               </div>
               <div className="p-8">

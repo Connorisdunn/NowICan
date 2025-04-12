@@ -69,7 +69,7 @@ const IntensivePhysicalTherapy = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/db6cd4b0-2346-4e1a-9172-f5e762b78278/H-Manual-Therapy.jpg" 
                   alt="Preparation & Techniques" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-bottom transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-8">
@@ -92,7 +92,7 @@ const IntensivePhysicalTherapy = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8e22fc86-bcc5-46d9-9f66-6221d1b3f577/H-Suit-therapy.jpg" 
                   alt="Orthotic Suit Therapy" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-8">
@@ -115,7 +115,7 @@ const IntensivePhysicalTherapy = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3b820391-8062-4b3c-a82e-bef7df3691f2/H-Cage-therapy.jpg" 
                   alt="Universal Exercise Unit" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-8">
