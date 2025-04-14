@@ -2,15 +2,40 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../components/home/HeroSection';
 
+// Import sticker images
+import wheelchairImage from '../assets/images/wheelchair.png';
+import jumpropeImage from '../assets/images/jumprope.png';
+import rainbowImage from '../assets/images/rainbow.png';
+import balloonImage from '../assets/images/balloon.png';
+import runningImage from '../assets/images/running.png';
+
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Hero Section with Video Background */}
       <HeroSection />
       
+      {/* Wheelchair sticker to the right of hero */}
+      <div className="absolute top-60 right-6 md:right-12 lg:right-24 w-24 md:w-32 lg:w-80 transform -rotate-6 z-10">
+        <img 
+          src={wheelchairImage}
+          alt="Wheelchair drawing" 
+          className="w-full h-auto drop-shadow-md"
+        />
+      </div>
+      
       {/* What Makes Us Different Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom mx-auto px-4">
+      <section className="py-16 bg-gray-50 relative">
+        {/* Jumprope sticker to the left */}
+        <div className="absolute top-12 left-2 md:left-8 lg:left-16 w-28 md:w-40 lg:w-60 transform -rotate-3 z-10">
+          <img 
+            src={jumpropeImage} 
+            alt="Jump rope drawing" 
+            className="w-full h-auto drop-shadow-md"
+          />
+        </div>
+        
+        <div className="container-custom mx-auto px-4 md:pl-24 lg:pl-32">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">What Makes Us Different</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -92,7 +117,16 @@ const Home = () => {
       </section>
       
       {/* Success Stories */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white relative">
+        {/* Rainbow sticker up and to the right */}
+        <div className="absolute top-28 right-8 md:right-16 lg:right-20 w-28 md:w-36 lg:w-48 transform rotate-12 z-10">
+          <img 
+            src={rainbowImage} 
+            alt="Rainbow drawing" 
+            className="w-full h-auto drop-shadow-md"
+          />
+        </div>
+        
         <div className="container-custom mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">Success Stories</h2>
@@ -156,8 +190,17 @@ const Home = () => {
       </section>
       
       {/* Locations */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom mx-auto px-4">
+      <section className="py-16 bg-gray-50 relative">
+        {/* Balloon sticker to the left */}
+        <div className="absolute top-24 left-4 md:left-10 lg:left-10 w-24 md:w-32 lg:w-80 transform -rotate-8 z-10">
+          <img 
+            src={balloonImage} 
+            alt="Balloon drawing" 
+            className="w-full h-auto drop-shadow-md"
+          />
+        </div>
+        
+        <div className="container-custom mx-auto px-4 md:pl-16 lg:pl-24">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">Our Locations</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -220,7 +263,16 @@ const Home = () => {
       </section>
       
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-primary-blue-500 to-primary-orange-500 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary-blue-500 to-primary-orange-500 text-white relative">
+        {/* Running sticker to the right */}
+        <div className="absolute top-1/4 right-4 md:right-12 lg:right-24 w-28 md:w-36 lg:w-60 transform rotate-6 z-10">
+          <img 
+            src={runningImage} 
+            alt="Running child drawing" 
+            className="w-full h-auto drop-shadow-md"
+          />
+        </div>
+        
         <div className="container-custom mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Ready to Take the Next Step?</h2>
           <p className="text-lg text-primary-blue-100 mb-8 max-w-2xl mx-auto">
