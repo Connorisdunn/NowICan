@@ -49,7 +49,7 @@ const Accommodations = () => {
                 </p>
                 <Link 
                   to="/for-families/accommodations/where-to-stay" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 inline-block"
                 >
                   View Lodging Options
                 </Link>
@@ -73,7 +73,7 @@ const Accommodations = () => {
                 </p>
                 <Link 
                   to="/for-families/accommodations/local-activities" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 inline-block"
                 >
                   Explore Local Activities
                 </Link>
@@ -83,8 +83,8 @@ const Accommodations = () => {
         </section>
         
         <section className="mb-12">
-          <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
-            <h2 className="text-2xl font-bold text-blue-800 mb-4">On-Site Accommodations in Utah</h2>
+          <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
+            <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">On-Site Accommodations in Utah</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <p className="text-lg mb-4">
@@ -217,7 +217,7 @@ const Accommodations = () => {
             <div className="flex justify-center">
               <Link 
                 to="/contact-us" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-3"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 text-lg px-8 py-3"
               >
                 Contact Us for Assistance
               </Link>

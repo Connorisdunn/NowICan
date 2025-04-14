@@ -25,7 +25,7 @@ const PatientInformation = () => {
           </p>
           
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-xl font-semibold text-blue-800 mb-6">Select Location</h2>
+            <h2 className="text-xl font-semibold text-primary-blue-800 mb-6">Select Location</h2>
             
             <div className="mb-8 flex justify-center">
               <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
@@ -56,15 +56,15 @@ const PatientInformation = () => {
                 {/* Sliding Background */}
                 <span 
                   className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                    location === 'UT' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                    location === 'UT' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                   }`}
                 ></span>
               </div>
             </div>
             
             {location === 'UT' && (
-              <div className="bg-blue-50 p-6 rounded-lg border border-blue-100">
-                <h3 className="text-lg font-medium text-blue-800 mb-3">Utah Patient Information</h3>
+              <div className="bg-primary-blue-50 p-6 rounded-lg border border-primary-blue-100">
+                <h3 className="text-lg font-medium text-primary-blue-800 mb-3">Utah Patient Information</h3>
                 <p className="text-gray-700 mb-4">
                   Prior to the start of the session, please click on the link below to download the Patient Intake Information form. 
                   Fill out the requested information and email the completed form to info@nowican.org.
@@ -73,7 +73,7 @@ const PatientInformation = () => {
                   href="https://drive.google.com/file/d/1SpHPrlizMgi1ypda1g7G_nm4L1w7Asta/view"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-5 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 mb-4"
+                  className="inline-block px-5 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700 focus:outline-none focus:ring-2 focus:ring-primary-blue-500 focus:ring-offset-2 mb-4"
                 >
                   Download Patient Intake Information Form
                 </a>
@@ -84,8 +84,8 @@ const PatientInformation = () => {
             )}
             
             {location === 'PA' && (
-              <div className="bg-purple-50 p-6 rounded-lg border border-purple-100">
-                <h3 className="text-lg font-medium text-purple-800 mb-3">Pennsylvania Patient Information</h3>
+              <div className="bg-primary-orange-50 p-6 rounded-lg border border-primary-orange-100">
+                <h3 className="text-lg font-medium text-primary-orange-800 mb-3">Pennsylvania Patient Information</h3>
                 <p className="text-gray-700">
                   Thank you for selecting our Pennsylvania location. Our team will email the patient information form to you directly.
                   Please ensure we have your current email address on file, or contact our Pennsylvania office at (717) 269-5829.
@@ -103,13 +103,13 @@ const PatientInformation = () => {
             {location === 'UT' ? (
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <span>Utah: (801) 228-1935</span>
                 </li>
                 <li className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <span>Email: allison@nowican.org</span>
@@ -118,13 +118,13 @@ const PatientInformation = () => {
             ) : (
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   <span>Pennsylvania: (717) 269-5829</span>
                 </li>
                 <li className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <span>Email: allison@nowican.org</span>

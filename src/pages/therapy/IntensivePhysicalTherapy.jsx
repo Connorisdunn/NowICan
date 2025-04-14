@@ -135,17 +135,17 @@ const IntensivePhysicalTherapy = () => {
           <div className="text-center mt-8 mb-4">
             <Link 
               to="/therapy-services/treatment-methods" 
-              className="btn bg-blue-600 text-white hover:bg-blue-700 inline-block px-6 py-3 text-lg"
+              className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 inline-block px-6 py-3 text-lg"
             >
               Discover Our Complete Range of Treatment Methods
             </Link>
           </div>
         </section>
         
-        <section className="bg-blue-50 rounded-lg overflow-hidden border border-blue-100 mb-12">
+        <section className="bg-primary-blue-50 rounded-lg overflow-hidden border border-primary-blue-100 mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-blue-800 mb-6">Get Started Today</h2>
+              <h2 className="text-3xl font-bold text-primary-blue-800 mb-6">Get Started Today</h2>
               <p className="text-xl mb-8">
                 The team at Now I Can looks forward to speaking with you to discuss how your child can reach their highest potential. 
                 Schedule a free consultation now.
@@ -153,7 +153,7 @@ const IntensivePhysicalTherapy = () => {
               <div>
                 <Link 
                   to="/for-families/getting-started/free-consultation" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-3"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 text-lg px-8 py-3"
                 >
                   Schedule a Consultation
                 </Link>

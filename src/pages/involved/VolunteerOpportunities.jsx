@@ -15,15 +15,15 @@ const VolunteerOpportunities = () => {
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
         {formSubmitted ? (
-          <div className="bg-green-50 border border-green-200 rounded-lg p-8 mb-8">
-            <h2 className="text-2xl font-bold text-green-800 mb-4 text-center">Thank You for Your Interest in Volunteering!</h2>
+          <div className="bg-primary-orange-50 border border-primary-orange-200 rounded-lg p-8 mb-8">
+            <h2 className="text-2xl font-bold text-primary-orange-800 mb-4 text-center">Thank You for Your Interest in Volunteering!</h2>
             <p className="text-lg text-center mb-6">
               We've received your volunteer application and will contact you soon about opportunities at Now I Can.
             </p>
             <p className="text-center">
               <button
                 onClick={() => setFormSubmitted(false)}
-                className="btn bg-blue-600 text-white hover:bg-blue-700 mt-4"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 mt-4"
               >
                 Return to Volunteer Information
               </button>
@@ -146,8 +146,8 @@ const VolunteerOpportunities = () => {
             </section>
             
             <section className="mb-12">
-              <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
-                <h2 className="text-2xl font-bold text-blue-800 mb-4">Volunteer Requirements</h2>
+              <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
+                <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Volunteer Requirements</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-lg font-bold mb-3">General Requirements:</h3>
@@ -206,7 +206,7 @@ const VolunteerOpportunities = () => {
                   {/* Sliding Background */}
                   <span 
                     className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                      location === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                      location === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                     }`}
                   ></span>
                 </div>
@@ -225,7 +225,7 @@ const VolunteerOpportunities = () => {
                       <input
                         type="text"
                         id="firstName"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                         required
                       />
                     </div>
@@ -236,7 +236,7 @@ const VolunteerOpportunities = () => {
                       <input
                         type="text"
                         id="lastName"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                         required
                       />
                     </div>
@@ -250,7 +250,7 @@ const VolunteerOpportunities = () => {
                       <input
                         type="email"
                         id="email"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                         required
                       />
                     </div>
@@ -261,7 +261,7 @@ const VolunteerOpportunities = () => {
                       <input
                         type="tel"
                         id="phone"
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                         required
                       />
                     </div>
@@ -277,7 +277,7 @@ const VolunteerOpportunities = () => {
                           id="therapy-assistant"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="therapy-assistant" className="ml-2 block text-sm text-gray-700">
                           Therapy Assistant
@@ -288,7 +288,7 @@ const VolunteerOpportunities = () => {
                           id="administrative"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="administrative" className="ml-2 block text-sm text-gray-700">
                           Administrative Support
@@ -299,7 +299,7 @@ const VolunteerOpportunities = () => {
                           id="events"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="events" className="ml-2 block text-sm text-gray-700">
                           Special Events
@@ -310,7 +310,7 @@ const VolunteerOpportunities = () => {
                           id="maintenance"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="maintenance" className="ml-2 block text-sm text-gray-700">
                           Facility Maintenance
@@ -321,7 +321,7 @@ const VolunteerOpportunities = () => {
                           id="family-support"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="family-support" className="ml-2 block text-sm text-gray-700">
                           Family Support
@@ -332,7 +332,7 @@ const VolunteerOpportunities = () => {
                           id="professional"
                           name="interests"
                           type="checkbox"
-                          className="h-4 w-4 mt-1 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                          className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="professional" className="ml-2 block text-sm text-gray-700">
                           Professional Services
@@ -347,7 +347,7 @@ const VolunteerOpportunities = () => {
                     </label>
                     <select
                       id="availability"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                       required
                     >
                       <option value="">Please select</option>
@@ -365,7 +365,7 @@ const VolunteerOpportunities = () => {
                     <textarea
                       id="experience"
                       rows={4}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                       placeholder="Please share any relevant experience, skills, or qualifications you have."
                     />
                   </div>
@@ -377,7 +377,7 @@ const VolunteerOpportunities = () => {
                     <textarea
                       id="motivation"
                       rows={4}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
                       placeholder="Please share your motivation for volunteering with us."
                       required
                     />
@@ -387,7 +387,7 @@ const VolunteerOpportunities = () => {
                     <button
                       type="submit"
                       className={`btn text-white text-lg px-8 py-3 rounded-lg ${
-                        location === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                        location === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
                       }`}
                     >
                       Submit Volunteer Application
@@ -401,22 +401,22 @@ const VolunteerOpportunities = () => {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-4 text-center">Volunteer Benefits</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Make a Difference</h3>
+                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Make a Difference</h3>
                     <p>
                       Directly contribute to improving the lives of children with disabilities and their families. 
                       See firsthand the progress and joy that intensive therapy brings.
                     </p>
                   </div>
-                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Gain Experience</h3>
+                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Gain Experience</h3>
                     <p>
                       Develop valuable skills and experience in healthcare, nonprofit operations, or your area of 
                       expertise. Perfect for students in related fields.
                     </p>
                   </div>
-                  <div className={`${location === 'utah' ? 'bg-blue-50 border-blue-100' : 'bg-purple-50 border-purple-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-blue-800' : 'text-purple-800'}`}>Join Our Community</h3>
+                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
+                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Join Our Community</h3>
                     <p>
                       Become part of the Now I Can family—a community of dedicated professionals, volunteers, 
                       and families working together to change lives.
@@ -425,7 +425,7 @@ const VolunteerOpportunities = () => {
                 </div>
                 <p className="text-lg text-center mt-8">
                   Have questions about volunteering? Contact us at{' '}
-                  <a href={`mailto:${location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}`} className={`${location === 'utah' ? 'text-blue-600 hover:text-blue-800' : 'text-purple-600 hover:text-purple-800'}`}>
+                  <a href={`mailto:${location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}`} className={`${location === 'utah' ? 'text-primary-blue-600 hover:text-primary-blue-800' : 'text-primary-orange-600 hover:text-primary-orange-800'}`}>
                     {location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}
                   </a>{' '}
                   or call {location === 'utah' ? '(801) 228-1935' : '(717) 269-5829'}.

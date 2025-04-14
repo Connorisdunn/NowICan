@@ -1,58 +1,42 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --color-primary-blue: #3490dc;
-  --color-primary-green: #38c172;
-  --color-primary-purple: #9561e2;
-  --color-primary-coral: #f66d9b;
-  
-  --color-secondary-blue: #2779bd;
-  --color-secondary-green: #1f9d55;
-  --color-secondary-purple: #794acf;
-  --color-secondary-coral: #eb5286;
-  
-  --color-light-blue: #6cb2eb;
-  --color-light-green: #a3e635;
-  --color-light-purple: #b794f4;
-  --color-light-coral: #f8a5c2;
-  
-  --color-text-dark: #2d3748;
-  --color-text-light: #f7fafc;
-}
+  /* New CSS Variables */
+  --color-primary-blue: #38bdf8; /* sky-400 */
+  --color-secondary-blue: #0284c7; /* sky-600 */
+  --color-primary-orange: #fb923c; /* orange-400 */
+  --color-secondary-orange: #f97316; /* orange-500 */
+
+  --color-light-blue: #7dd3fc;  /* sky-300 */
+  --color-light-orange: #fdba74; /* orange-300 */
+
+  --color-text-dark: #1f2937;  /* gray-800 */
+  --color-text-light: #f9fafb; /* gray-50 */}
 
 @layer base {
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
     @apply font-sans text-gray-800 bg-white m-0 min-h-screen;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-semibold leading-tight;
   }
-  
-  h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
-  }
-  
-  h2 {
-    @apply text-3xl md:text-4xl;
-  }
-  
-  h3 {
-    @apply text-2xl md:text-3xl;
-  }
-  
-  p {
-    @apply mb-4 leading-relaxed;
-  }
-  
+
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  p { @apply mb-4 leading-relaxed; }
+
   a {
-    @apply text-blue-600 hover:text-blue-800 transition duration-200;
+    /* Use the new primary blue for links */
+    @apply text-primary-blue-600 hover:text-primary-blue-700 transition duration-200;
   }
 }
 
@@ -60,93 +44,59 @@
   .btn {
     @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-lg font-medium shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
-  
+
+  /* Updated Button Styles */
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+    @apply bg-primary-blue-500 text-white hover:bg-primary-blue-600 focus:ring-primary-blue-500;
   }
-  
+
   .btn-secondary {
-    @apply bg-purple-600 text-white hover:bg-purple-700 focus:ring-purple-500;
+    /* Let's use orange for secondary */
+    @apply bg-primary-orange-400 text-white hover:bg-primary-orange-500 focus:ring-primary-orange-400;
   }
-  
-  .btn-accent {
-    @apply bg-coral-500 text-white hover:bg-coral-600 focus:ring-coral-400;
-  }
-  
-  .btn-green {
-    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
-  }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section {
     @apply py-12 md:py-20;
   }
-  
+
   .card {
     @apply bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-lg;
   }
-  
-  .form-input {
-    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+
+  .form-input, .form-textarea, .form-select {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-blue-500 focus:ring-primary-blue-500;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-coral-500;
+    /* New gradient using blue and orange */
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-blue-500 to-primary-orange-500;
   }
 }
 
-/* Custom font family */
-@font-face {
-  font-family: 'Poppins';
-  font-display: swap;
-}
+/* Custom font family (remains the same) */
+@font-face { font-family: 'Poppins'; font-display: swap; }
+@font-face { font-family: 'Inter'; font-display: swap; }
+.font-sans { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+.font-heading { font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
 
-@font-face {
-  font-family: 'Inter';
-  font-display: swap;
-}
-
-.font-sans {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-.font-heading {
-  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* Custom utility classes */
+/* Update custom gradients */
 .bg-gradient-primary {
-  background: linear-gradient(90deg, var(--color-primary-blue), var(--color-primary-green), var(--color-primary-purple), var(--color-primary-coral));
+  background: linear-gradient(90deg, var(--color-primary-blue), var(--color-primary-orange));
 }
 
 .bg-gradient-secondary {
-  background: linear-gradient(90deg, var(--color-light-blue), var(--color-light-green), var(--color-light-purple), var(--color-light-coral));
+  background: linear-gradient(90deg, var(--color-light-blue), var(--color-light-orange));
 }
 
-/* Custom animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Custom animations (remains the same) */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
 
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-out forwards;
-}
-
-/* Responsive fixes */
-@media (max-width: 768px) {
-  body {
-    @apply text-base;
-  }
-}
+/* Responsive fixes (remains the same) */
+@media (max-width: 768px) { body { @apply text-base; } }

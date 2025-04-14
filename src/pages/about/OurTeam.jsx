@@ -199,7 +199,7 @@ const OurTeam = () => {
           <button
             className={`mr-2 py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'therapists'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('therapists')}
@@ -209,7 +209,7 @@ const OurTeam = () => {
           <button
             className={`py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'board'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('board')}
@@ -250,7 +250,7 @@ const OurTeam = () => {
                 {/* Sliding Background */}
                 <span 
                   className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                    selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                    selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                   }`}
                 ></span>
               </div>
@@ -259,7 +259,7 @@ const OurTeam = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {filteredTherapists.map((therapist, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <div className={`h-3 ${therapist.location === 'utah' ? 'bg-blue-600' : 'bg-purple-600'}`}></div>
+                  <div className={`h-3 ${therapist.location === 'utah' ? 'bg-primary-blue-600' : 'bg-primary-orange-600'}`}></div>
                   <div className="p-6">
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 flex justify-center">
@@ -281,7 +281,7 @@ const OurTeam = () => {
                       </div>
                       <div className="md:w-2/3">
                         <h2 className="text-xl font-bold mb-1">{therapist.name}</h2>
-                        <p className={`text-sm font-medium mb-4 ${therapist.location === 'utah' ? 'text-blue-600' : 'text-purple-600'}`}>
+                        <p className={`text-sm font-medium mb-4 ${therapist.location === 'utah' ? 'text-primary-blue-600' : 'text-primary-orange-600'}`}>
                           {therapist.title}
                         </p>
                         <div className="space-y-3">
@@ -298,7 +298,7 @@ const OurTeam = () => {
               ))}
             </div>
             
-            <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
+            <div className="mt-12 bg-primary-blue-50 rounded-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
               <p className="text-lg mb-6">
                 We're always looking for talented and passionate physical therapists and staff<br></br>
@@ -306,7 +306,7 @@ const OurTeam = () => {
               </p>
               <Link 
                 to="/contact-us" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
               >
                 Contact Us About Opportunities
               </Link>
@@ -320,7 +320,7 @@ const OurTeam = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {boardMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <div className="h-3 bg-blue-600"></div>
+                  <div className="h-3 bg-primary-blue-600"></div>
                   <div className="p-6">
                     <div className="flex flex-col gap-4">
                       <div>
@@ -330,7 +330,7 @@ const OurTeam = () => {
                             src={member.image} 
                             alt={`${member.name}`} 
                             className="w-full h-48 rounded-lg object-contain mb-4"
-                            //className="w-50 h-50 rounded-full object-contain border-4 border-blue-600"
+                            //className="w-50 h-50 rounded-full object-contain border-4 border-primary-blue-600"
                             onError={(e) => {
                               e.target.onerror = null;
                               e.target.src = defaultBoardImage;
@@ -351,7 +351,7 @@ const OurTeam = () => {
               ))}
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-8 text-center">
+            <div className="bg-primary-blue-50 rounded-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Join Our Mission</h2>
               <p className="text-lg mb-6">
                 Our board members volunteer their time and expertise to help Now I Can Foundation fulfill its mission.<br></br>

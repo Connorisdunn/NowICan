@@ -53,7 +53,7 @@ const FinancialSupport = () => {
           <button
             className={`mr-2 py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'payment-options'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('payment-options')}
@@ -63,7 +63,7 @@ const FinancialSupport = () => {
           <button
             className={`py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'therapy-grants'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('therapy-grants')}
@@ -110,7 +110,7 @@ const FinancialSupport = () => {
                   {/* Sliding Background */}
                   <span 
                     className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                      selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                      selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                     }`}
                   ></span>
                 </div>
@@ -122,7 +122,7 @@ const FinancialSupport = () => {
                   target="_blank"
                   rel="noopener noreferrer" 
                   className={`btn text-white text-lg px-8 py-3 ${
-                    selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                    selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
                   }`}
                 >
                   Proceed to Payment Portal
@@ -220,7 +220,7 @@ const FinancialSupport = () => {
                           {/* Sliding Background */}
                           <span 
                             className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                              selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                              selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                             }`}
                           ></span>
                         </div>
@@ -230,7 +230,7 @@ const FinancialSupport = () => {
                     <div className="flex justify-center">
                       <button 
                         className={`btn text-white text-lg px-8 py-3 ${
-                          selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                          selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
                         }`}
                         onClick={() => setShowGrantForm(true)}
                       >
@@ -863,7 +863,7 @@ const FinancialSupport = () => {
                           <button 
                             type="submit" 
                             className={`px-6 py-2 rounded-md text-white ${
-                              selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                              selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
                             }`}
                           >
                             Submit Application
@@ -879,7 +879,7 @@ const FinancialSupport = () => {
         )}
         
         {activeTab === 'payment-options' && (
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 rounded-lg p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-4">Learn About Financial Assistance</h2>
             <p className="text-lg mb-6">
               Need help with therapy costs? Our Ability Fund provides grants to eligible families to help cover treatment expenses.
@@ -890,7 +890,7 @@ const FinancialSupport = () => {
                 setActiveTab('therapy-grants');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }} 
-              className="btn bg-white text-blue-600 hover:bg-blue-50"
+              className="btn bg-white text-primary-blue-600 hover:bg-primary-blue-50"
             >
               Explore Grant Opportunities
             </button>

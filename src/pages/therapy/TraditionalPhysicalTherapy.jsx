@@ -111,16 +111,16 @@ const TraditionalPhysicalTherapy = () => {
           </div>
         </section>
         
-        <section className="bg-blue-50 rounded-lg p-8 border border-blue-100 mb-12">
+        <section className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100 mb-12">
           <div className="flex flex-col items-center">
-            <h2 className="text-3xl font-bold text-blue-800 mb-6">Get Started Today</h2>
+            <h2 className="text-3xl font-bold text-primary-blue-800 mb-6">Get Started Today</h2>
             <p className="text-xl text-center mb-8 max-w-3xl">
               The team at Now I Can looks forward to speaking with you to discuss how your child can reach their highest potential. 
               Schedule a free consultation now!
             </p>
             <Link 
               to="/for-families/getting-started/free-consultation" 
-              className="btn bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-3"
+              className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 text-lg px-8 py-3"
             >
               Schedule a Consultation
             </Link>
@@ -147,7 +147,7 @@ const TraditionalPhysicalTherapy = () => {
             <div className="flex justify-center">
               <Link 
                 to="/therapy-services/intensive-physical-therapy" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 mr-4"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 mr-4"
               >
                 Learn About Intensive Therapy
               </Link>

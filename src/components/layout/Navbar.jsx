@@ -108,8 +108,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold font-heading text-blue-600">Now I Can</span>
-            <span className="ml-1 text-sm font-medium text-purple-500">Foundation</span>
+            <span className="text-2xl font-bold font-heading text-primary-blue-600">Now I Can</span>
+            <span className="ml-1 text-sm font-medium text-primary-orange-500">Foundation</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -128,8 +128,8 @@ const Navbar = () => {
                       to={item.path}
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center
                         ${location.pathname === item.path || location.pathname.startsWith(item.path + '/') 
-                          ? 'text-blue-600' 
-                          : 'text-gray-700 hover:text-blue-600'}`}
+                          ? 'text-primary-blue-600' 
+                          : 'text-gray-700 hover:text-primary-blue-600'}`}
                       aria-expanded={activeDropdown === index}
                       aria-haspopup={item.dropdown ? "true" : "false"}
                     >
@@ -152,8 +152,8 @@ const Navbar = () => {
                     <div
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center cursor-pointer
                         ${location.pathname === item.path || location.pathname.startsWith(item.path + '/') 
-                          ? 'text-blue-600' 
-                          : 'text-gray-700 hover:text-blue-600'}`}
+                          ? 'text-primary-blue-600' 
+                          : 'text-gray-700 hover:text-primary-blue-600'}`}
                       aria-expanded={activeDropdown === index}
                       aria-haspopup={item.dropdown ? "true" : "false"}
                     >
@@ -189,8 +189,8 @@ const Navbar = () => {
                           <Link
                             key={dropdownIndex}
                             to={dropdownItem.path}
-                            className={`block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600
-                              ${location.pathname === dropdownItem.path ? 'bg-blue-50 text-blue-600' : ''}`}
+                            className={`block px-4 py-2 text-sm text-gray-700 hover:bg-primary-blue-50 hover:text-primary-blue-600
+                              ${location.pathname === dropdownItem.path ? 'bg-primary-blue-50 text-primary-blue-600' : ''}`}
                             role="menuitem"
                           >
                             {dropdownItem.name}
@@ -217,7 +217,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden inline-flex items-center justify-center p-3 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="lg:hidden inline-flex items-center justify-center p-3 rounded-md text-gray-700 hover:text-primary-blue-600 focus:outline-none focus:ring-2 focus:ring-primary-blue-500"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -254,8 +254,8 @@ const Navbar = () => {
                     to={item.path}
                     className={`block px-3 py-2 rounded-md text-base font-medium ${
                       location.pathname === item.path
-                        ? 'bg-blue-50 text-blue-600'
-                        : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                        ? 'bg-primary-blue-50 text-primary-blue-600'
+                        : 'text-gray-700 hover:bg-primary-blue-50 hover:text-primary-blue-600'
                     }`}
                     onClick={() => !item.dropdown && setIsMenuOpen(false)}
                   >
@@ -265,8 +265,8 @@ const Navbar = () => {
                   <div
                     className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer ${
                       location.pathname === item.path
-                        ? 'bg-blue-50 text-blue-600'
-                        : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                        ? 'bg-primary-blue-50 text-primary-blue-600'
+                        : 'text-gray-700 hover:bg-primary-blue-50 hover:text-primary-blue-600'
                     }`}
                   >
                     {item.title}
@@ -275,7 +275,7 @@ const Navbar = () => {
                 {item.dropdown && (
                   <button
                     onClick={() => toggleMobileDropdown(index)}
-                    className="px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none"
+                    className="px-3 py-2 text-gray-700 hover:text-primary-blue-600 focus:outline-none"
                     aria-expanded={activeDropdown === index}
                   >
                     <svg
@@ -303,8 +303,8 @@ const Navbar = () => {
                       to={dropdownItem.path}
                       className={`block px-3 py-2 rounded-md text-sm font-medium ${
                         location.pathname === dropdownItem.path
-                          ? 'bg-blue-50 text-blue-600'
-                          : 'text-gray-600 hover:bg-blue-50 hover:text-blue-600'
+                          ? 'bg-primary-blue-50 text-primary-blue-600'
+                          : 'text-gray-600 hover:bg-primary-blue-50 hover:text-primary-blue-600'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >

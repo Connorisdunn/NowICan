@@ -27,9 +27,9 @@ const WaitListInfo = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6">
+      <div className="bg-gradient-to-r from-primary-blue-500 to-primary-orange-500 p-6">
         <h3 className="text-xl font-bold text-white">Waitlist Information</h3>
-        <p className="text-blue-100 mt-2">
+        <p className="text-primary-blue-100 mt-2">
           How our waitlist process works and what to expect when you join.
         </p>
       </div>
@@ -45,7 +45,7 @@ const WaitListInfo = () => {
           {waitlistSteps.map((step, index) => (
             <div key={index} className="flex">
               <div className="flex-shrink-0 mt-1">
-                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-blue-100 text-primary-blue-600 font-semibold text-sm">
                   {index + 1}
                 </div>
               </div>
@@ -57,8 +57,8 @@ const WaitListInfo = () => {
           ))}
         </div>
         
-        <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-          <h4 className="font-bold text-blue-800 mb-3">Waitlist Policies</h4>
+        <div className="bg-primary-blue-50 rounded-lg p-6 border border-primary-blue-100">
+          <h4 className="font-bold text-primary-blue-800 mb-3">Waitlist Policies</h4>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
               We maintain separate waitlists for each session date and location.
@@ -81,13 +81,13 @@ const WaitListInfo = () => {
         <div className="mt-8 text-center">
           <Link 
             to="/for-families/getting-started/free-consultation" 
-            className="btn bg-blue-600 hover:bg-blue-700 text-white inline-block"
+            className="btn bg-primary-blue-600 hover:bg-primary-blue-700 text-white inline-block"
           >
             Join the Waitlist
           </Link>
           <p className="mt-4 text-sm text-gray-600">
             Questions about the waitlist? Contact us directly at{" "}
-            <a href="mailto:info@nowican.org" className="text-blue-600 hover:text-blue-800">
+            <a href="mailto:info@nowican.org" className="text-primary-blue-600 hover:text-primary-blue-800">
               info@nowican.org
             </a>
           </p>

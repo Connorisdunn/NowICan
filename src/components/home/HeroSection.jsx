@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-[85vh] overflow-hidden">
       {/* Video background with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-purple-900/80 to-coral-600/80 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-blue-800/80 to-primary-orange-700/80 z-10"></div>
       <div className="absolute pt-16 inset-0 overflow-hidden">
         <div className="relative h-full w-full">
           {/* Video player */}
@@ -51,16 +51,16 @@ const HeroSection = () => {
         <div className="max-w-2xl pt-32 md:pt-40">
           <div className="animate-fadeIn">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-heading mb-4 md:mb-6 leading-tight">
-              Helping Children <span className="text-gradient bg-gradient-to-r from-blue-300 via-green-300 to-coral-300 pl-4 md:pl-12">Move Mountains</span>
+              Helping Children <span className="text-gradient bg-gradient-to-r from-primary-blue-300 to-primary-orange-300 pl-4 md:pl-12">Move Mountains</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-white mb-6 md:mb-8 max-w-2xl">
               At Now I Can Foundation, we help children with disabilities reach their full potential through innovative physical therapy services.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-              <Link to="/for-families/getting-started/free-consultation" className="btn bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30 transform transition duration-300 hover:-translate-y-1 text-center">
+              <Link to="/for-families/getting-started/free-consultation" className="btn bg-primary-blue-500 hover:bg-primary-blue-600 shadow-lg shadow-primary-blue-500/30 transform transition duration-300 hover:-translate-y-1 text-center">
                 <span className="text-white">Free Consultation</span>
               </Link>
-              <Link to="/get-involved" className="btn bg-purple-600 hover:bg-purple-700 shadow-lg shadow-purple-500/30 transform transition duration-300 hover:-translate-y-1 text-center">
+              <Link to="/get-involved" className="btn bg-primary-orange-400 hover:bg-primary-orange-500 shadow-lg shadow-primary-orange-500/30 transform transition duration-300 hover:-translate-y-1 text-center">
                 <span className="text-white">Get Involved</span>
               </Link>
             </div>

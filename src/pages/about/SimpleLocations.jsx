@@ -23,24 +23,24 @@ const SimpleLocations = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4">Now I Can - Utah</h2>
               <div className="mb-6">
-                <h3 className="text-lg font-medium mb-2 text-blue-600">Location</h3>
+                <h3 className="text-lg font-medium mb-2 text-primary-blue-600">Location</h3>
                 <address className="not-italic text-gray-700">
                   <p className="mb-1">1950 S 375 E</p>
                   <p className="mb-3">Orem, UT 84058</p>
                   <p className="mb-1">
-                    <a href="tel:+18012281935" className="text-blue-600 hover:text-blue-800">
+                    <a href="tel:+18012281935" className="text-primary-blue-600 hover:text-primary-blue-800">
                       (801) 228-1935
                     </a>
                   </p>
                   <p>
-                    <a href="mailto:info@nowican.org" className="text-blue-600 hover:text-blue-800">
+                    <a href="mailto:info@nowican.org" className="text-primary-blue-600 hover:text-primary-blue-800">
                       info@nowican.org
                     </a>
                   </p>
                 </address>
               </div>
               <div className="mb-4">
-                <h3 className="text-lg font-medium mb-2 text-blue-600">About Our Facility</h3>
+                <h3 className="text-lg font-medium mb-2 text-primary-blue-600">About Our Facility</h3>
                 <p className="text-gray-700 mb-4">
                   Our Utah location offers state-of-the-art therapy services in a beautiful setting at the base of the Wasatch Mountains.
                 </p>
@@ -63,24 +63,24 @@ const SimpleLocations = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4">Now I Can - Pennsylvania</h2>
               <div className="mb-6">
-                <h3 className="text-lg font-medium mb-2 text-purple-600">Location</h3>
+                <h3 className="text-lg font-medium mb-2 text-primary-orange-600">Location</h3>
                 <address className="not-italic text-gray-700">
                   <p className="mb-1">100 West Millport Road</p>
                   <p className="mb-3">Lititz, PA 17543</p>
                   <p className="mb-1">
-                    <a href="tel:+17172695829" className="text-purple-600 hover:text-purple-800">
+                    <a href="tel:+17172695829" className="text-primary-orange-600 hover:text-primary-orange-800">
                       (717) 269-5829
                     </a>
                   </p>
                   <p>
-                    <a href="mailto:allison@nowican.org" className="text-purple-600 hover:text-purple-800">
+                    <a href="mailto:allison@nowican.org" className="text-primary-orange-600 hover:text-primary-orange-800">
                       allison@nowican.org
                     </a>
                   </p>
                 </address>
               </div>
               <div className="mb-4">
-                <h3 className="text-lg font-medium mb-2 text-purple-600">About Our Facility</h3>
+                <h3 className="text-lg font-medium mb-2 text-primary-orange-600">About Our Facility</h3>
                 <p className="text-gray-700 mb-4">
                   Our Pennsylvania location is in Lititz, voted "America's Coolest Small Town," with picturesque streets, shops, and unique eateries.
                 </p>
@@ -96,13 +96,13 @@ const SimpleLocations = () => {
         <div className="text-center mb-12">
           <Link 
             to="/for-families/getting-started/free-consultation" 
-            className="btn bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg inline-block font-medium shadow-md"
+            className="btn bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 text-white hover:from-primary-blue-700 hover:to-primary-orange-700 px-8 py-3 rounded-lg inline-block font-medium shadow-md"
           >
             Schedule a Free Consultation
           </Link>
         </div>
         
-        <div className="bg-blue-50 rounded-lg p-8 mb-12">
+        <div className="bg-primary-blue-50 rounded-lg p-8 mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">Accommodations & Local Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md p-6">
@@ -125,7 +125,7 @@ const SimpleLocations = () => {
               </ul>
               <Link 
                 to="/for-families/accommodations" 
-                className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                className="text-primary-blue-600 hover:text-primary-blue-800 font-medium flex items-center"
               >
                 View All Accommodations
                 <svg className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -169,7 +169,7 @@ const SimpleLocations = () => {
               <div className="mt-4">
                 <Link 
                   to="/for-families/accommodations/local-activities" 
-                  className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                  className="text-primary-blue-600 hover:text-primary-blue-800 font-medium flex items-center"
                 >
                   Explore All Activities
                   <svg className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -181,7 +181,7 @@ const SimpleLocations = () => {
           </div>
         </div>
         
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 rounded-lg p-8 text-white text-center">
           <h2 className="text-2xl font-bold mb-4">Ready to Begin Your Journey with Now I Can?</h2>
           <p className="text-lg mb-6">
             Contact us today to learn more about our therapy services or to schedule a consultation at either of our locations.
@@ -189,7 +189,7 @@ const SimpleLocations = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/for-families/getting-started/free-consultation" 
-              className="btn bg-blue-500 text-blue-600 hover:bg-blue-600"
+              className="btn bg-primary-blue-500 text-primary-blue-600 hover:bg-primary-blue-600"
             >
               Schedule a Consultation
             </Link>

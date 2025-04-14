@@ -43,18 +43,18 @@ const OurDonors = () => {
           </p>
         </div>
 
-        <div className="bg-blue-50 rounded-lg p-8 mb-12 text-center border border-blue-100">
-          <div className="w-20 h-20 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mx-auto mb-4">
+        <div className="bg-primary-blue-50 rounded-lg p-8 mb-12 text-center border border-primary-blue-100">
+          <div className="w-20 h-20 rounded-full bg-primary-blue-100 text-primary-blue-600 flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
             </svg>
           </div>
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Join Our Mission</h2>
-          <p className="text-lg text-blue-700 mb-6 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-primary-blue-800 mb-4">Join Our Mission</h2>
+          <p className="text-lg text-primary-blue-700 mb-6 max-w-2xl mx-auto">
             Every donation helps children with disabilities reach their full potential and gain independence.
             Your support makes transformative therapy possible.
           </p>
-          <Link to="/get-involved/donate" className="btn bg-blue-600 hover:bg-blue-700 text-white">
+          <Link to="/get-involved/donate" className="btn bg-primary-blue-600 hover:bg-primary-blue-700 text-white">
             Become a Donor
           </Link>
         </div>
@@ -74,7 +74,7 @@ const OurDonors = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {/* Foundational Donors */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 py-4 px-6">
+            <div className="bg-gradient-to-r from-primary-orange-600 to-primary-blue-600 py-4 px-6">
               <h2 className="text-white text-xl font-bold">Foundational Donors</h2>
             </div>
             <div className="p-6">
@@ -84,7 +84,7 @@ const OurDonors = () => {
                     <div className="flex justify-between items-center">
                       <span className="font-medium">{donor.name}</span>
                       <span className={`text-sm px-2 py-1 rounded-full ${
-                        donor.level === 'Platinum' ? 'bg-blue-100 text-blue-800' :
+                        donor.level === 'Platinum' ? 'bg-primary-blue-100 text-primary-blue-800' :
                         donor.level === 'Gold' ? 'bg-yellow-100 text-yellow-800' :
                         'bg-gray-100 text-gray-800'
                       }`}>
@@ -99,7 +99,7 @@ const OurDonors = () => {
 
           {/* Corporate Donors */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 py-4 px-6">
+            <div className="bg-gradient-to-r from-primary-orange-600 to-primary-blue-600 py-4 px-6">
               <h2 className="text-white text-xl font-bold">Corporate Partners</h2>
             </div>
             <div className="p-6">
@@ -118,7 +118,7 @@ const OurDonors = () => {
 
           {/* Individual Donors */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-coral-500 to-purple-600 py-4 px-6">
+            <div className="bg-gradient-to-r from-primary-orange-500 to-primary-orange-600 py-4 px-6">
               <h2 className="text-white text-xl font-bold">Individual Supporters</h2>
             </div>
             <div className="p-6">
@@ -140,11 +140,11 @@ const OurDonors = () => {
           <h2 className="text-2xl font-bold mb-6">Donor Recognition Levels</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-blue-800">Annual Giving Levels</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary-blue-800">Annual Giving Levels</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                    <span className="text-blue-600 text-xs font-bold">1</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-blue-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-blue-600 text-xs font-bold">1</span>
                   </div>
                   <div>
                     <span className="font-medium">Benefactor</span>
@@ -152,8 +152,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                    <span className="text-blue-600 text-xs font-bold">2</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-blue-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-blue-600 text-xs font-bold">2</span>
                   </div>
                   <div>
                     <span className="font-medium">Patron</span>
@@ -161,8 +161,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                    <span className="text-blue-600 text-xs font-bold">3</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-blue-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-blue-600 text-xs font-bold">3</span>
                   </div>
                   <div>
                     <span className="font-medium">Supporter</span>
@@ -170,8 +170,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                    <span className="text-blue-600 text-xs font-bold">4</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-blue-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-blue-600 text-xs font-bold">4</span>
                   </div>
                   <div>
                     <span className="font-medium">Friend</span>
@@ -182,11 +182,11 @@ const OurDonors = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-purple-800">Corporate Partnership Levels</h3>
+              <h3 className="text-xl font-semibold mb-4 text-primary-orange-800">Corporate Partnership Levels</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                    <span className="text-purple-600 text-xs font-bold">1</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-orange-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-orange-600 text-xs font-bold">1</span>
                   </div>
                   <div>
                     <span className="font-medium">Sustaining Partner</span>
@@ -194,8 +194,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                    <span className="text-purple-600 text-xs font-bold">2</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-orange-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-orange-600 text-xs font-bold">2</span>
                   </div>
                   <div>
                     <span className="font-medium">Annual Sponsor</span>
@@ -203,8 +203,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                    <span className="text-purple-600 text-xs font-bold">3</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-orange-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-orange-600 text-xs font-bold">3</span>
                   </div>
                   <div>
                     <span className="font-medium">Event Sponsor</span>
@@ -212,8 +212,8 @@ const OurDonors = () => {
                   </div>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                    <span className="text-purple-600 text-xs font-bold">4</span>
+                  <div className="w-6 h-6 rounded-full bg-primary-orange-100 flex items-center justify-center mr-3">
+                    <span className="text-primary-orange-600 text-xs font-bold">4</span>
                   </div>
                   <div>
                     <span className="font-medium">Project Sponsor</span>
@@ -226,14 +226,14 @@ const OurDonors = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 rounded-lg p-8 text-white text-center">
           <h2 className="text-2xl font-bold mb-4">Become Part of Our Story</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             Join our community of supporters who are making a difference in the lives of children with disabilities.
             Your donation, no matter the size, helps children reach their full potential.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/get-involved/donate" className="btn bg-white text-blue-600 hover:bg-blue-50">
+            <Link to="/get-involved/donate" className="btn bg-white text-primary-blue-600 hover:bg-primary-blue-50">
               Make a Donation
             </Link>
             <Link to="/contact-us" className="btn border border-white text-white hover:bg-white/10">

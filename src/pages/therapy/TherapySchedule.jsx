@@ -100,7 +100,7 @@ const TherapySchedule = () => {
   const getAvailabilityColor = (availability) => {
     switch (availability) {
       case 'Available':
-        return 'bg-green-100 text-green-800';
+        return 'bg-primary-orange-100 text-primary-orange-800';
       case 'Limited':
         return 'bg-yellow-100 text-yellow-800';
       case 'Full':
@@ -119,7 +119,7 @@ const TherapySchedule = () => {
               <h1 className="text-4xl font-bold font-heading">Therapy Schedule</h1>
               <button 
                 onClick={() => setShowWaitlistInfo(true)} 
-                className="btn bg-blue-600 hover:bg-blue-700 text-white"
+                className="btn bg-primary-blue-600 hover:bg-primary-blue-700 text-white"
               >
                 View Waitlist Information
               </button>
@@ -139,7 +139,7 @@ const TherapySchedule = () => {
                     <select
                       id="location"
                       name="location"
-                      className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                      className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm rounded-md"
                       value={selectedLocation}
                       onChange={(e) => handleLocationChange(e.target.value)}
                     >
@@ -157,7 +157,7 @@ const TherapySchedule = () => {
                     <select
                       id="year"
                       name="year"
-                      className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                      className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm rounded-md"
                       value={selectedYear}
                       onChange={(e) => handleYearChange(e.target.value)}
                     >
@@ -202,14 +202,14 @@ const TherapySchedule = () => {
                           {session.availability === 'Full' ? (
                             <button 
                               onClick={() => setShowWaitlistInfo(true)}
-                              className="text-blue-600 hover:text-blue-900"
+                              className="text-primary-blue-600 hover:text-primary-blue-900"
                             >
                               Join Waitlist
                             </button>
                           ) : (
                             <Link
                               to="/for-families/getting-started/free-consultation"
-                              className="text-blue-600 hover:text-blue-900"
+                              className="text-primary-blue-600 hover:text-primary-blue-900"
                             >
                               Request Session
                             </Link>
@@ -222,8 +222,8 @@ const TherapySchedule = () => {
               </div>
             </div>
             
-            <div className="bg-blue-50 rounded-lg p-8 border border-blue-100 mb-10">
-              <h2 className="text-2xl font-bold text-blue-800 mb-4">About Our Therapy Sessions</h2>
+            <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100 mb-10">
+              <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">About Our Therapy Sessions</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <div className="mb-4 h-48 overflow-hidden rounded-lg">
@@ -240,7 +240,7 @@ const TherapySchedule = () => {
                   </p>
                   <Link
                     to="/therapy-services/intensive-physical-therapy"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    className="text-primary-blue-600 hover:text-primary-blue-800 font-medium"
                   >
                     Learn more about Intensive Therapy →
                   </Link>
@@ -261,7 +261,7 @@ const TherapySchedule = () => {
                   </p>
                   <Link
                     to="/therapy-services/traditional-physical-therapy"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    className="text-primary-blue-600 hover:text-primary-blue-800 font-medium"
                   >
                     Learn more about Traditional Therapy →
                   </Link>
@@ -289,7 +289,7 @@ const TherapySchedule = () => {
                 <div className="mt-6">
                   <Link
                     to="/for-families/getting-started/free-consultation"
-                    className="btn bg-blue-600 text-white hover:bg-blue-700"
+                    className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
                   >
                     Schedule a Consultation
                   </Link>
@@ -318,7 +318,7 @@ const TherapySchedule = () => {
                 <div className="mt-6">
                   <button 
                     onClick={() => setShowWaitlistInfo(true)}
-                    className="text-blue-600 hover:text-blue-800 font-medium"
+                    className="text-primary-blue-600 hover:text-primary-blue-800 font-medium"
                   >
                     Learn more about our waitlist process →
                   </button>

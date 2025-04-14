@@ -53,7 +53,7 @@ const PaymentProcessor = () => {
   if (submitted) {
     return (
       <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-        <div className="w-16 h-16 bg-green-100 text-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="w-16 h-16 bg-primary-orange-100 text-primary-orange-700 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
@@ -62,8 +62,8 @@ const PaymentProcessor = () => {
         <p className="text-gray-600 mb-6">
           Thank you for your payment. A confirmation email has been sent to {formData.email}.
         </p>
-        <div className="bg-blue-50 rounded-lg p-6 border border-blue-100 mb-6 text-left">
-          <h3 className="font-semibold text-blue-800 mb-3">Payment Details</h3>
+        <div className="bg-primary-blue-50 rounded-lg p-6 border border-primary-blue-100 mb-6 text-left">
+          <h3 className="font-semibold text-primary-blue-800 mb-3">Payment Details</h3>
           <p className="text-gray-700">
             <span className="font-medium">Amount:</span> ${formData.amount}
           </p>
@@ -86,11 +86,11 @@ const PaymentProcessor = () => {
         </div>
         <p className="text-gray-600">
           If you have any questions about your payment, please contact us at{' '}
-          <a href="mailto:info@nowican.org" className="text-blue-600 hover:underline">info@nowican.org</a>.
+          <a href="mailto:info@nowican.org" className="text-primary-blue-600 hover:underline">info@nowican.org</a>.
         </p>
         <button 
           onClick={() => setSubmitted(false)} 
-          className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          className="mt-6 px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700"
         >
           Make Another Payment
         </button>
@@ -100,9 +100,9 @@ const PaymentProcessor = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6">
+      <div className="bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 p-6">
         <h2 className="text-2xl font-bold text-white">Make a Payment</h2>
-        <p className="text-blue-100 mt-2">
+        <p className="text-primary-blue-100 mt-2">
           Secure payment processing for therapy sessions and deposits.
         </p>
       </div>
@@ -116,7 +116,7 @@ const PaymentProcessor = () => {
             <label className="block text-sm font-medium text-gray-700 mb-2">Payment Type</label>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <div 
-                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'deposit' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'deposit' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                 onClick={() => handleInputChange({ target: { name: 'paymentType', value: 'deposit' } })}
               >
                 <div className="flex items-center space-x-2">
@@ -127,7 +127,7 @@ const PaymentProcessor = () => {
                     checked={formData.paymentType === 'deposit'} 
                     value="deposit"
                     onChange={handleInputChange}
-                    className="h-4 w-4 text-blue-600 border-gray-300"
+                    className="h-4 w-4 text-primary-blue-600 border-gray-300"
                   />
                   <label htmlFor="deposit" className="text-gray-900 font-medium">Therapy Deposit</label>
                 </div>
@@ -135,7 +135,7 @@ const PaymentProcessor = () => {
               </div>
               
               <div 
-                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'fullPayment' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'fullPayment' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                 onClick={() => handleInputChange({ target: { name: 'paymentType', value: 'fullPayment' } })}
               >
                 <div className="flex items-center space-x-2">
@@ -146,7 +146,7 @@ const PaymentProcessor = () => {
                     checked={formData.paymentType === 'fullPayment'} 
                     value="fullPayment"
                     onChange={handleInputChange}
-                    className="h-4 w-4 text-blue-600 border-gray-300"
+                    className="h-4 w-4 text-primary-blue-600 border-gray-300"
                   />
                   <label htmlFor="fullPayment" className="text-gray-900 font-medium">Full Session Payment</label>
                 </div>
@@ -154,7 +154,7 @@ const PaymentProcessor = () => {
               </div>
               
               <div 
-                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'custom' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentType === 'custom' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                 onClick={() => handleInputChange({ target: { name: 'paymentType', value: 'custom' } })}
               >
                 <div className="flex items-center space-x-2">
@@ -165,7 +165,7 @@ const PaymentProcessor = () => {
                     checked={formData.paymentType === 'custom'} 
                     value="custom"
                     onChange={handleInputChange}
-                    className="h-4 w-4 text-blue-600 border-gray-300"
+                    className="h-4 w-4 text-primary-blue-600 border-gray-300"
                   />
                   <label htmlFor="custom" className="text-gray-900 font-medium">Custom Amount</label>
                 </div>
@@ -202,7 +202,7 @@ const PaymentProcessor = () => {
             <label className="block text-sm font-medium text-gray-700 mb-2">Payment Method</label>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div 
-                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentMethod === 'creditCard' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentMethod === 'creditCard' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                 onClick={() => handleInputChange({ target: { name: 'paymentMethod', value: 'creditCard' } })}
               >
                 <div className="flex items-center">
@@ -213,7 +213,7 @@ const PaymentProcessor = () => {
                     checked={formData.paymentMethod === 'creditCard'} 
                     value="creditCard"
                     onChange={handleInputChange}
-                    className="h-4 w-4 text-blue-600 border-gray-300"
+                    className="h-4 w-4 text-primary-blue-600 border-gray-300"
                   />
                   <label htmlFor="creditCard" className="ml-3 block text-sm font-medium text-gray-700">
                     Credit or Debit Card
@@ -222,7 +222,7 @@ const PaymentProcessor = () => {
               </div>
               
               <div 
-                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentMethod === 'ach' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                className={`border rounded-lg p-4 cursor-pointer ${formData.paymentMethod === 'ach' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                 onClick={() => handleInputChange({ target: { name: 'paymentMethod', value: 'ach' } })}
               >
                 <div className="flex items-center">
@@ -233,7 +233,7 @@ const PaymentProcessor = () => {
                     checked={formData.paymentMethod === 'ach'} 
                     value="ach"
                     onChange={handleInputChange}
-                    className="h-4 w-4 text-blue-600 border-gray-300"
+                    className="h-4 w-4 text-primary-blue-600 border-gray-300"
                   />
                   <label htmlFor="ach" className="ml-3 block text-sm font-medium text-gray-700">
                     Bank Transfer (ACH)
@@ -258,7 +258,7 @@ const PaymentProcessor = () => {
                     placeholder="1234 5678 9012 3456"
                     value={formData.cardNumber}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                   />
                 </div>
                 
@@ -272,7 +272,7 @@ const PaymentProcessor = () => {
                       placeholder="MM/YY"
                       value={formData.cardExpiry}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     />
                   </div>
                   
@@ -285,7 +285,7 @@ const PaymentProcessor = () => {
                       placeholder="123"
                       value={formData.cardCvc}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     />
                   </div>
                 </div>
@@ -299,7 +299,7 @@ const PaymentProcessor = () => {
               <h3 className="text-lg font-medium text-gray-900 mb-4">Bank Account Information</h3>
               
               <div className="space-y-4">
-                <p className="text-sm text-blue-700 bg-blue-50 p-3 rounded-md border border-blue-100">
+                <p className="text-sm text-primary-blue-700 bg-primary-blue-50 p-3 rounded-md border border-primary-blue-100">
                   For demonstration purposes, we're not collecting actual bank details in this form. 
                   In a real implementation, this would include secure routing and account number collection.
                 </p>
@@ -320,7 +320,7 @@ const PaymentProcessor = () => {
                   name="name" 
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                   required
                 />
               </div>
@@ -333,7 +333,7 @@ const PaymentProcessor = () => {
                   name="email" 
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                   required
                 />
               </div>
@@ -346,7 +346,7 @@ const PaymentProcessor = () => {
                   name="phone" 
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -365,7 +365,7 @@ const PaymentProcessor = () => {
                   name="patientName" 
                   value={formData.patientName}
                   onChange={handleInputChange}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                 />
               </div>
               
@@ -378,7 +378,7 @@ const PaymentProcessor = () => {
                   placeholder="e.g., July 8-26, 2024"
                   value={formData.therapyDates}
                   onChange={handleInputChange}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                 />
               </div>
             </div>
@@ -391,7 +391,7 @@ const PaymentProcessor = () => {
                 rows="3" 
                 value={formData.notes}
                 onChange={handleInputChange}
-                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                 placeholder="Any additional information about this payment"
               ></textarea>
             </div>
@@ -401,7 +401,7 @@ const PaymentProcessor = () => {
           <div className="pt-4">
             <button 
               type="submit" 
-              className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-md shadow-sm text-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="w-full py-3 px-4 bg-primary-blue-600 hover:bg-primary-blue-700 text-white rounded-md shadow-sm text-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue-500"
             >
               Process Payment
             </button>

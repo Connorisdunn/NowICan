@@ -34,13 +34,13 @@ const LocalActivities = () => {
         <section className="mb-10">
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center mb-8">
             <button 
-              className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'utah' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'utah' ? 'bg-primary-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
               onClick={() => setSelectedLocation('utah')}
             >
               Utah (Orem) Location
             </button>
             <button 
-              className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'pennsylvania' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+              className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'pennsylvania' ? 'bg-primary-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
               onClick={() => setSelectedLocation('pennsylvania')}
             >
               Pennsylvania (Lititz) Location
@@ -308,8 +308,8 @@ const LocalActivities = () => {
         </section>
         
         <section className="mb-10">
-          <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
-            <h2 className="text-2xl font-bold text-blue-800 mb-4">Dining Options</h2>
+          <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
+            <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Dining Options</h2>
             <p className="text-lg mb-6">
               Both our Utah and Pennsylvania locations are surrounded by a variety of family-friendly dining options, 
               from quick-service restaurants to unique local eateries.
@@ -390,7 +390,7 @@ const LocalActivities = () => {
               </Link>
               <Link 
                 to="/contact-us" 
-                className="btn bg-blue-600 text-white hover:bg-blue-700 px-6 py-3"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-6 py-3"
               >
                 Ask About Local Activities
               </Link>

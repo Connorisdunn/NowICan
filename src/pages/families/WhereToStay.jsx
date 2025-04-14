@@ -15,7 +15,7 @@ const WhereToStay = () => {
               <h1 className="text-4xl font-bold font-heading">Where to Stay</h1>
               <button 
                 onClick={() => setShowBookingForm(true)}
-                className="btn bg-blue-600 text-white hover:bg-blue-700"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
               >
                 Book Accommodation
               </button>
@@ -47,13 +47,13 @@ const WhereToStay = () => {
             <section className="mb-10">
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center mb-8">
                 <button 
-                  className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'utah' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                  className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'utah' ? 'bg-primary-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
                   onClick={() => setSelectedLocation('utah')}
                 >
                   Utah (Orem) Location
                 </button>
                 <button 
-                  className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'pennsylvania' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+                  className={`px-6 py-3 rounded-lg text-lg ${selectedLocation === 'pennsylvania' ? 'bg-primary-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
                   onClick={() => setSelectedLocation('pennsylvania')}
                 >
                   Pennsylvania (Lititz) Location
@@ -62,8 +62,8 @@ const WhereToStay = () => {
               
               {selectedLocation === 'utah' ? (
                 <div>
-                  <div className="bg-blue-50 rounded-lg p-8 border border-blue-100 mb-8">
-                    <h2 className="text-2xl font-bold text-blue-800 mb-4">On-Site Accommodations</h2>
+                  <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100 mb-8">
+                    <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">On-Site Accommodations</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
                         <h3 className="text-lg font-bold mb-3">Now I Can Cottages</h3>
@@ -82,7 +82,7 @@ const WhereToStay = () => {
                         </ul>
                         <button 
                           onClick={() => setShowBookingForm(true)}
-                          className="mt-6 bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded"
+                          className="mt-6 bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-4 py-2 rounded"
                         >
                           Book On-Site Cottage
                         </button>
@@ -216,7 +216,7 @@ const WhereToStay = () => {
                       </p>
                       <button 
                         onClick={() => setShowBookingForm(true)}
-                        className="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded"
+                        className="mt-4 bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-4 py-2 rounded"
                       >
                         Book Partner Hotel
                       </button>
@@ -239,7 +239,7 @@ const WhereToStay = () => {
                       </p>
                       <button 
                         onClick={() => setShowBookingForm(true)}
-                        className="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded"
+                        className="mt-4 bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-4 py-2 rounded"
                       >
                         Book Partner Hotel
                       </button>
@@ -300,8 +300,8 @@ const WhereToStay = () => {
             </section>
             
             <section className="mb-10">
-              <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
-                <h2 className="text-2xl font-bold text-blue-800 mb-4">Booking Tips</h2>
+              <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
+                <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Booking Tips</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-lg font-bold mb-3">When to Book:</h3>
@@ -327,7 +327,7 @@ const WhereToStay = () => {
                 <div className="mt-6 text-center">
                   <button 
                     onClick={() => setShowBookingForm(true)}
-                    className="btn bg-blue-600 text-white hover:bg-blue-700"
+                    className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
                   >
                     Book Your Stay Now
                   </button>
@@ -351,7 +351,7 @@ const WhereToStay = () => {
                   </Link>
                   <Link 
                     to="/contact-us" 
-                    className="btn bg-blue-600 text-white hover:bg-blue-700 px-6 py-3"
+                    className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-6 py-3"
                   >
                     Contact Us for Help
                   </Link>

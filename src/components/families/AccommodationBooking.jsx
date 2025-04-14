@@ -130,7 +130,7 @@ const AccommodationBooking = () => {
     
     return (
       <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-        <div className="w-16 h-16 bg-green-100 text-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="w-16 h-16 bg-primary-orange-100 text-primary-orange-700 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
@@ -140,8 +140,8 @@ const AccommodationBooking = () => {
           Thank you for your accommodation booking. A confirmation email has been sent to {formData.email}.
         </p>
         
-        <div className="bg-blue-50 rounded-lg p-6 border border-blue-100 mb-6 text-left">
-          <h3 className="font-semibold text-blue-800 mb-3">Booking Details</h3>
+        <div className="bg-primary-blue-50 rounded-lg p-6 border border-primary-blue-100 mb-6 text-left">
+          <h3 className="font-semibold text-primary-blue-800 mb-3">Booking Details</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p className="text-gray-700">
@@ -180,7 +180,7 @@ const AccommodationBooking = () => {
             <li>You'll receive a detailed confirmation email with check-in instructions.</li>
             <li>Please arrive between 3:00 PM and 6:00 PM on your check-in date.</li>
             <li>Contact us if your therapy schedule or travel plans change.</li>
-            <li>Questions? Contact us at <a href="mailto:info@nowican.org" className="text-blue-600 hover:underline">info@nowican.org</a>.</li>
+            <li>Questions? Contact us at <a href="mailto:info@nowican.org" className="text-primary-blue-600 hover:underline">info@nowican.org</a>.</li>
           </ul>
         </div>
         
@@ -192,7 +192,7 @@ const AccommodationBooking = () => {
             setSubmitted(false);
             setStep(1);
           }} 
-          className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          className="mt-6 px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700"
         >
           Make Another Booking
         </button>
@@ -213,7 +213,7 @@ const AccommodationBooking = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div 
-                      className={`border rounded-lg p-4 cursor-pointer ${formData.location === 'utah' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                      className={`border rounded-lg p-4 cursor-pointer ${formData.location === 'utah' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                       onClick={() => handleLocationChange('utah')}
                     >
                       <div className="flex items-center">
@@ -224,7 +224,7 @@ const AccommodationBooking = () => {
                           checked={formData.location === 'utah'} 
                           value="utah"
                           onChange={() => handleLocationChange('utah')}
-                          className="h-4 w-4 text-blue-600 border-gray-300"
+                          className="h-4 w-4 text-primary-blue-600 border-gray-300"
                         />
                         <label htmlFor="locationUtah" className="ml-3 block text-sm font-medium text-gray-700">
                           Now I Can - Utah (Orem)
@@ -233,7 +233,7 @@ const AccommodationBooking = () => {
                     </div>
                     
                     <div 
-                      className={`border rounded-lg p-4 cursor-pointer ${formData.location === 'pennsylvania' ? 'border-blue-500 bg-blue-50' : 'border-gray-200 hover:border-blue-200'}`}
+                      className={`border rounded-lg p-4 cursor-pointer ${formData.location === 'pennsylvania' ? 'border-primary-blue-500 bg-primary-blue-50' : 'border-gray-200 hover:border-primary-blue-200'}`}
                       onClick={() => handleLocationChange('pennsylvania')}
                     >
                       <div className="flex items-center">
@@ -244,7 +244,7 @@ const AccommodationBooking = () => {
                           checked={formData.location === 'pennsylvania'} 
                           value="pennsylvania"
                           onChange={() => handleLocationChange('pennsylvania')}
-                          className="h-4 w-4 text-blue-600 border-gray-300"
+                          className="h-4 w-4 text-primary-blue-600 border-gray-300"
                         />
                         <label htmlFor="locationPennsylvania" className="ml-3 block text-sm font-medium text-gray-700">
                           Now I Can - Pennsylvania (Lititz)
@@ -263,7 +263,7 @@ const AccommodationBooking = () => {
                       name="checkInDate" 
                       value={formData.checkInDate}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                       required
                     />
                   </div>
@@ -276,7 +276,7 @@ const AccommodationBooking = () => {
                       name="checkOutDate" 
                       value={formData.checkOutDate}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                       required
                     />
                   </div>
@@ -290,7 +290,7 @@ const AccommodationBooking = () => {
                       name="adults" 
                       value={formData.adults}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     >
                       {[1, 2, 3, 4, 5].map(num => (
                         <option key={num} value={num}>{num}</option>
@@ -305,7 +305,7 @@ const AccommodationBooking = () => {
                       name="children" 
                       value={formData.children}
                       onChange={handleInputChange}
-                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                      className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     >
                       {[0, 1, 2, 3, 4, 5].map(num => (
                         <option key={num} value={num}>{num}</option>
@@ -320,7 +320,7 @@ const AccommodationBooking = () => {
               <button
                 type="button"
                 onClick={handleNextStep}
-                className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue-500"
                 disabled={!formData.checkInDate || !formData.checkOutDate}
               >
                 Next: Select Accommodation
@@ -341,8 +341,8 @@ const AccommodationBooking = () => {
                     key={accommodation.id}
                     className={`border rounded-lg overflow-hidden cursor-pointer transition-all ${
                       formData.accommodation === accommodation.id 
-                        ? 'border-blue-500 ring-2 ring-blue-200 shadow-md' 
-                        : 'border-gray-200 hover:border-blue-200'
+                        ? 'border-primary-blue-500 ring-2 ring-primary-blue-200 shadow-md' 
+                        : 'border-gray-200 hover:border-primary-blue-200'
                     }`}
                     onClick={() => setFormData(prev => ({ ...prev, accommodation: accommodation.id }))}
                   >
@@ -366,7 +366,7 @@ const AccommodationBooking = () => {
                               checked={formData.accommodation === accommodation.id} 
                               value={accommodation.id}
                               onChange={handleInputChange}
-                              className="h-4 w-4 text-blue-600 border-gray-300"
+                              className="h-4 w-4 text-primary-blue-600 border-gray-300"
                             />
                           </div>
                         </div>
@@ -374,7 +374,7 @@ const AccommodationBooking = () => {
                         <div className="mt-4">
                           <div className="flex flex-wrap gap-2">
                             {accommodation.amenities.map((amenity, index) => (
-                              <span key={index} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                              <span key={index} className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-blue-100 text-primary-blue-800">
                                 {amenity}
                               </span>
                             ))}
@@ -389,7 +389,7 @@ const AccommodationBooking = () => {
                             {accommodation.discountedPrice ? (
                               <>
                                 <p className="text-sm text-gray-500 line-through">${accommodation.pricePerNight}/night</p>
-                                <p className="text-lg font-semibold text-green-600">${accommodation.discountedPrice}/night</p>
+                                <p className="text-lg font-semibold text-primary-orange-600">${accommodation.discountedPrice}/night</p>
                               </>
                             ) : (
                               <p className="text-lg font-semibold text-gray-900">${accommodation.pricePerNight}/night</p>
@@ -399,7 +399,7 @@ const AccommodationBooking = () => {
                         
                         {accommodation.external && (
                           <div className="mt-4 pt-4 border-t border-gray-100">
-                            <p className="text-sm text-purple-700">
+                            <p className="text-sm text-primary-orange-700">
                               This is a partner hotel. You'll receive a special discount code after selecting this option.
                             </p>
                           </div>
@@ -423,7 +423,7 @@ const AccommodationBooking = () => {
               <button
                 type="button"
                 onClick={handleNextStep}
-                className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue-500"
                 disabled={!formData.accommodation}
               >
                 Next: Enter Details
@@ -447,7 +447,7 @@ const AccommodationBooking = () => {
                     name="firstName" 
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     required
                   />
                 </div>
@@ -460,7 +460,7 @@ const AccommodationBooking = () => {
                     name="lastName" 
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     required
                   />
                 </div>
@@ -473,7 +473,7 @@ const AccommodationBooking = () => {
                     name="email" 
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     required
                   />
                 </div>
@@ -486,7 +486,7 @@ const AccommodationBooking = () => {
                     name="phone" 
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     required
                   />
                 </div>
@@ -501,7 +501,7 @@ const AccommodationBooking = () => {
                     name="patientName" 
                     value={formData.patientName}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                   />
                 </div>
                 
@@ -514,7 +514,7 @@ const AccommodationBooking = () => {
                     placeholder="e.g., July 8-26, 2024"
                     value={formData.therapyDates}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                   />
                 </div>
                 
@@ -526,13 +526,13 @@ const AccommodationBooking = () => {
                     rows="3" 
                     value={formData.specialRequests}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-blue-500 focus:border-primary-blue-500 sm:text-sm"
                     placeholder="Any special requests or accessibility needs"
                   ></textarea>
                 </div>
               </div>
               
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
+              <div className="bg-primary-blue-50 rounded-lg p-4 border border-primary-blue-100">
                 <div className="flex items-start">
                   <div className="flex items-center h-5">
                     <input
@@ -541,13 +541,13 @@ const AccommodationBooking = () => {
                       type="checkbox"
                       checked={formData.agreeToTerms}
                       onChange={handleInputChange}
-                      className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                      className="h-4 w-4 text-primary-blue-600 border-gray-300 rounded focus:ring-primary-blue-500"
                       required
                     />
                   </div>
                   <div className="ml-3 text-sm">
-                    <label htmlFor="agreeToTerms" className="font-medium text-blue-800">I agree to the terms and conditions</label>
-                    <p className="text-blue-700">
+                    <label htmlFor="agreeToTerms" className="font-medium text-primary-blue-800">I agree to the terms and conditions</label>
+                    <p className="text-primary-blue-700">
                       I understand that this booking is subject to the accommodation policies, including check-in/check-out times and cancellation policy.
                     </p>
                   </div>
@@ -567,7 +567,7 @@ const AccommodationBooking = () => {
               <button
                 type="button"
                 onClick={handleNextStep}
-                className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue-500"
                 disabled={!formData.firstName || !formData.lastName || !formData.email || !formData.phone}
               >
                 Next: Review & Confirm
@@ -674,9 +674,9 @@ const AccommodationBooking = () => {
                 )}
               </div>
               
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
-                <h4 className="font-semibold text-blue-800 mb-2">Important Information</h4>
-                <ul className="list-disc list-inside space-y-1 text-blue-700 text-sm">
+              <div className="bg-primary-blue-50 rounded-lg p-4 border border-primary-blue-100">
+                <h4 className="font-semibold text-primary-blue-800 mb-2">Important Information</h4>
+                <ul className="list-disc list-inside space-y-1 text-primary-blue-700 text-sm">
                   <li>Check-in time is 3:00 PM and check-out time is 11:00 AM.</li>
                   <li>Please contact us at least 48 hours in advance if your plans change.</li>
                   <li>Pets are not allowed in on-site accommodations.</li>
@@ -697,7 +697,7 @@ const AccommodationBooking = () => {
               <button
                 type="submit"
                 onClick={handleSubmit}
-                className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="px-6 py-2 bg-primary-blue-600 text-white rounded-md hover:bg-primary-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue-500"
                 disabled={!formData.agreeToTerms}
               >
                 Confirm Booking
@@ -727,20 +727,20 @@ const AccommodationBooking = () => {
         </div>
         
         <div className="relative">
-          <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-100">
-            <div style={{ width: `${(step / steps.length) * 100}%` }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600 transition-all duration-300"></div>
+          <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-primary-blue-100">
+            <div style={{ width: `${(step / steps.length) * 100}%` }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-primary-blue-600 transition-all duration-300"></div>
           </div>
           
           <div className="flex justify-between">
             {steps.map((s) => (
-              <div key={s.number} className={`text-center ${step >= s.number ? 'text-blue-600' : 'text-gray-400'}`}>
-                <div className={`w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-1 ${step >= s.number ? 'bg-blue-100' : 'bg-gray-100'}`}>
+              <div key={s.number} className={`text-center ${step >= s.number ? 'text-primary-blue-600' : 'text-gray-400'}`}>
+                <div className={`w-8 h-8 flex items-center justify-center rounded-full mx-auto mb-1 ${step >= s.number ? 'bg-primary-blue-100' : 'bg-gray-100'}`}>
                   {step > s.number ? (
-                    <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-5 h-5 text-primary-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                     </svg>
                   ) : (
-                    <span className={`text-sm font-medium ${step === s.number ? 'text-blue-600' : 'text-gray-400'}`}>{s.number}</span>
+                    <span className={`text-sm font-medium ${step === s.number ? 'text-primary-blue-600' : 'text-gray-400'}`}>{s.number}</span>
                   )}
                 </div>
                 <span className="text-xs hidden sm:block">{s.title}</span>
@@ -754,9 +754,9 @@ const AccommodationBooking = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-6">
+      <div className="bg-gradient-to-r from-primary-blue-600 to-primary-orange-600 p-6">
         <h2 className="text-2xl font-bold text-white">Accommodations</h2>
-        <p className="text-blue-100 mt-2">
+        <p className="text-primary-blue-100 mt-2">
           Book your stay for your therapy session at Now I Can.
         </p>
       </div>

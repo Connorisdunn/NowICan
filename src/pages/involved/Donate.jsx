@@ -36,7 +36,7 @@ const Donate = () => {
         
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 rounded-lg p-8 border border-blue-100">
+            <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
               <div className="mb-4 rounded-lg overflow-hidden">
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3bdc3ee2-ef3f-4f0b-8661-3eae1b2233ba/AveryNIC.jpg" 
@@ -44,7 +44,7 @@ const Donate = () => {
                   className="w-full h-48 object-cover"
                 />
               </div>
-              <h2 className="text-2xl font-bold text-blue-800 mb-4">Your Donation Makes a Difference</h2>
+              <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Your Donation Makes a Difference</h2>
               <p className="mb-4">
                 When you donate to Now I Can Foundation, your contribution goes directly toward:
               </p>
@@ -55,7 +55,7 @@ const Donate = () => {
                 <li>Helping us expand our services to reach more children</li>
                 <li>Subsidizing our on-site family accommodations</li>
               </ul>
-              <p className="text-blue-700 font-medium">
+              <p className="text-primary-blue-700 font-medium">
                 100% of your donation goes toward our mission of helping children with disabilities reach their full potential.
               </p>
             </div>
@@ -64,25 +64,25 @@ const Donate = () => {
               <h3 className="text-xl font-bold mb-4">Ways to Donate</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
                   <div>
                     <span className="font-medium">Online</span>: Make a secure donation through our website using the buttons below
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
                   <div>
                     <span className="font-medium">Venmo</span>: Send donations to @nowican
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
                   <div>
                     <span className="font-medium">By Phone</span>: Give us a call to discuss your donation
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1 text-lg">•</span>
+                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
                   <div>
                     <span className="font-medium">By Mail</span>: Send checks payable to "Now I Can Foundation" to:
                     <div className="ml-4 mt-1">
@@ -132,7 +132,7 @@ const Donate = () => {
                   {/* Sliding Background */}
                   <span 
                     className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                      selectedLocation === 'utah' ? 'left-1 bg-blue-600' : 'left-40 bg-purple-600'
+                      selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
                     }`}
                   ></span>
                 </div>
@@ -144,7 +144,7 @@ const Donate = () => {
                   target="_blank"
                   rel="noopener noreferrer" 
                   className={`btn text-white text-lg px-8 py-3 ${
-                    selectedLocation === 'utah' ? 'bg-blue-600 hover:bg-blue-700' : 'bg-purple-600 hover:bg-purple-700'
+                    selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
                   }`}
                 >
                   Proceed to Donation Page

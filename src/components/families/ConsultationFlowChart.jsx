@@ -59,39 +59,26 @@ const ConsultationFlowChart = () => {
     }
   ];
 
-  const getStepColors = (color) => {
+  const getStepColors = (index) => {
+    const isBlue = index % 2 === 0; // Alternate colors
     const colors = {
       blue: {
-        bg: "bg-blue-100",
-        text: "text-blue-600",
-        border: "border-blue-200",
-        light: "bg-blue-50",
-        dark: "bg-blue-600"
+        bg: "bg-primary-blue-100",
+        text: "text-primary-blue-600",
+        border: "border-primary-blue-200",
+        light: "bg-primary-blue-50",
+        dark: "bg-primary-blue-600"
       },
-      green: {
-        bg: "bg-green-100",
-        text: "text-green-600",
-        border: "border-green-200",
-        light: "bg-green-50",
-        dark: "bg-green-600"
-      },
-      purple: {
-        bg: "bg-purple-100",
-        text: "text-purple-600",
-        border: "border-purple-200",
-        light: "bg-purple-50",
-        dark: "bg-purple-600"
-      },
-      coral: {
-        bg: "bg-coral-100",
-        text: "text-coral-600",
-        border: "border-coral-200",
-        light: "bg-coral-50",
-        dark: "bg-coral-600"
+      orange: {
+        bg: "bg-primary-orange-100",
+        text: "text-primary-orange-600",
+        border: "border-primary-orange-200",
+        light: "bg-primary-orange-50",
+        dark: "bg-primary-orange-600"
       }
     };
     
-    return colors[color] || colors.blue;
+    return isBlue ? colors.blue : colors.orange;
   };
 
   return (
@@ -107,7 +94,7 @@ const ConsultationFlowChart = () => {
         <div className="absolute left-4 md:left-6 top-6 bottom-10 w-0.5 bg-gray-200 hidden md:block"></div>
         
         {steps.map((step, index) => {
-          const colors = getStepColors(step.color);
+          const colors = getStepColors(index);
           
           return (
             <div key={index} className="relative">

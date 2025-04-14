@@ -4,7 +4,7 @@ import logo from '../../assets/images/now-i-can-logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+    <footer className="bg-gradient-to-r from-primary-blue-800 to-primary-blue-900 text-white">
       <div className="container-custom mx-auto pt-12 pb-8 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo & Tagline */}
@@ -16,7 +16,7 @@ const Footer = () => {
                 className="h-12 w-auto mb-2"
               />
             </Link>
-            <p className="mt-3 text-blue-100 text-sm max-w-md">
+            <p className="mt-3 text-primary-blue-100 text-sm max-w-md">
               Our mission at Now I Can is to help children with disabilities reach their full potential and greatest independence through innovative physical therapy.
             </p>
           </div>
@@ -26,27 +26,27 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about-us" className="text-blue-200 hover:text-white text-sm transition-colors duration-200">
+                <Link to="/about-us" className="text-primary-blue-100 hover:text-white text-sm transition-colors duration-200">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/therapy-services" className="text-blue-200 hover:text-white text-sm transition-colors duration-200">
+                <Link to="/therapy-services" className="text-primary-blue-100 hover:text-white text-sm transition-colors duration-200">
                   Therapy Services
                 </Link>
               </li>
               <li>
-                <Link to="/for-families" className="text-blue-200 hover:text-white text-sm transition-colors duration-200">
+                <Link to="/for-families" className="text-primary-blue-100 hover:text-white text-sm transition-colors duration-200">
                   For Families
                 </Link>
               </li>
               <li>
-                <Link to="/get-involved/donate" className="text-blue-200 hover:text-white text-sm transition-colors duration-200">
+                <Link to="/get-involved/donate" className="text-primary-blue-100 hover:text-white text-sm transition-colors duration-200">
                   Donate
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="text-blue-200 hover:text-white text-sm transition-colors duration-200">
+                <Link to="/contact-us" className="text-primary-blue-100 hover:text-white text-sm transition-colors duration-200">
                   Contact Us
                 </Link>
               </li>
@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Utah Location */}
           <div>
             <h3 className="text-lg font-bold mb-4">Utah Location</h3>
-            <address className="text-sm text-blue-200 not-italic">
+            <address className="text-sm text-primary-blue-100 not-italic">
               <p>1950 S 375 E</p>
               <p>Orem, UT 84058</p>
               <p className="mt-2">
@@ -71,7 +71,7 @@ const Footer = () => {
                 href="https://www.instagram.com/now_i_can/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-blue-200 hover:text-white transition-colors duration-200"
+                className="text-primary-blue-100 hover:text-white transition-colors duration-200"
               >
                 <span className="sr-only">Instagram</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -84,7 +84,7 @@ const Footer = () => {
           {/* Pennsylvania Location */}
           <div>
             <h3 className="text-lg font-bold mb-4">Pennsylvania Location</h3>
-            <address className="text-sm text-blue-200 not-italic">
+            <address className="text-sm text-primary-blue-100 not-italic">
               <p>100 West Millport Road</p>
               <p>Lititz, PA 17543</p>
               <p className="mt-2">
@@ -99,7 +99,7 @@ const Footer = () => {
                 href="https://www.facebook.com/NowiCanNorthEast" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-blue-200 hover:text-white transition-colors duration-200"
+                className="text-primary-blue-100 hover:text-white transition-colors duration-200"
               >
                 <span className="sr-only">Facebook</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -110,7 +110,7 @@ const Footer = () => {
                 href="https://www.instagram.com/nowicannortheast/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-blue-200 hover:text-white transition-colors duration-200"
+                className="text-primary-blue-100 hover:text-white transition-colors duration-200"
               >
                 <span className="sr-only">Instagram</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -122,18 +122,18 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-blue-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-blue-300 mb-4 md:mb-0">
+        <div className="border-t border-primary-blue-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-primary-blue-200 mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Now I Can Foundation. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-sm text-blue-300 hover:text-white transition-colors duration-200">
+            <Link to="/privacy-policy" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="text-sm text-blue-300 hover:text-white transition-colors duration-200">
+            <Link to="/terms-of-service" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
               Terms of Service
             </Link>
-            <Link to="/accessibility" className="text-sm text-blue-300 hover:text-white transition-colors duration-200">
+            <Link to="/accessibility" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
               Accessibility
             </Link>
           </div>

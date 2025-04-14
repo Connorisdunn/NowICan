@@ -147,7 +147,7 @@ const FamilyResources = () => {
           <button
             className={`mr-2 py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'testimonials'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('testimonials')}
@@ -157,7 +157,7 @@ const FamilyResources = () => {
           <button
             className={`py-2 px-4 font-medium text-sm rounded-t-lg ${
               activeTab === 'faqs'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-primary-blue-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
             onClick={() => setActiveTab('faqs')}
@@ -173,7 +173,7 @@ const FamilyResources = () => {
               <h2 className="text-2xl font-bold mb-6">Featured Family Stories</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {featuredTestimonials.map(testimonial => (
-                  <div key={testimonial.id} className="bg-blue-50 rounded-lg shadow-md overflow-hidden border border-blue-100">
+                  <div key={testimonial.id} className="bg-primary-blue-50 rounded-lg shadow-md overflow-hidden border border-primary-blue-100">
                     {testimonial.id === 1 && (
                       <div className="h-48 overflow-hidden">
                         <img 
@@ -201,7 +201,7 @@ const FamilyResources = () => {
                       <div className="text-right">
                         <p className="text-gray-800 font-bold">— {testimonial.family}</p>
                         {testimonial.child && (
-                          <p className="text-blue-600">{testimonial.child}'s Journey</p>
+                          <p className="text-primary-blue-600">{testimonial.child}'s Journey</p>
                         )}
                       </div>
                     </div>
@@ -245,7 +245,7 @@ const FamilyResources = () => {
                         <div className="text-right">
                           <p className="text-gray-800 font-bold">— {testimonial.family}</p>
                           {testimonial.child && (
-                            <p className="text-blue-600">{testimonial.child}'s Journey</p>
+                            <p className="text-primary-blue-600">{testimonial.child}'s Journey</p>
                           )}
                         </div>
                       </div>
@@ -256,7 +256,7 @@ const FamilyResources = () => {
             </section>
             
             <section className="mb-8">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
+              <div className="bg-primary-blue-50 rounded-lg p-6 border border-primary-blue-100">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3">
                     <img 
@@ -266,7 +266,7 @@ const FamilyResources = () => {
                     />
                   </div>
                   <div className="md:w-2/3">
-                    <h2 className="text-2xl font-bold text-blue-800 mb-4">Colby's Story</h2>
+                    <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Colby's Story</h2>
                     <p className="text-gray-700 mb-4">
                       Colby Christensen, the daughter of Now I Can founders Joel and Tracey Christensen, was the inspiration 
                       behind our foundation. Diagnosed with Hemiplegic Cerebral Palsy as a baby, Colby's journey with intensive 
@@ -285,7 +285,7 @@ const FamilyResources = () => {
                 <div className="flex justify-center mt-4">
                   <Link 
                     to="/about-us/our-story-mission" 
-                    className="btn bg-blue-600 text-white hover:bg-blue-700"
+                    className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
                   >
                     Read Colby's Full Story
                   </Link>
@@ -305,7 +305,7 @@ const FamilyResources = () => {
                     key={category.id}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
                       activeFaqCategory === category.id 
-                        ? 'bg-blue-600 text-white' 
+                        ? 'bg-primary-blue-600 text-white' 
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                     }`}
                     onClick={() => setActiveFaqCategory(category.id)}
@@ -330,7 +330,7 @@ const FamilyResources = () => {
             </section>
             
             <section className="mb-8">
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
+              <div className="bg-primary-blue-50 rounded-lg p-6 border border-primary-blue-100">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3">
                     <img 
@@ -340,7 +340,7 @@ const FamilyResources = () => {
                     />
                   </div>
                   <div className="md:w-2/3">
-                    <h2 className="text-2xl font-bold text-blue-800 mb-4">Still Have Questions?</h2>
+                    <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Still Have Questions?</h2>
                     <p className="text-gray-700 mb-6">
                       We're here to help! If you have questions that aren't answered above, please reach out to our team. 
                       We're happy to provide more information about our therapy programs, financial options, or any other 
@@ -387,7 +387,7 @@ const FamilyResources = () => {
                 </p>
                 <Link 
                   to="/therapy-services/intensive-physical-therapy" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 w-full text-center"
                 >
                   Explore Therapy Services
                 </Link>
@@ -409,7 +409,7 @@ const FamilyResources = () => {
                 </p>
                 <Link 
                   to="/for-families/payment-financial-aid" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 w-full text-center"
                 >
                   Payment Options
                 </Link>
@@ -431,7 +431,7 @@ const FamilyResources = () => {
                 </p>
                 <Link 
                   to="/for-families/accommodations" 
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full text-center"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 w-full text-center"
                 >
                   Accommodations Info
                 </Link>

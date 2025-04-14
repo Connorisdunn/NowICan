@@ -26,12 +26,12 @@ const ContactUs = () => {
                 <p className="mb-1">1950 S 375 E</p>
                 <p className="mb-1">Orem, UT 84058</p>
                 <p className="mb-3">
-                  <a href="tel:+18012281935" className="text-blue-600 hover:text-blue-800">
+                  <a href="tel:+18012281935" className="text-primary-blue-600 hover:text-primary-blue-800">
                     (801) 228-1935
                   </a>
                 </p>
                 <p>
-                  <a href="mailto:info@nowican.org" className="text-blue-600 hover:text-blue-800">
+                  <a href="mailto:info@nowican.org" className="text-primary-blue-600 hover:text-primary-blue-800">
                     info@nowican.org
                   </a>
                 </p>
@@ -45,12 +45,12 @@ const ContactUs = () => {
                 <p className="mb-1">100 West Millport Road</p>
                 <p className="mb-1">Lititz, PA 17543</p>
                 <p className="mb-3">
-                  <a href="tel:+17172695829" className="text-purple-600 hover:text-purple-800">
+                  <a href="tel:+17172695829" className="text-primary-orange-600 hover:text-primary-orange-800">
                     (717) 269-5829
                   </a>
                 </p>
                 <p>
-                  <a href="mailto:allison@nowican.org" className="text-purple-600 hover:text-purple-800">
+                  <a href="mailto:allison@nowican.org" className="text-primary-orange-600 hover:text-primary-orange-800">
                     allison@nowican.org
                   </a>
                 </p>
@@ -62,7 +62,7 @@ const ContactUs = () => {
           <div className="flex justify-center mb-12">
             <Link 
               to="/for-families/getting-started/free-consultation" 
-              className="btn bg-blue-600 text-white hover:bg-blue-700 text-center px-8 py-3 text-lg"
+              className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 text-center px-8 py-3 text-lg"
             >
               Schedule a Free Consultation
             </Link>
@@ -128,7 +128,7 @@ const ContactUs = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="btn bg-blue-600 text-white hover:bg-blue-700 w-full sm:w-auto"
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 w-full sm:w-auto"
                 >
                   Send Message
                 </button>

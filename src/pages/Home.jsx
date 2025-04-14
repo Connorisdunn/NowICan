@@ -33,7 +33,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">
                   Our intensive model provides 4 hours of therapy per day, 5 days a week, resulting in gains that might take months or years in traditional therapy.
                 </p>
-                <Link to="/therapy-services/intensive-physical-therapy" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                <Link to="/therapy-services/intensive-physical-therapy" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -56,7 +56,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">
                   We utilize cutting-edge techniques including Orthotic Suit Therapy, Universal Exercise Unit, and specialized manual therapy approaches.
                 </p>
-                <Link to="/therapy-services/treatment-methods" className="text-green-600 font-medium hover:text-green-800 flex items-center">
+                <Link to="/therapy-services/treatment-methods" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -79,7 +79,7 @@ const Home = () => {
                 <p className="text-gray-600 mb-4">
                   Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
                 </p>
-                <Link to="/about-us/our-team" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                <Link to="/about-us/our-team" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                   Meet Our Team
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -117,7 +117,7 @@ const Home = () => {
                   From requiring constant assistance to becoming an active teenager and college student, Colby's story showcases the transformative power of intensive therapy.
                 </p>
                 <div className="flex justify-between items-center">
-                  <Link to="/about-us/our-story-mission" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                  <Link to="/about-us/our-story-mission" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                     Read Colby's Story
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -142,7 +142,7 @@ const Home = () => {
                   Discover how intensive therapy has helped children take their first steps, gain independence, and achieve milestones their families never thought possible.
                 </p>
                 <div className="flex justify-between items-center">
-                  <Link to="/for-families" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                  <Link to="/for-families" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
                     Read More Stories
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -182,7 +182,7 @@ const Home = () => {
                   <p>Orem, UT 84058</p>
                   <p className="mt-2">(801) 228-1935</p>
                 </address>
-                <Link to="/about-us/locations" className="text-blue-600 font-medium hover:text-blue-800 flex items-center">
+                <Link to="/about-us/locations" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -207,7 +207,7 @@ const Home = () => {
                   <p>Lititz, PA 17543</p>
                   <p className="mt-2">(717) 269-5829</p>
                 </address>
-                <Link to="/about-us/locations" className="text-purple-600 font-medium hover:text-purple-800 flex items-center">
+                <Link to="/about-us/locations" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -220,17 +220,17 @@ const Home = () => {
       </section>
       
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary-blue-500 to-primary-orange-500 text-white">
         <div className="container-custom mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Ready to Take the Next Step?</h2>
-          <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-blue-100 mb-8 max-w-2xl mx-auto">
             Schedule a free consultation to learn how Now I Can can help your child reach their full potential.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/for-families/getting-started/free-consultation" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-blue-500/20 transform transition duration-300 hover:-translate-y-1">
+            <Link to="/for-families/getting-started/free-consultation" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-primary-blue-500/20 transform transition duration-300 hover:-translate-y-1">
               Free Consultation
             </Link>
-            <Link to="/therapy-services/therapy-schedule" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-blue-500/20 transform transition duration-300 hover:-translate-y-1">
+            <Link to="/therapy-services/therapy-schedule" className="btn border border-white text-white hover:bg-white/10 shadow-lg shadow-primary-blue-500/20 transform transition duration-300 hover:-translate-y-1">
               View Therapy Schedule
             </Link>
           </div>
