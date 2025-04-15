@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import freeconsuationImage from '../../assets/images/freeConsultation.jpg';
+
 const FreeConsultation = () => {
   const [formData, setFormData] = useState({
     childName: '',
@@ -584,7 +586,7 @@ const FreeConsultation = () => {
         <div className="max-w-3xl mx-auto">
           <div className="mb-8 overflow-hidden rounded-lg">
             <img 
-              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/ea7fade6-2887-41a3-a09b-ebd0cb3f523a/C-FAQ2.jpg" 
+              src={freeconsuationImage} 
               alt="Free Consultation with Now I Can Therapists" 
               className="w-full h-64 object-cover"
             />

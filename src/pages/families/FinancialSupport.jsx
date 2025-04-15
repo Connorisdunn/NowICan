@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import finaceImage from '../../assets/images/financeheader.jpg';
+
 const FinancialSupport = () => {
   const [activeTab, setActiveTab] = useState('payment-options');
   const [showGrantForm, setShowGrantForm] = useState(false);
@@ -37,9 +39,9 @@ const FinancialSupport = () => {
       <div className="container-custom mx-auto px-4">
         <div className="mb-8 overflow-hidden rounded-lg">
           <img 
-            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b55c7694-f32a-4da9-9266-cfb53d817a8d/H-Therapy-Schedule.jpg" 
+            src={finaceImage} 
             alt="Financial Support at Now I Can" 
-            className="w-full h-64 object-cover"
+            className="w-full h-96 object-cover"
           />
         </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Payment & Financial Aid</h1>

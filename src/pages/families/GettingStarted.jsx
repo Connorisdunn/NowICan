@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Import local image
+import gettingStartedBanner from '../../assets/images/Therapy6.jpg';
+
 const GettingStarted = () => {
   return (
     <div className="min-h-screen pt-16 pb-12">
       <div className="container-custom mx-auto px-4">
-        <div className="mb-6 overflow-hidden rounded-lg">
+        <div className="mb-6 overflow-hidden rounded-lg shadow-md">
           <img 
-            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/0e517959-5a2a-4ce7-95f6-d0c6e2eef69f/H-FAQ-for-families.jpg" 
+            src={gettingStartedBanner} 
             alt="Getting Started with Now I Can" 
-            className="w-full h-48 object-cover"
+            className="w-full h-96 object-cover object-[center_30%]"
           />
         </div>
         <h1 className="text-3xl font-bold font-heading mb-4">Getting Started</h1>

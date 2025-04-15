@@ -1,18 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Import local images
+import foundationBannerImage from '../../assets/images/nowican-51.jpg';
+import foundersImage from '../../assets/images/joel-tracey-christensen.jpg';
+import colbyImage from '../../assets/images/colby.jpg';
+
 const OurStoryMission = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
+        {/* Main content area with max width for better readability */}
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8 overflow-hidden rounded-lg">
+          {/* Banner image now inside the max-width container */}
+          <div className="mb-8 overflow-hidden rounded-lg shadow-md">
             <img 
-              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/e4b949a5-642c-4bcf-974e-183be7a17bf1/H-Foundation.jpg" 
+              src={foundationBannerImage} 
               alt="Now I Can Foundation" 
-              className="w-full h-64 object-cover"
+              className="w-full h-96 object-cover object-[center_60%]"
             />
           </div>
+          
           <h1 className="text-4xl font-bold font-heading mb-6">Our Story & Mission</h1>
           
           {/* Mission Section */}
@@ -36,7 +44,8 @@ const OurStoryMission = () => {
             </div>
           </div>
           
-          {/* Values Section */}
+          {/* Rest of the content remains unchanged... */}
+          {/* Values Section with Fixed Checkmarks */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Our Core Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -46,23 +55,23 @@ const OurStoryMission = () => {
                 </div>
                 <div className="p-6">
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We are punctual
+                      <span>We are punctual</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We work as a team
+                      <span>We work as a team</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-blue-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We focus on the patient
+                      <span>We focus on the patient</span>
                     </li>
                   </ul>
                 </div>
@@ -74,23 +83,23 @@ const OurStoryMission = () => {
                 </div>
                 <div className="p-6">
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We improve lives
+                      <span>We improve lives</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We use the best techniques
+                      <span>We use the best techniques</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We interact well with patients and parents
+                      <span>We interact well with patients and parents</span>
                     </li>
                   </ul>
                 </div>
@@ -102,23 +111,23 @@ const OurStoryMission = () => {
                 </div>
                 <div className="p-6">
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We utilize time wisely
+                      <span>We utilize time wisely</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We emphasize the positive
+                      <span>We emphasize the positive</span>
                     </li>
-                    <li className="flex items-center">
-                      <svg className="h-5 w-5 text-primary-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li className="flex items-start">
+                      <svg className="h-5 w-5 text-primary-orange-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
-                      We set goals and work passionately towards them
+                      <span>We set goals and work passionately towards them</span>
                     </li>
                   </ul>
                 </div>
@@ -134,7 +143,7 @@ const OurStoryMission = () => {
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/3 flex justify-center">
                     <img 
-                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/c5dd170d-0caf-4531-ac2a-44fa9d5c4379/Tracey+and+Joel-2.jpg" 
+                      src={foundersImage} 
                       alt="Tracey and Joel Christensen - Now I Can Founders" 
                       className="w-64 h-64 rounded-full object-cover"
                     />
@@ -164,32 +173,89 @@ const OurStoryMission = () => {
               </div>
             </div>
             
+            {/* Colby's Story - Reorganized with better spacing */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="p-6">
                 <div className="flex flex-col md:flex-row gap-6 mb-6">
                   <div className="md:w-1/3 flex justify-center">
                     <img 
-                      src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/685d3859-6826-45eb-88ad-6f6bad55abae/Colby.jpg" 
+                      src={colbyImage} 
                       alt="Colby Christensen" 
                       className="w-64 h-64 rounded-lg object-cover"
                     />
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-2xl font-bold mb-4">Colby's Story</h2>
-                    <div className="italic text-gray-600 mb-6">
+                    <div className="italic text-gray-600 mb-4">
                       In Colby's own words...
                     </div>
+                    <p className="text-gray-700">
+                      Hi, my name is Colby Christensen. I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.
+                    </p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-4">
-                  Hi, my name is Colby Christensen. I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  When I was a baby I was diagnosed with Hemiplegic Cerebral Palsy. Doctors told my parents that physical therapy could maybe help me, and I was referred to a local therapy office. In a couple years I was able to make small changes, but my parents couldn't help but wonder if maybe there was MORE? They did their homework and when I was four years old my Mom and Dad took me to Poland to try a "new" treatment. The treatment was called the Intensive Model of Therapy (IMOT for short). At home, in Utah, my traditional physical therapy sessions lasted 45-minutes, once a week. But the IMOT I received in Poland had me in innovative physical therapy sessions that were 3-hours long and occurred 5 days a week! The therapy was physically challenging, but it was also fun. The best part was that I could feel and see myself gaining strength fast. In just a few weeks I had discovered new ways to make my body move. It was so exciting!
-                </p>
-                <p className="text-gray-700">
-                  The results I got using IMOT were too good to ignore. That's why my Mom and Dad started an IMOT clinic in Utah to help me—and other kids like me--reach amazing goals that traditional PT would not have allowed. They named the clinic Now I Can.
-                </p>
+              
+                <div className="space-y-4 text-gray-700">
+                  <p>
+                    When I was a baby I was diagnosed with Hemiplegic Cerebral Palsy. Doctors told my parents that physical therapy could maybe help me, and I was referred to a local therapy office. In a couple years I was able to make small changes, but my parents couldn't help but wonder if maybe there was MORE?
+                  </p>
+                  
+                  <p>
+                    They did their homework and when I was four years old my Mom and Dad took me to Poland to try a "new" treatment. The treatment was called the Intensive Model of Therapy (IMOT for short). At home, in Utah, my traditional physical therapy sessions lasted 45-minutes, once a week. But the IMOT I received in Poland had me in innovative physical therapy sessions that were 3-hours long and occurred 5 days a week!
+                  </p>
+                  
+                  <p>
+                    The therapy was physically challenging, but it was also fun. The best part was that I could feel and see myself gaining strength fast. In just a few weeks I had discovered new ways to make my body move. It was so exciting!
+                  </p>
+                  
+                  <p>
+                    The results I got using IMOT were too good to ignore. That's why my Mom and Dad started an IMOT clinic in Utah to help me—and other kids like me--reach amazing goals that traditional PT would not have allowed. They named the clinic Now I Can.
+                  </p>
+                  
+                  <p>
+                    If your child has a neuromuscular disorder like me, you've probably spoken to surgeons and watched helplessly as your child went through intervention after intervention. When I was small that's how it went for me—but introducing intensive physical therapy into my life changed all that. I just kept making progress which meant I didn't need as many surgeries and interventions.
+                  </p>
+                  
+                  <p>
+                    Instead of spending my time recovering from surgery, or in therapy, I became an active teenager. I made the cheerleading team, I went to football games with friends and walked up and down the bleachers, and I eventually attended college fully able to walk across campus on my own.
+                  </p>
+                  
+                  <p>
+                    Growing up doing intensive physical therapy at Now I Can didn't just strengthen my body; it also strengthened my mind. My therapists have taught me how to be patient with myself and others. They've helped retrain my brain to see the positive in every situation, and they've helped me understand that it's not about being the fastest, it's about simply participating in an experience.
+                  </p>
+                  
+                  <p>
+                    (Which is way better than feeling sorry for yourself and doing nothing at all.) Sure, it takes me longer to do things—and sometimes I get frustrated—but then I remember to just let the bad thoughts go. This has made a big difference in my life because situations can have a totally different outcome just based on the way you look at it. My mom has always said it best, "Give every situation your very best and be proud knowing you gave it your all."
+                  </p>
+                  
+                  <p>
+                    Another life lesson I've learned through my time at Now I Can is that it's okay to ask for help. I used to struggle, believing the lie that I had be independent and do everything by myself, but that's not true at all. There's not one person in the world who can do everything; we all need help with something.
+                  </p>
+                  
+                  <p>
+                    I wouldn't be where I am today without all the willing help I've received. I am so grateful for my family and friends who have helped me with simple tasks like opening fruit snacks, tying my shoes, or doing my hair, as well as the bigger things. I'm still working hard to gain more independence, but it's comforting to know I can always ask for help.
+                  </p>
+                  
+                  <p>
+                    Do you want to know something else I love about Now I Can that has nothing to do with therapy? It's knowing the other patients. Seeing other kids with disabilities working through therapy made me feel I wasn't alone.
+                  </p>
+                  
+                  <p>
+                    It's easy to be self-centered and so caught up in your own story that you forget that life is about building relationships. Without relationships life is lonely and kinda depressing. It feels good to consider other people; share a smile; start a conversation; be charitable--because you don't know what the other person is going through.
+                  </p>
+                  
+                  <p>
+                    For me, connecting with other kids and families just made things better. As a young adult I have volunteered at Now I Can and every time I'm there those kids put a smile on my face. They remind me that life is good, and they inspire me to never stop trying.
+                  </p>
+                  
+                  <p>
+                    An interesting thing happened to me a couple years ago. A friend interviewed me about living life with a disability. She asked, "If you could change having a disability, would you?" I immediately answered "No." I was kind of surprised by my own response, but it's very true. Even though living with a disability can be really hard sometimes, I'm definitely grateful for all the important things I've learned because of it. Almost all of those things I discovered or learned at Now I Can.
+                  </p>
+                  
+                  <p>
+                    The intensive physical therapy I received as a child at Now I Can boosted my ability and impacted my life in many wonderful ways. I'm so glad my parents didn't settle for "average" therapy, but instead they searched for MORE and they gave me MORE at Now I Can.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -202,7 +268,7 @@ const OurStoryMission = () => {
             <div className="flex justify-center">
               <Link 
                 to="/for-families/getting-started/free-consultation" 
-                className="btn bg-white text-primary-blue-600 hover:bg-primary-blue-50"
+                className="btn bg-primary-blue-800 text-white hover:bg-primary-blue-900 border-2 border-white font-bold text-lg px-8 py-3 shadow-md"
               >
                 Schedule a Free Consultation
               </Link>

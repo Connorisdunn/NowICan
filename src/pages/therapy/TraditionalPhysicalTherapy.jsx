@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Import local images
+import traditionalBannerImage from '../../assets/images/vibrationPlateHeader.jpg';
+import regularSessionsImage from '../../assets/images/ball.jpg';
+import extendedTreatmentImage from '../../assets/images/TraditionalTherapy3.jpg';
+
 const TraditionalPhysicalTherapy = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
-        <div className="mb-8 overflow-hidden rounded-lg">
+        <div className="mb-8 overflow-hidden rounded-lg shadow-md">
           <img 
-            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/6861c38a-ebdf-4fe0-8c3c-7dcd2ddc40f3/H-Traditional-Therapy.jpg" 
+            src={traditionalBannerImage} 
             alt="Traditional Physical Therapy at Now I Can" 
-            className="w-full h-64 object-cover"
+            className="w-full h-96 object-cover"
           />
         </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Traditional Physical Therapy</h1>
@@ -39,11 +44,11 @@ const TraditionalPhysicalTherapy = () => {
           <h2 className="text-3xl font-bold mb-6">Traditional Therapy Options</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
                 <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/e68d6c63-dddb-46a7-a0af-e33aee339b3d/Traditional2.jpeg" 
+                  src={regularSessionsImage} 
                   alt="Regular therapy sessions" 
-                  className="w-full h-full object-cover object-[center_20%]"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-8">
@@ -60,11 +65,11 @@ const TraditionalPhysicalTherapy = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-square overflow-hidden">
                 <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/92400a06-7978-4ed7-9ed3-087006b83cdc/C-Traditional-4.jpg" 
+                  src={extendedTreatmentImage} 
                   alt="Extended treatment time" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-8">
@@ -82,35 +87,6 @@ const TraditionalPhysicalTherapy = () => {
           </div>
         </section>
         
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Benefits of Traditional Therapy at Now I Can</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Consistent Progress</h3>
-              <p className="text-gray-700">
-                Regular therapy sessions ensure continuous progress toward developmental goals, 
-                helping to maintain gains made during intensive therapy periods.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Personalized Approach</h3>
-              <p className="text-gray-700">
-                Each child receives an individualized therapy plan designed specifically for their 
-                unique needs, challenges, and developmental goals.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Advanced Techniques</h3>
-              <p className="text-gray-700">
-                Our therapists utilize the same innovative treatment methods used in our intensive programs, 
-                adapted for traditional therapy schedules.
-              </p>
-            </div>
-          </div>
-        </section>
-        
         <section className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100 mb-12">
           <div className="flex flex-col items-center">
             <h2 className="text-3xl font-bold text-primary-blue-800 mb-6">Get Started Today</h2>
@@ -124,40 +100,6 @@ const TraditionalPhysicalTherapy = () => {
             >
               Schedule a Consultation
             </Link>
-          </div>
-        </section>
-        
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Combining Traditional and Intensive Approaches</h2>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <p className="text-lg mb-6">
-              Many families find that combining our traditional therapy program with periodic intensive 
-              therapy sessions provides the optimal approach for their child's development. This combined 
-              approach allows for:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg mb-6">
-              <li>Breakthrough progress during intensive sessions</li>
-              <li>Consistent maintenance and reinforcement during traditional sessions</li>
-              <li>Development of new skills year-round</li>
-              <li>Adaptability to your family's schedule and lifestyle</li>
-            </ul>
-            <p className="text-lg mb-6">
-              Our therapy team can help you determine the best combination of services for your child's unique needs.
-            </p>
-            <div className="flex justify-center">
-              <Link 
-                to="/therapy-services/intensive-physical-therapy" 
-                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 mr-4"
-              >
-                Learn About Intensive Therapy
-              </Link>
-              <Link 
-                to="/therapy-services/therapy-schedule" 
-                className="btn bg-gray-600 text-white hover:bg-gray-700"
-              >
-                View Therapy Schedule
-              </Link>
-            </div>
           </div>
         </section>
       </div>
