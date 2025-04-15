@@ -13,7 +13,7 @@ const Donate = () => {
           <img 
             src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/03c7afca-b61c-457f-b5e4-7a8f9fd2e078/H-Donate.jpg" 
             alt="Donate to Now I Can Foundation" 
-            className="w-full h-64 object-cover"
+            className="w-full h-96 object-cover object-position-center-top" style={{objectPosition: '50% 40%'}}
           />
         </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Donate to Now I Can</h1>
@@ -41,7 +41,7 @@ const Donate = () => {
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3bdc3ee2-ef3f-4f0b-8661-3eae1b2233ba/AveryNIC.jpg" 
                   alt="Child benefiting from donation at Now I Can" 
-                  className="w-full h-48 object-cover"
+                  className="w-full aspect-square object-cover" // Changed to make the image square
                 />
               </div>
               <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Your Donation Makes a Difference</h2>
@@ -62,98 +62,97 @@ const Donate = () => {
             
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-xl font-bold mb-4">Ways to Donate</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
+              <ul className="space-y-4 mb-8">
+                <li className="flex">
+                  <span className="text-primary-blue-600 mr-2">•</span>
                   <div>
                     <span className="font-medium">Online</span>: Make a secure donation through our website using the buttons below
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
+                <li className="flex">
+                  <span className="text-primary-blue-600 mr-2">•</span>
                   <div>
                     <span className="font-medium">Venmo</span>: Send donations to @nowican
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
+                <li className="flex">
+                  <span className="text-primary-blue-600 mr-2">•</span>
                   <div>
                     <span className="font-medium">By Phone</span>: Give us a call to discuss your donation
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-primary-blue-600 mr-3 mt-1 text-lg">•</span>
+                <li className="flex">
+                  <span className="text-primary-blue-600 mr-2">•</span>
                   <div>
                     <span className="font-medium">By Mail</span>: Send checks payable to "Now I Can Foundation" to:
-                    <div className="ml-4 mt-1">
+                    <div className="mt-1">
                       <p>Now I Can Foundation<br></br>1950 S 375 E Orem, UT 84058</p>
                     </div>
                   </div>
                 </li>
               </ul>
-            </div>
-          </div>
-        </section>
-        
-        <section className="mb-12">
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold mb-6 text-center">Make a Donation</h2>
-            <div className="max-w-2xl mx-auto">
-              <p className="text-center text-lg mb-8">
-                Ready to make a donation to Now I Can?<br />First, select which Now I Can location you're donating to:
-              </p>
               
-              <div className="mb-8 flex justify-center">
-                <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
-                  {/* Utah Button */}
-                  <button
-                    className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
-                      selectedLocation === 'utah' 
-                      ? 'text-white' 
-                      : 'text-gray-700'
-                    }`}
-                    onClick={() => setSelectedLocation('utah')}
-                  >
-                    Utah
-                  </button>
+              {/* Make a Donation section moved inside Ways to Donate */}
+              <div className="border-t pt-8">
+                <h3 className="text-xl font-bold mb-6 text-center">Make a Donation</h3>
+                <div className="max-w-2xl mx-auto">
+                  <p className="text-center text-lg mb-8">
+                    Ready to make a donation to Now I Can?<br />First, select which Now I Can location you're donating to:
+                  </p>
                   
-                  {/* Pennsylvania Button */}
-                  <button
-                    className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
-                      selectedLocation === 'pennsylvania' 
-                      ? 'text-white' 
-                      : 'text-gray-700'
-                    }`}
-                    onClick={() => setSelectedLocation('pennsylvania')}
-                  >
-                    Pennsylvania
-                  </button>
+                  <div className="mb-8 flex justify-center">
+                    <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                      {/* Utah Button */}
+                      <button
+                        className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                          selectedLocation === 'utah' 
+                          ? 'text-white' 
+                          : 'text-gray-700'
+                        }`}
+                        onClick={() => setSelectedLocation('utah')}
+                      >
+                        Utah
+                      </button>
+                      
+                      {/* Pennsylvania Button */}
+                      <button
+                        className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                          selectedLocation === 'pennsylvania' 
+                          ? 'text-white' 
+                          : 'text-gray-700'
+                        }`}
+                        onClick={() => setSelectedLocation('pennsylvania')}
+                      >
+                        Pennsylvania
+                      </button>
+                      
+                      {/* Sliding Background */}
+                      <span 
+                        className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                          selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
+                        }`}
+                      ></span>
+                    </div>
+                  </div>
                   
-                  {/* Sliding Background */}
-                  <span 
-                    className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                      selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
-                    }`}
-                  ></span>
+                  <div className="flex justify-center">
+                    <a 
+                      href={donationFormUrl}
+                      target="_blank"
+                      rel="noopener noreferrer" 
+                      className={`btn text-white text-lg px-8 py-3 ${
+                        selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
+                      }`}
+                    >
+                      Proceed to Donation Page
+                    </a>
+                  </div>
+                  
+                  <p className="text-gray-500 text-sm italic text-center mt-6">
+                    You will be redirected to our secure donation processor to complete your transaction.
+                  </p>
                 </div>
               </div>
-              
-              <div className="flex justify-center">
-                <a 
-                  href={donationFormUrl}
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className={`btn text-white text-lg px-8 py-3 ${
-                    selectedLocation === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'
-                  }`}
-                >
-                  Proceed to Donation Page
-                </a>
-              </div>
-              
-              <p className="text-gray-500 text-sm italic text-center mt-6">
-                You will be redirected to our secure donation processor to complete your transaction.
-              </p>
             </div>
           </div>
         </section>
@@ -162,4 +161,4 @@ const Donate = () => {
   );
 };
 
-export default Donate; 
+export default Donate;

@@ -41,7 +41,7 @@ const FinancialSupport = () => {
           <img 
             src={finaceImage} 
             alt="Financial Support at Now I Can" 
-            className="w-full h-96 object-cover"
+            className="w-full h-96 object-cover object-position-center-top"
           />
         </div>
         <h1 className="text-4xl font-bold font-heading mb-6">Payment & Financial Aid</h1>

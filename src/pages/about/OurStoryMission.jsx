@@ -190,7 +190,10 @@ const OurStoryMission = () => {
                       In Colby's own words...
                     </div>
                     <p className="text-gray-700">
-                      Hi, my name is Colby Christensen. I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.
+                      Hi, my name is Colby Christensen.
+                      <br></br>
+                      <br></br>
+                      I want to tell you my story, how it led to "Now I Can", and how their approach to physical therapy changed my life.
                     </p>
                   </div>
                 </div>
