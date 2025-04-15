@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import donateImage from '../../assets/images/Marshall_Bike_mom3.jpg';
+import donateImage2 from '../../assets/images/PAParadeMomTrophy.jpg';
 
 const Donate = () => {
   const [selectedLocation, setSelectedLocation] = useState('utah');
@@ -11,7 +13,7 @@ const Donate = () => {
       <div className="container-custom mx-auto px-4">
         <div className="mb-8 overflow-hidden rounded-lg">
           <img 
-            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/03c7afca-b61c-457f-b5e4-7a8f9fd2e078/H-Donate.jpg" 
+            src={donateImage}
             alt="Donate to Now I Can Foundation" 
             className="w-full h-96 object-cover object-position-center-top" style={{objectPosition: '50% 40%'}}
           />
@@ -39,7 +41,7 @@ const Donate = () => {
             <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
               <div className="mb-4 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/3bdc3ee2-ef3f-4f0b-8661-3eae1b2233ba/AveryNIC.jpg" 
+                  src={donateImage2}
                   alt="Child benefiting from donation at Now I Can" 
                   className="w-full aspect-square object-cover" // Changed to make the image square
                 />
