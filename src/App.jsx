@@ -5,6 +5,9 @@ import './App.css'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 
+// Import the improved ScrollToTop component
+import ScrollToTop from './components/ScrollToTop'
+
 // Page Components
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -37,6 +40,7 @@ import FamilyResources from './pages/families/FamilyResources'
 function App() {
   return (
     <Router basename="/nowican">
+      <ScrollToTop /> {/* Add the imported ScrollToTop component */}
       <div className="flex flex-col min-h-screen bg-white">
         <Navbar />
         <main className="flex-grow">
