@@ -12,6 +12,11 @@ import rainbowImage from '../assets/images/rainbow.png';
 import balloonImage from '../assets/images/balloon.png';
 import runningImage from '../assets/images/running.png';
 
+import EbersoleFamilyImg from '../assets/images/EbersoleFamily1.jpg';
+import InnovativeImg from '../assets/images/innovative.jpg';
+import intensiveImg from '../assets/images/Intensive.jpg';
+import teamImg from '../assets/images/NacoleandAvery.jpg';
+
 const Home = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -51,19 +56,21 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
             <ScrollReveal delay={200}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300" style={{ height: "100%" }}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300 h-full">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/925c9c27-3b4a-4b66-a4ee-8acf79695199/HP-Therapy-Schedule.jpg" 
+                    src={intensiveImg}
                     alt="Intensive Therapy Model" 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <div className="p-6 flex flex-col h-40">
-                  <h3 className="text-xl font-bold mb-2">Intensive Therapy Model</h3>
-                  <p className="text-gray-600 mb-4 flex-grow">
-                    Our intensive model provides 4 hours of therapy per day, 5 days a week, resulting in gains that might take months or years in traditional therapy.
-                  </p>
+                <div className="p-6 flex flex-col justify-between h-full">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Intensive Therapy Model</h3>
+                    <p className="text-gray-600 mb-4">
+                      Our intensive model provides 4 hours of therapy per day, 5 days a week, resulting in gains that might take months or years in traditional therapy.
+                    </p>
+                  </div>
                   <Link to="/therapy-services/intensive-physical-therapy" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                     Learn More
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,19 +83,21 @@ const Home = () => {
             
             {/* Card 2 - Innovative Treatment Methods with fixed styling */}
             <ScrollReveal delay={300}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300" style={{ height: "100%" }}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300 h-full">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/1647216189569-8OCPNKIVC8MYZL30181M/Suit-Therapy-Page-Spot1.jpg" 
+                    src={InnovativeImg} 
                     alt="Innovative Treatment Methods" 
                     className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <div className="p-6 flex flex-col h-40">
-                  <h3 className="text-xl font-bold mb-2">Innovative Treatment Methods</h3>
-                  <p className="text-gray-600 mb-4 flex-grow">
-                    We utilize cutting-edge techniques including Orthotic Suit Therapy, Universal Exercise Unit, and specialized manual therapy approaches.
-                  </p>
+                <div className="p-6 flex flex-col justify-between h-full">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Innovative Treatment Methods</h3>
+                    <p className="text-gray-600 mb-4">
+                      We utilize cutting-edge techniques including Orthotic Suit Therapy, Universal Exercise Unit, and specialized manual therapy approaches.
+                    </p>
+                  </div>
                   <Link to="/therapy-services/treatment-methods" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
                     Learn More
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,19 +110,21 @@ const Home = () => {
             
             {/* Card 3 */}
             <ScrollReveal delay={400}>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300" style={{ height: "100%" }}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow transform hover:-translate-y-1 duration-300 h-full">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/8b9b155b-8374-41c9-b6be-b6a3418f09c4/H-Therapy-Team.jpg" 
+                    src={teamImg}
                     alt="Expert Therapy Team" 
                     className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                <div className="p-6 flex flex-col h-40">
-                  <h3 className="text-xl font-bold mb-2">Expert Therapy Team</h3>
-                  <p className="text-gray-600 mb-4 flex-grow">
-                    Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
-                  </p>
+                <div className="p-6 flex flex-col justify-between h-full">
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Expert Therapy Team</h3>
+                    <p className="text-gray-600 mb-4">
+                      Our therapists have specialized training in pediatric therapy and are experts in treating children with a wide range of disabilities.
+                    </p>
+                  </div>
                   <Link to="/about-us/our-team" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
                     Meet Our Team
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -178,9 +189,9 @@ const Home = () => {
               <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="h-56 overflow-hidden">
                   <img 
-                    src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/39fc64f9-31df-4b8a-87e3-5898cdb8a92d/H-Testimonials.jpg" 
+                    src={EbersoleFamilyImg}
                     alt="Success Stories" 
-                    className="w-full h-full object-cover object-bottom transition-transform duration-500 hover:scale-105"
+                    className="w-full h-full object-cover object-[center_15%] transition-transform duration-500 hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
@@ -189,7 +200,7 @@ const Home = () => {
                     Discover how intensive therapy has helped children take their first steps, gain independence, and achieve milestones their families never thought possible.
                   </p>
                   <div className="flex justify-between items-center">
-                    <Link to="/for-families" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
+                    <Link to="/for-families/family-resources" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
                       Read More Stories
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -247,12 +258,6 @@ const Home = () => {
                     <p>Orem, UT 84058</p>
                     <p className="mt-2">(801) 228-1935</p>
                   </address>
-                  <Link to="/about-us/locations" className="text-primary-blue-600 font-medium hover:text-primary-blue-700 flex items-center">
-                    Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 </div>
               </div>
             </ScrollReveal>
@@ -274,16 +279,22 @@ const Home = () => {
                     <p>Lititz, PA 17543</p>
                     <p className="mt-2">(717) 269-5829</p>
                   </address>
-                  <Link to="/about-us/locations" className="text-primary-orange-500 font-medium hover:text-primary-orange-600 flex items-center">
-                    Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 </div>
               </div>
             </ScrollReveal>
           </div>
+
+          {/* Single button for both locations */}
+          <ScrollReveal delay={400}>
+            <div className="text-center mt-8">
+              <Link to="/about-us/locations" className="btn inline-block text-primary-blue-600 font-medium hover:text-primary-blue-700 border border-primary-blue-600 hover:border-primary-blue-700 bg-white hover:bg-gray-50 rounded-lg px-6 py-3 shadow-sm transition-all duration-300">
+                View All Locations
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
       
