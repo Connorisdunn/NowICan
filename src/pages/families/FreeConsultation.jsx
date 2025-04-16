@@ -23,6 +23,7 @@ const FreeConsultation = () => {
   });
 
   const [currentStep, setCurrentStep] = useState(1);
+  const [formErrors, setFormErrors] = useState({});
   const totalSteps = 4;
 
   const handleInputChange = (e) => {
@@ -31,6 +32,14 @@ const FreeConsultation = () => {
       ...prevData,
       [name]: value
     }));
+    
+    // Clear error for this field when user starts typing
+    if (formErrors[name]) {
+      setFormErrors(prevErrors => ({
+        ...prevErrors,
+        [name]: ''
+      }));
+    }
   };
 
   const handleLocationChange = (location) => {
@@ -42,6 +51,17 @@ const FreeConsultation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Validate step 4 (final validation before submit)
+    const consentCheckbox = document.getElementById('consent');
+    if (!consentCheckbox.checked) {
+      setFormErrors(prevErrors => ({
+        ...prevErrors,
+        consent: 'You must consent to be contacted'
+      }));
+      return;
+    }
+    
     // In a real application, we would send this data to a server
     console.log('Form submitted:', formData);
     setFormData(prevData => ({
@@ -50,15 +70,70 @@ const FreeConsultation = () => {
     }));
   };
 
+  const validateStep = (step) => {
+    const errors = {};
+    
+    switch(step) {
+      case 1:
+        if (!formData.childName.trim()) errors.childName = 'Child name is required';
+        if (!formData.dob) errors.dob = 'Date of birth is required';
+        if (!formData.medicalConditions.trim()) errors.medicalConditions = 'Medical conditions is required';
+        break;
+      
+      case 2:
+        if (!formData.parentNames.trim()) errors.parentNames = 'Parent names are required';
+        if (!formData.email.trim()) errors.email = 'Email is required';
+        if (!formData.phone.trim()) errors.phone = 'Phone number is required';
+        if (!formData.hearAboutUs) errors.hearAboutUs = 'Please select how you heard about us';
+        
+        // Conditionally validate social media source
+        if (formData.hearAboutUs === 'Social Media' && !formData.socialMediaSource.trim()) {
+          errors.socialMediaSource = 'Please specify which social media platform';
+        }
+        
+        // Conditionally validate therapist referral
+        if (formData.hearAboutUs === 'Therapist' && !formData.therapistReferral.trim()) {
+          errors.therapistReferral = 'Please provide therapist information';
+        }
+        break;
+      
+      // Step 3 doesn't need validation as it has a default value
+      
+      default:
+        break;
+    }
+    
+    return errors;
+  };
+
   const nextStep = () => {
+    const errors = validateStep(currentStep);
+    
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      // Scroll to the first error
+      const firstErrorField = document.getElementById(Object.keys(errors)[0]);
+      if (firstErrorField) {
+        firstErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstErrorField.focus();
+      }
+      return;
+    }
+    
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
+      setFormErrors({});
+      // Scroll to top of form
+      window.scrollTo({ top: 300, behavior: 'smooth' });
     }
   };
 
   const prevStep = () => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1);
+      setFormErrors({});
+      // Scroll to top of form
+      window.scrollTo({ top: 300, behavior: 'smooth' });
     }
   };
 
@@ -82,9 +157,12 @@ const FreeConsultation = () => {
                 name="childName"
                 value={formData.childName}
                 onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
+                className={`form-input rounded-md shadow-sm w-full ${formErrors.childName ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.childName && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.childName}</p>
+              )}
             </div>
             
             <div>
@@ -97,9 +175,12 @@ const FreeConsultation = () => {
                 name="dob"
                 value={formData.dob}
                 onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
+                className={`form-input rounded-md shadow-sm w-full ${formErrors.dob ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.dob && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.dob}</p>
+              )}
             </div>
             
             <div>
@@ -112,9 +193,12 @@ const FreeConsultation = () => {
                 value={formData.medicalConditions}
                 onChange={handleInputChange}
                 rows={3}
-                className="form-textarea rounded-md shadow-sm w-full"
+                className={`form-textarea rounded-md shadow-sm w-full ${formErrors.medicalConditions ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.medicalConditions && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.medicalConditions}</p>
+              )}
             </div>
             
             <div>
@@ -195,9 +279,12 @@ const FreeConsultation = () => {
                 name="parentNames"
                 value={formData.parentNames}
                 onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
+                className={`form-input rounded-md shadow-sm w-full ${formErrors.parentNames ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.parentNames && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.parentNames}</p>
+              )}
             </div>
             
             <div>
@@ -210,9 +297,12 @@ const FreeConsultation = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
+                className={`form-input rounded-md shadow-sm w-full ${formErrors.email ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.email && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.email}</p>
+              )}
             </div>
             
             <div>
@@ -225,9 +315,12 @@ const FreeConsultation = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="form-input rounded-md shadow-sm w-full"
+                className={`form-input rounded-md shadow-sm w-full ${formErrors.phone ? 'border-red-500' : ''}`}
                 required
               />
+              {formErrors.phone && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.phone}</p>
+              )}
             </div>
             
             <div>
@@ -253,7 +346,7 @@ const FreeConsultation = () => {
                 name="hearAboutUs"
                 value={formData.hearAboutUs}
                 onChange={handleInputChange}
-                className="form-select rounded-md shadow-sm w-full"
+                className={`form-select rounded-md shadow-sm w-full ${formErrors.hearAboutUs ? 'border-red-500' : ''}`}
                 required
               >
                 <option value="">Please select</option>
@@ -264,12 +357,15 @@ const FreeConsultation = () => {
                 <option value="Therapist">Therapist</option>
                 <option value="Other">Other</option>
               </select>
+              {formErrors.hearAboutUs && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.hearAboutUs}</p>
+              )}
             </div>
             
             {formData.hearAboutUs === 'Social Media' && (
               <div>
                 <label htmlFor="socialMediaSource" className="block text-sm font-medium text-gray-700 mb-1">
-                  If Social Media – Please let us know where:
+                  If Social Media – Please let us know where: *
                 </label>
                 <input
                   type="text"
@@ -278,15 +374,19 @@ const FreeConsultation = () => {
                   value={formData.socialMediaSource}
                   onChange={handleInputChange}
                   placeholder="Facebook, Instagram, TikTok, etc."
-                  className="form-input rounded-md shadow-sm w-full"
+                  className={`form-input rounded-md shadow-sm w-full ${formErrors.socialMediaSource ? 'border-red-500' : ''}`}
+                  required
                 />
+                {formErrors.socialMediaSource && (
+                  <p className="mt-1 text-sm text-red-600">{formErrors.socialMediaSource}</p>
+                )}
               </div>
             )}
             
             {formData.hearAboutUs === 'Therapist' && (
               <div>
                 <label htmlFor="therapistReferral" className="block text-sm font-medium text-gray-700 mb-1">
-                  If a therapist recommended us to you, please list the therapist and the agency:
+                  If a therapist recommended us to you, please list the therapist and the agency: *
                 </label>
                 <input
                   type="text"
@@ -294,8 +394,12 @@ const FreeConsultation = () => {
                   name="therapistReferral"
                   value={formData.therapistReferral}
                   onChange={handleInputChange}
-                  className="form-input rounded-md shadow-sm w-full"
+                  className={`form-input rounded-md shadow-sm w-full ${formErrors.therapistReferral ? 'border-red-500' : ''}`}
+                  required
                 />
+                {formErrors.therapistReferral && (
+                  <p className="mt-1 text-sm text-red-600">{formErrors.therapistReferral}</p>
+                )}
               </div>
             )}
           </div>
@@ -474,13 +578,16 @@ const FreeConsultation = () => {
                   type="checkbox"
                   id="consent"
                   name="consent"
-                  className="mt-1 mr-2"
+                  className={`mt-1 mr-2 ${formErrors.consent ? 'border-red-500' : ''}`}
                   required
                 />
-                <label htmlFor="consent" className="text-sm text-gray-600">
-                  I consent to Now I Can Foundation contacting me using the information provided above.
+                <label htmlFor="consent" className={`text-sm ${formErrors.consent ? 'text-red-600' : 'text-gray-600'}`}>
+                  I consent to Now I Can Foundation contacting me using the information provided above. *
                 </label>
               </div>
+              {formErrors.consent && (
+                <p className="mt-1 text-sm text-red-600">{formErrors.consent}</p>
+              )}
             </div>
           </div>
         );

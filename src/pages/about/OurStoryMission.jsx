@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import foundationBannerImage from '../../assets/images/nowican-51.jpg';
 import foundersImage from '../../assets/images/joel-tracey-christensen.jpg';
 import colbyImage from '../../assets/images/colby.jpg';
+import allisonTroyImage from '../../assets/images/ebersoleFamily1.jpg'; // Add this new import
 
 const OurStoryMission = () => {
   return (
@@ -44,7 +45,6 @@ const OurStoryMission = () => {
             </div>
           </div>
           
-          {/* Rest of the content remains unchanged... */}
           {/* Values Section with Fixed Checkmarks */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Our Core Values</h2>
@@ -174,7 +174,7 @@ const OurStoryMission = () => {
             </div>
             
             {/* Colby's Story - Reorganized with better spacing */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
               <div className="p-6">
                 <div className="flex flex-col md:flex-row gap-6 mb-6">
                   <div className="md:w-1/3 flex justify-center">
@@ -203,6 +203,7 @@ const OurStoryMission = () => {
                     When I was a baby I was diagnosed with Hemiplegic Cerebral Palsy. Doctors told my parents that physical therapy could maybe help me, and I was referred to a local therapy office. In a couple years I was able to make small changes, but my parents couldn't help but wonder if maybe there was MORE?
                   </p>
                   
+                  {/* Rest of Colby's story content remains unchanged */}
                   <p>
                     They did their homework and when I was four years old my Mom and Dad took me to Poland to try a "new" treatment. The treatment was called the Intensive Model of Therapy (IMOT for short). At home, in Utah, my traditional physical therapy sessions lasted 45-minutes, once a week. But the IMOT I received in Poland had me in innovative physical therapy sessions that were 3-hours long and occurred 5 days a week!
                   </p>
@@ -257,6 +258,54 @@ const OurStoryMission = () => {
                   
                   <p>
                     The intensive physical therapy I received as a child at Now I Can boosted my ability and impacted my life in many wonderful ways. I'm so glad my parents didn't settle for "average" therapy, but instead they searched for MORE and they gave me MORE at Now I Can.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Now I Can North East Story - New Section */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+              <div className="p-6">
+                <div className="flex flex-col md:flex-row gap-6 mb-6">
+                  <div className="md:w-1/3 flex justify-center">
+                    <img 
+                      src={allisonTroyImage} 
+                      alt="Allison and Troy with daughter Lauren" 
+                      className="w-64 h-64 rounded-lg object-cover object-[25%_center]"
+                    />
+                  </div>
+                  <div className="md:w-2/3">
+                    <h2 className="text-2xl font-bold mb-4">Our Pennsylvania Partnership Story</h2>
+                    <h3 className="text-lg font-medium text-primary-blue-600 mb-4">Now I Can Foundation North East</h3>
+                    <p className="text-gray-700">
+                      A story of seeking more, finding hope, and expanding the Now I Can mission to the East Coast.
+                    </p>
+                  </div>
+                </div>
+              
+                <div className="space-y-4 text-gray-700">
+                  <p>
+                    In 2009 Allison and Troy welcomed their first child into the world, a beautiful daughter named Lauren. At 18-months Lauren was diagnosed with cerebral palsy. Within months, physical therapy became a staple of their everyday living. As Lauren grew and faced new challenges they began to wonder: is there more we can do? When Lauren was 7-years old God answered their question as Allison learned about <span className="italic">Now I Can Foundation</span> in Utah.
+                  </p>
+                  
+                  <p>
+                    As a family that enjoyed exploring the south-western states, Allison and Troy decided to make physical therapy a part of their summer vacation. They registered Lauren to receive 3-weeks of intensive physical therapy at Now I Can Foundation in Provo, UT. After just one week of therapy Allison and Troy were blown away by the amazing progress Lauren had made in such a short time span. Allison's eyes had been opened. There was MORE. And it came in a package called intensive physical therapy. This changed everything.
+                  </p>
+                  
+                  <p>
+                    For the next five summers Allison and Troy took their children to Utah for a month. During the week Lauren would receive cutting-edge treatment, and on the weekends the family would take mini-trips to explore the national parks and visit new towns.
+                  </p>
+                  
+                  <p>
+                    It was after summer number four that Allison recognized God was leading her to open an intensive physical therapy clinic in Pennsylvania that would serve children and families living on the East Coast.
+                  </p>
+                  
+                  <p>
+                    Partnering with <span className="italic">Now I Can Foundation</span> in Utah, Allison and her brother, Ross, established <span className="italic">Now I Can Foundation North East</span> in the town of Lititz, Pennsylvania. The intensive physical therapy center is located on the same campus as Ross's technology company, Listrak.
+                  </p>
+                  
+                  <p>
+                    A long time First Grade teacher with a Masters in Education, Allison has a heart to see kids grow and achieve. She knows first hand that miracles happen every day–and she wants <span className="italic">Now I Can North East</span> to be a part of your family's miracle.
                   </p>
                 </div>
               </div>

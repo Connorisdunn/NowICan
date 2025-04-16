@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (     
     <section className="relative w-full min-h-[85vh] overflow-hidden">       
       {/* Added back a subtle gradient overlay with reduced opacity */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-blue-800/80 to-primary-orange-700/30 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-blue-800/80 to-primary-orange-700/60 z-10"></div>
       
       {/* Video container */}
       <div className="absolute inset-0 w-full overflow-hidden">         
