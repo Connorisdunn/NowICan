@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';  
 
 const HeroSection = () => {   
-  // Updated video URL: removed start=15 parameter and added playlist parameter with the video ID to enable looping
+  // Video URL configured to start from beginning and loop
   const videoUrl = "https://www.youtube.com/embed/5tTLG0zQXKk?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=0&rel=0&playlist=5tTLG0zQXKk&loop=1";   
   const heroImage = "https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/1b927174-e241-4e50-8399-dc5b25146a27/H-Avery-on-bike.jpg";   
   const [videoLoaded, setVideoLoaded] = useState(false);   
@@ -19,10 +19,12 @@ const HeroSection = () => {
   }, []);    
 
   return (     
-    <section className="relative min-h-[85vh] overflow-hidden">       
-      {/* Video background with overlay */}       
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-blue-800/80 to-primary-orange-700/80 z-10"></div>       
-      <div className="absolute pt-16 inset-0 overflow-hidden">         
+    <section className="relative w-full min-h-[85vh] overflow-hidden">       
+      {/* Added back a subtle gradient overlay with reduced opacity */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary-blue-800/50 to-primary-orange-700/30 z-10"></div>
+      
+      {/* Video container */}
+      <div className="absolute inset-0 w-full overflow-hidden">         
         <div className="relative h-full w-full">           
           {/* Video player */}           
           <iframe              

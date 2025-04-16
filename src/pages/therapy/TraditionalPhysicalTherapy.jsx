@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import local images
-import traditionalBannerImage from '../../assets/images/vibrationPlateHeader.jpg';
+import traditionalBannerImage from '../../assets/images/VibrationPlateHeader.jpg';
 import regularSessionsImage from '../../assets/images/ball.jpg';
 import extendedTreatmentImage from '../../assets/images/TraditionalTherapy3.jpg';
 
