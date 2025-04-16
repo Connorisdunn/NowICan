@@ -260,19 +260,54 @@ const Accommodations = () => {
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="p-8">
                   <h3 className="text-xl font-bold mb-4">What Can We Do While Staying in Provo?</h3>
-                  <p className="text-lg mb-4">
-                    Provo is located about 50 miles south of Salt Lake City, Utah, and is at the base of the beautiful 
-                    Wasatch Mountains. Fun family activities abound, from hiking or skiing, to visiting museums and water slide parks.
-                  </p>
-                  <p className="text-lg mb-4">
-                    During your stay, you'll find plenty of family-friendly activities in the Provo/Orem area. 
-                    Enjoy Thanksgiving Point, Provo Canyon, Bridal Veil Falls, and numerous restaurants and 
-                    shopping centers all within a short drive from our facility.
-                  </p>
-                  <p className="text-lg mb-4">
-                    To explore more fun options in Provo and surrounding cities, please visit our 
-                    <Link to="/about-us/locations" className="text-primary-blue-600 hover:underline ml-1">Utah page</Link>.
-                  </p>
+                  
+                  <div className="space-y-4">
+                    <p className="text-lg">
+                      Provo is located about 50 miles south of Salt Lake City, Utah, and is at the base of the beautiful 
+                      Wasatch Mountains. Our valley location offers many outdoor activities year-round:
+                    </p>
+                    
+                    <div className="pl-5">
+                      <h4 className="font-medium text-lg mb-2">Outdoor Activities</h4>
+                      <ul className="list-disc pl-5 mb-4">
+                        <li>Skiing and snowboarding (15 minutes from Sundance Resort, 40 minutes from Park City)</li>
+                        <li>Hiking scenic trails</li>
+                        <li>Mountain biking</li>
+                        <li>Rock climbing</li>
+                        <li>Swimming</li>
+                        <li>Provo Canyon and Bridal Veil Falls</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="pl-5">
+                      <h4 className="font-medium text-lg mb-2">Family-Friendly Entertainment</h4>
+                      <ul className="list-disc pl-5 mb-4">
+                        <li>Museums</li>
+                        <li>Waterparks</li>
+                        <li>Theater productions</li>
+                        <li>Arcades</li>
+                        <li>Aquarium</li>
+                        <li>Sporting events</li>
+                        <li>Thanksgiving Point</li>
+                      </ul>
+                    </div>
+                    
+                    <p className="text-lg">
+                      Our clinic is located on the border of Provo and Orem, which each have incredible recreation centers 
+                      where you can swim, work out, or take a class as a guest for just $5 a day.
+                    </p>
+                    
+                    <p className="text-lg">
+                      We're also close to two major universities (BYU and UVU) with many cultural and educational activities,
+                      as well as numerous restaurants and shopping centers all within a short drive from our facility.
+                    </p>
+                    
+                    <p className="text-lg">
+                      Families enjoy time spent here doing fun activities outside of the physical therapy hours. 
+                      If you have questions about accommodations or need suggestions for entertainment or great food, 
+                      we are here to help!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -299,15 +334,50 @@ const Accommodations = () => {
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="p-8">
                   <h3 className="text-xl font-bold mb-4">What Can We Do While Staying in Lititz, PA?</h3>
-                  <p className="text-lg mb-4">
-                    Lititz, PA is home to "America's Coolest Small Town". Located 38 miles from Harrisburg, 76 miles from Philadelphia, and 9 miles from Lancaster, the area is rich in history, shopping, parks, entertainment, and restaurants.
-                  </p>
-                  <p className="text-lg mb-4">
-                    Visit <a href="https://lititzpa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">LititzPA.com</a> to see all the amazing opportunities that abound in this quaint small town. We are also located a short drive from Hershey, PA, home to world-famous Hershey Park & Chocolate World!
-                  </p>
-                  <p className="text-lg mb-4">
-                    For more ideas about fun in Lititz and surrounding cities, check out <a href="https://www.visitpa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">VisitPA.com</a>.
-                  </p>
+                  
+                  <div className="bg-primary-orange-50 border-l-4 border-primary-orange-500 p-4 mb-6">
+                    <h4 className="text-lg font-bold mb-2">Come For The Therapy, Stay For The Adventure!</h4>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <p className="text-lg">
+                      Welcome to Lititz, Pennsylvania! Voted "America's Coolest Small Town" in 2013, our vibrant community is constantly growing, offering all kinds of activities, entertainment and eating experiences the entire family will enjoy.
+                    </p>
+                    
+                    <p className="text-lg">
+                      The picturesque, tree-lined streets of downtown Lititz are home to blocks of eclectic retail shops and boutiques, entertainment, historical architecture and tours, plus unique eateries that span coffee and ice cream shops, to gourmet sandwiches and pizzas, to fine dining and desserts. Lititz is also home to Julius Sturgis Pretzels, the oldest pretzel company in the USA. Take a tour and discover how pretzels came into existence, then try your hand at pretzel making. To satisfy your sweet tooth visit the second oldest chocolate factory in America–Wilbur Chocolates. There you can watch chocolatiers make all kinds of sweet treats while shopping their expansive selection of chocolates and candy. Across the street is Lititz Springs Park, a beautiful expanse of grass and tall trees, speckled with picnic tables, playgrounds, and a walking path that follows the waters of the natural spring that is the source of Lititz Run (creek). When planning your visit be sure to check the Lititz events calendar where you'll discover a constant rotation of festivals, musical performances, art and craft shows, plus holiday celebrations. There's always something happening in Lititz!
+                    </p>
+                    
+                    <p className="text-lg">
+                      Nestled in beautiful Lancaster County farmland, Lititz is a quick 15-minutes drive from city of Lancaster where you'll find even more shopping, dining, lodging, entertainment and outdoor activities. The Route 30 corridor is home to outlet shopping, Dutch Wonderland Amusement Park, many family owned buffets and chain restaurants, plus opportunities to explore the Amish community and their handcrafted goods.
+                    </p>
+                    
+                    <p className="text-lg">
+                      While visiting Lititz, be sure to make the 25 mile drive to the town of Hershey "The Sweetest Place on Earth!" Hershey is home to Hershey Park, Chocolate World, Zoo America, The Giant Center and the beautiful Hershey Gardens. You'll also find plenty of outlet and boutique shopping, gourmet restaurants, and coffee shops.
+                    </p>
+                    
+                    <div className="bg-gray-50 p-5 rounded-lg mt-6">
+                      <h4 className="font-bold mb-3">Links to More Information</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>
+                          <span className="font-medium">For more Lititz information </span>
+                          <a href="https://lititzpa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a>
+                        </li>
+                        <li>
+                          <span className="font-medium">For more Lancaster information </span>
+                          <a href="https://www.lancasterpa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a>
+                        </li>
+                        <li>
+                          <span className="font-medium">For more Hershey information </span>
+                          <a href="https://www.hersheypa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a>
+                        </li>
+                        <li>
+                          <span className="font-medium">For more amazing places to visit in Pennsylvania </span>
+                          <a href="https://www.visitpa.com/" className="text-primary-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">click here</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

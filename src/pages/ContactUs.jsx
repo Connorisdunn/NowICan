@@ -22,6 +22,14 @@ const ContactUs = () => {
       [name]: value
     }));
   };
+  
+  // Handle office selection
+  const handleOfficeChange = (office) => {
+    setFormData(prevState => ({
+      ...prevState,
+      office
+    }));
+  };
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -168,39 +176,45 @@ const ContactUs = () => {
                 </div>
               </div>
               
+              {/* Office Toggle Switch */}
               <div>
-                <label htmlFor="office" className="block text-sm font-medium text-gray-700 mb-1 text-center">
+                <label className="block text-sm font-medium text-gray-700 mb-3 text-center">
                   Which Office Are You Contacting? *
                 </label>
-                <div className="flex flex-col sm:flex-row gap-4 mb-4 justify-center">
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="utah-office"
-                      name="office"
-                      value="utah"
-                      checked={formData.office === 'utah'}
-                      onChange={handleChange}
-                      className="h-4 w-4 text-primary-blue-600 focus:ring-primary-blue-500"
-                      required
-                    />
-                    <label htmlFor="utah-office" className="ml-2 block text-sm text-gray-700">
-                      Utah Office
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      type="radio"
-                      id="pennsylvania-office"
-                      name="office"
-                      value="pennsylvania"
-                      checked={formData.office === 'pennsylvania'}
-                      onChange={handleChange}
-                      className="h-4 w-4 text-primary-orange-600 focus:ring-primary-orange-500"
-                    />
-                    <label htmlFor="pennsylvania-office" className="ml-2 block text-sm text-gray-700">
-                      Pennsylvania Office
-                    </label>
+                <div className="flex justify-center">
+                  <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                    {/* Utah Button */}
+                    <button 
+                      type="button"
+                      className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                        formData.office === 'utah' 
+                        ? 'text-white' 
+                        : 'text-gray-700'
+                      }`}
+                      onClick={() => handleOfficeChange('utah')}
+                    >
+                      Utah
+                    </button>
+                    
+                    {/* Pennsylvania Button */}
+                    <button 
+                      type="button"
+                      className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                        formData.office === 'pennsylvania' 
+                        ? 'text-white' 
+                        : 'text-gray-700'
+                      }`}
+                      onClick={() => handleOfficeChange('pennsylvania')}
+                    >
+                      Pennsylvania
+                    </button>
+                    
+                    {/* Sliding Background */}
+                    <span 
+                      className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                        formData.office === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
+                      }`}
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -238,7 +252,7 @@ const ContactUs = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 w-full sm:w-auto"
+                  className={`btn ${formData.office === 'utah' ? 'bg-primary-blue-600 hover:bg-primary-blue-700' : 'bg-primary-orange-600 hover:bg-primary-orange-700'} text-white w-full sm:w-auto`}
                 >
                   Send Message
                 </button>
