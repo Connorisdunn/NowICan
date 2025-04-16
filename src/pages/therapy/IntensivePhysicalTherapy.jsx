@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Import local images
 import intensiveOverviewImage from '../../assets/images/NacoleandAvery.jpg';
-import sessionStructureImage from '../../assets/images/intensive.jpg';
+import sessionStructureImage from '../../assets/images/Intensive.jpg';
 import manualTechniqueImage from '../../assets/images/nowican-39.jpg';
 import orthoticSuitImage from '../../assets/images/orthotic-suit.png';
 import universalExerciseImage from '../../assets/images/universal-exercise2.jpg';
