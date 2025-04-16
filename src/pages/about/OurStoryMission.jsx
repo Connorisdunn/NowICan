@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import foundationBannerImage from '../../assets/images/nowican-51.jpg';
 import foundersImage from '../../assets/images/joel-tracey-christensen.jpg';
 import colbyImage from '../../assets/images/colby.jpg';
-import allisonTroyImage from '../../assets/images/ebersoleFamily1.jpg'; // Add this new import
+import allisonTroyImage from '../../assets/images/EbersoleFamily1.jpg'; // Add this new import
 
 const OurStoryMission = () => {
   return (
