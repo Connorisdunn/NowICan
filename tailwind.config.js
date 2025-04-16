@@ -1,4 +1,6 @@
 // tailwind.config.js
+import formsPlugin from '@tailwindcss/forms';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -49,13 +51,25 @@ export default {
       boxShadow: {
         'inner-light': 'inset 0 2px 4px 0 rgba(255, 255, 255, 0.06)',
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+          '25%': { transform: 'translateY(-5px) rotate(1deg)' },
+          '75%': { transform: 'translateY(5px) rotate(-1deg)' },
+        }
+      },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',
         'bounce-slow': 'bounce 2s infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    formsPlugin,
   ],
 }

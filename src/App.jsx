@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 
@@ -22,12 +21,10 @@ import GettingStarted from './pages/families/GettingStarted'
 import PatientInformation from './pages/families/PatientInformation'
 import FreeConsultation from './pages/families/FreeConsultation'
 import Accommodations from './pages/families/Accommodations'
-import WhereToStay from './pages/families/WhereToStay'
-import LocalActivities from './pages/families/LocalActivities'
+
 
 import Donate from './pages/involved/Donate'
 import VolunteerOpportunities from './pages/involved/VolunteerOpportunities'
-import OurDonors from './pages/involved/OurDonors'
 
 // New Consolidated Pages
 import OurStoryMission from './pages/about/OurStoryMission'
@@ -70,17 +67,13 @@ function App() {
             <Route path="/for-families/getting-started/patient-information" element={<PatientInformation />} />
             <Route path="/for-families/financial-support" element={<FinancialSupport />} />
             <Route path="/for-families/accommodations" element={<Accommodations />} />
-            <Route path="/for-families/accommodations/where-to-stay" element={<WhereToStay />} />
-            <Route path="/for-families/accommodations/local-activities" element={<LocalActivities />} />
             <Route path="/for-families/family-resources" element={<FamilyResources />} />
             
             {/* Get Involved/Support Us Pages */}
             <Route path="/get-involved/donate" element={<Donate />} />
             <Route path="/get-involved/volunteer-opportunities" element={<VolunteerOpportunities />} />
-            <Route path="/get-involved/our-donors" element={<OurDonors />} />
             <Route path="/support-us/donate" element={<Donate />} />
             <Route path="/support-us/volunteer" element={<VolunteerOpportunities />} />
-            <Route path="/support-us/our-supporters" element={<OurDonors />} />
           </Routes>
         </main>
         <Footer />

@@ -137,17 +137,6 @@ const Footer = () => {
           <p className="text-sm text-primary-blue-200 mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Now I Can Foundation. All rights reserved.
           </p>
-          <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-service" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
-              Terms of Service
-            </Link>
-            <Link to="/accessibility" className="text-sm text-primary-blue-200 hover:text-white transition-colors duration-200">
-              Accessibility
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import contactusImg from '../assets/images/contactus.jpg';
+
 const ContactUs = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
@@ -8,7 +10,7 @@ const ContactUs = () => {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8 overflow-hidden rounded-lg">
             <img 
-              src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/b4c8215b-7666-466f-9cbb-681d523f871c/H-Utah-location.jpg" 
+              src={contactusImg}
               alt="Contact Now I Can" 
               className="w-full h-64 object-cover"
             />

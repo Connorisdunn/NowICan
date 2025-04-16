@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import donateImage from '../../assets/images/Marshall_Bike_mom3.jpg';
-import donateImage2 from '../../assets/images/PAParadeMomTrophy.jpg';
+import donateImage2 from '../../assets/images/star.jpg';
 
 const Donate = () => {
   const [selectedLocation, setSelectedLocation] = useState('utah');

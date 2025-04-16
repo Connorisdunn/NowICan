@@ -1,320 +1,368 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Accommodations = () => {
+// Import therapist images
+import markBarneyImage from '../../assets/images/mark-barney.jpg';
+import nacoleJacksonImage from '../../assets/images/nacole-jackson.jpg';
+import meganMerrillImage from '../../assets/images/megan-merrill.jpg';
+import davidLandeenImage from '../../assets/images/david-landeen.jpeg';
+import brookeWinterImage from '../../assets/images/brooke-winter.png';
+import aliBarney from '../../assets/images/ali-barney.jpg';
+import jessicaButlerImage from '../../assets/images/jessica-butler.png';
+import melissaChalkImage from '../../assets/images/melissa-chalk.jpg';
+import traceyChristensenImage from '../../assets/images/tracey-christensen.jpg';
+import allisonEbersoleImage from '../../assets/images/Allison.jpg';
+
+// Import board member images
+import joelTraceyChristensenImage from '../../assets/images/joel-tracey-christensen.jpg';
+import larryMcfersonImage from '../../assets/images/larry-mcferson.jpg';
+import johnLivingstonImage from '../../assets/images/john-livingston.jpg';
+import neilLebaronImage from '../../assets/images/neil-lebaron.jpg';
+import rebeccaSwindleImage from '../../assets/images/rebecca-swindle.jpg';
+import lizLivingstonImage from '../../assets/images/liz-livingston.jpg';
+
+// Import fallback images
+import defaultProfileImage from '../../assets/images/default-board.jpg';
+import defaultBoardImage from '../../assets/images/default-board.jpg';
+
+const OurTeam = () => {
+  const [activeTab, setActiveTab] = useState('therapists');
   const [selectedLocation, setSelectedLocation] = useState('utah');
-
-  // Content specific to Utah
-  const utahContent = {
-    onSiteTitle: "On-Site Accommodations in Utah",
-    onSiteDescription: "Our Utah facility is proud to offer on-site family suites right on our property. These comfortable accommodations allow families to minimize travel time and maximize therapy benefits.",
-    onSiteFeatures: [
-      "Beautifully decorated, comfortable spaces",
-      "Affordable rates ($35/night thanks to our donors)",
-      "Walking distance to therapy sessions",
-      "Kitchenette facilities in some units",
-      "Private bathroom (some with bathtubs)",
-      "Free WiFi and utilities"
-    ],
-    onSiteReservation: [
-      "Three suites available (book early as they fill quickly)",
-      "Typically booked for the duration of therapy sessions",
-      "Request during your therapy scheduling process",
-      "Special arrangements available for families with specific needs"
-    ],
-    onSiteTestimonial: '"Staying at the on-site apartments made our intensive therapy session so much easier. Not having to commute each day gave us more time to rest and prepare for therapy. It was perfect for our family\'s needs." - Johnson Family',
-    nearbyOptions: [
-      {
-        name: "Marriott Residence Inn",
-        description: "Extended stay hotel with kitchen, free breakfast",
-        note: "Ask for Now I Can special rate"
-      },
-      {
-        name: "Marriott Springhill Suites",
-        description: "Spacious suites with mini-fridges, free breakfast",
-        note: "Ask for Now I Can special rate"
-      },
-      {
-        name: "Days Inn",
-        description: "Budget-friendly option with standard amenities",
-        note: ""
-      },
-      {
-        name: "Aspenwood Manor",
-        description: "Apartment-style accommodations",
-        note: ""
-      }
-    ]
-  };
-
-  // Content specific to Pennsylvania
-  const pennsylvaniaContent = {
-    onSiteTitle: "Off-Site Accommodations near our Pennsylvania Location",
-    onSiteDescription: "Our Pennsylvania location offers several comfortable accommodation options nearby. We've partnered with local hotels and rental properties to ensure families have a comfortable place to stay during therapy sessions.",
-    onSiteFeatures: [
-      "Multiple options to fit different budgets",
-      "All accommodations within 15 minutes of our facility",
-      "Special rates negotiated for Now I Can families",
-      "Comfortable spaces for the whole family",
-      "Hotel options with included breakfast",
-      "Extended stay options with kitchen facilities"
-    ],
-    onSiteReservation: [
-      "Request accommodation information during your therapy scheduling",
-      "Book early for best availability, especially during summer months",
-      "Special family rates available at partner hotels",
-      "Alternative housing options can be discussed with our staff"
-    ],
-    onSiteTestimonial: '"The accommodation options in Pennsylvania worked perfectly for our family. The hotel was close to the therapy center and offered everything we needed for our two-week stay." - Williams Family',
-    nearbyOptions: [
-      {
-        name: "Fairfield Inn & Suites",
-        description: "Comfortable rooms with free breakfast",
-        note: "Ask for Now I Can special rate"
-      },
-      {
-        name: "Homewood Suites",
-        description: "Extended stay with kitchenette suites",
-        note: "Great for longer therapy sessions"
-      },
-      {
-        name: "Inn at Leola Village",
-        description: "Charming local inn with great amenities",
-        note: ""
-      },
-      {
-        name: "Suites at Eden Resort",
-        description: "Resort-style accommodations with pools",
-        note: ""
-      },
-      {
-        name: "VRBO Vacation Rentals",
-        description: "Many houses and cottages available in the Lititz area",
-        note: "Best for families looking for home-like accommodations"
-      }
-    ]
-  };
-
-  // Get content based on selected location
-  const locationContent = selectedLocation === 'utah' ? utahContent : pennsylvaniaContent;
-
+  
+  const therapists = [
+    {
+      name: 'MARK BARNEY, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      image: markBarneyImage,
+      bio: [
+        "Mark graduated from Southern Utah University in 2002 with a Bachelors of Science in Physical Education/emphasis in Athletic training and Health Education. He received his Doctorate of Physical Therapy degree from the University of Saint Augustine for Health Sciences in 2008.",
+        "After graduation Mark had the opportunity to work in many different clinical settings including orthopedic outpatient, skilled nursing, and home health. It wasn't long before his career route took a dramatic turn into the field of Pediatrics. Mark finds great satisfaction in assisting children to realize their potential with improved motor function and mobility.",
+        "Mark's training includes courses in musculoskeletal development, manual therapy, myofascial release, NDT, pediatric equipment and bracing, pediatric kinesiology taping, pediatric treatment, and motor control/learning.",
+        "Mark lives in Spanish Fork, UT with his wife and five children. He feels lucky to be around kids at work and at home. He loves to spend time with his family and enjoys being in the outdoors, any sporting event, and serving in the community."
+      ]
+    },
+    {
+      name: 'NACOLE JACKSON',
+      title: 'Physical Therapist Assistant',
+      location: 'utah',
+      image: nacoleJacksonImage,
+      bio: [
+        "Nacole Jackson graduated from Provo College as a Physical Therapist Assistant with high honors.",
+        "Nacole has worked in many physical therapy settings including acute care, inpatient, outpatient orthopedics, industrial PT, and pediatrics. She also has more than 10 years of experience working with children in various teaching settings prior to coming to Now I Can in 2008.",
+        "Nacole enjoys integrating her physical therapy and teaching knowledge to help patients learn and achieve their therapy goals.",
+        "Patients and parents appreciate Nacole's vast knowledge as well as her kind attention to her patients' needs."
+      ]
+    },
+    {
+      name: 'MEGAN MERRILL, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      image: meganMerrillImage,
+      bio: [
+        "Megan grew up in Pocatello, Idaho, and moved to Provo to study at BYU. She earned her BS in Exercise Science in 2013, and started her Doctorate in Physical Therapy one week later at Rocky Mountain University of Health Professions.",
+        "Megan has known she wanted to work with kiddos from the very beginning. She volunteered at Now I Can for 3 years during college and returned as a therapist in 2019: truly a dream come true!",
+        "Megan has been married for one and a half years and recently bought a miniature schnauzer named Ollie, who keeps their little family very busy!"
+      ]
+    },
+    {
+      name: 'David Landeen, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      image: davidLandeenImage,
+      bio: [
+        "David recently graduated from the University of Utah with a Doctor of Physical Therapy degree. Originally from Utah, he spent 10 years in video production before transitioning to a career as a Physical Therapist.",
+        "David's decision was inspired by witnessing a pediatric PT help his oldest daughter, who has special needs, learn to walk. Witnessing the profound impact of physical therapy on his daughter and their family motivated David to pursue the same transformative work for others.",
+        "Outside of work, David treasures time with his wife and four daughters, and enjoys running marathons, hiking, paddle boarding, and exploring the outdoors. He is excited about joining the Now I Can team!",
+      ]
+    },
+    {
+      name: 'Brooke Winter, DPT',
+      title: 'Doctor of Physical Therapy',
+      location: 'utah',
+      image: brookeWinterImage,
+      bio: [
+        "Brooke Winter is a 36-year-old mother of three amazing kids. Her husband is her number one supporter, and she is grateful for his help in juggling everything life throws her way.",
+        "Brooke attended the University of Utah for both her bachelor's and doctorate degrees. She has been a practicing physical therapist for 11 years, spending most of her career working in the neurologic and pediatric settings. She loves her job and finds fulfillment in helping people accomplish their goals.",
+        "Outside of work, Brooke enjoys being outdoors or in the kitchen—whether running, road biking, hiking, gardening, baking, or listening to an audiobook.",
+      ]
+    },
+    {
+      name: 'Ali Barney, PTA',
+      title: 'Physical Therapist Assistant',
+      location: 'utah',
+      image: aliBarney,
+      bio: [
+       "Ali grew up in Nebraska and attended Southern Utah University where she earned a bachelor's degree in Exercise Science. She then earned her Physical Therapist Assistant degree from Provo College and began working at Now I Can in 2023.",
+       "Ali volunteered and worked in a few different settings, but knew her heart was set on working with kids. She loves working in pediatrics, connecting with the kids and families, and seeing patients achieve their goals.",
+       "Outside of work Ali loves to play volleyball, go on roadtrips and bake elaborate treats.",
+      ]
+    },
+    {
+      name: 'Jessica Butler, PTA',
+      title: 'Physical Therapist Assistant',
+      location: 'utah',
+      image: jessicaButlerImage,
+      bio: [
+       "Jessica was born and raised in Orem, Utah. She grew up playing sports and was always interested in joining the healthcare community. She holds a bachelor's degree in Exercise Physiology and also became a PTA at BYU - Idaho so she could help others improve through physical therapy.",
+       "After graduation, Jessica found her passion in pediatrics and has been loving meeting and helping all of the wonderful kids at Now I Can!",
+       "Jessica has been married for almost a year now and she and her husband love being active and escaping to the mountains whenever possible! Utah holds her heart and she couldn't dream of living anywhere else!",
+      ]
+    },
+    {
+      name: 'MELISSA CHALK',
+      title: 'Managing Director',
+      location: 'utah',
+      image: melissaChalkImage,
+      bio: [
+        "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is excited to be a part of the Now I Can team!",
+        "Melissa has been Now I Can's Director of Operations since 2013. She brings extensive clinical management experience, as well as her special blend of magic to keep everything running smoothly. If you call, you will likely hear Melissa's cheerful voice! She helps keep patients, volunteers, and therapists' schedules on track, as well as handling all day-to-day operations and accounting.",
+        "Give Melissa a call to schedule your session today!"
+      ]
+    },
+    {
+      name: 'TRACEY CHRISTENSEN',
+      title: 'Executive Director, Utah and Co-Founder',
+      location: 'utah',
+      image: traceyChristensenImage,
+      bio: [
+        "Joel and Tracey Christensen are founders and board members of Now I Can Foundation. Tracey has been the Executive Director for most all of Now I Can's 16 years. She enjoys working with the amazing Now I Can team, cheering on our patients, and learning from their great parents.",
+        "Tracey is responsible for Development, Community Outreach and Marketing. She really loves cheering on the kids and being their friend.",
+        "Tracey loves sports, food, sunshine and time with family and friends!"
+      ]
+    },
+    {
+      name: 'ALLISON EBERSOLE',
+      title: 'General Manager, Northeast',
+      location: 'pennsylvania',
+      image: allisonEbersoleImage,
+      bio: [
+        "Allison Ebersole graduated from Penn State University with a BS degree in Recreation and Parks Management. She then earned her Masters Degree in Elementary Education. She is a former first grade teacher. She has always had a heart for helping children develop, grow and reach for the stars!",
+        "Having a daughter with cerebral palsy, she knew first hand the time, dedication and hard work that goes into raising a child with special needs. Allison has a passion for helping special needs kids achieve their greatest potential.",
+        "Her dream of opening an intensive physical therapy center has now become a reality! Her motto for the center is making miracles happen step by step!! She is excited to watch how children's lives will be positively impacted by the center.",
+      ]
+    }
+  ];
+  
+  const boardMembers = [
+    {
+      name: 'JOEL AND TRACEY CHRISTENSEN',
+      image: joelTraceyChristensenImage,
+      bio: "Joel and Tracey Christensen are the founders of Now I Can Foundation. Both Joel and Tracey graduated from Brigham Young University. They have three children and enjoy spending time together as a family and doing home renovation projects."
+    },
+    {
+      name: 'LARRY MCFERSON',
+      image: larryMcfersonImage,
+      bio: "Larry McFerson is a Financial Accountant, working at Brigham Young University. He is a graduate of Accounting from BYU and earned an MBA with an Accounting Emphasis from Utah State University. He grew up in Clearfield, UT, but has lived in Utah County for many years, and now lives in American Fork. He was recently married to Sarah, his eternal love, and they are looking forward to having a family together. He has more interests and hobbies than he has time and money to support. He loves anything BYU, anything athletic, and anything with the arts. He loves music, all-things Disney, and tries to stay active. He is grateful to Now I Can's \"Run to Walk,\" which is the first 5K he ever ran. He has done many races since (and has only missed one Now I Can race)."
+    },
+    {
+      name: 'JOHN LIVINGSTON',
+      image: johnLivingstonImage,
+      bio: "John P. Livingstone is a Canadian who came to BYU in 1998 following his service as President of the Michigan Detroit Mission. John and his wife Linda are the parents of six daughters and one son and an ever-growing number of grandchildren. He began employment with the Church Educational System in 1972 and is a retired Associate Professor of Church History and Doctrine. He serves as a sealer in the Provo Temple currently. John is a past president of the Association of Mormon Counselors and Psychotherapists (AMCAP). John and Linda became Americans in May of 2005."
+    },
+    {
+      name: 'NEIL LEBARON',
+      image: neilLebaronImage,
+      bio: "Neil LeBaron has owned LeBaron & Associated, Inc., a Utah advertising agency for forty-five years. He has served on the executive board and as the vice president of American Indian Services for over twenty years. It is a 501 (C) (3) corporation providing scholarships for Native Americans. Neil has also served several missions for the Church of Jesus Christ of Latter-day Saints in Australia, Texas, and Utah including two educational service missions and a Humanitarian Service Mission which benefited non-profit walk-in clinics, community gardens, the education of school children and adults, homeless shelters, women's shelters, ESL education, and private schools. Neil married Ruth Ann Adams in 1971. Together they have eight children, thirty-six grandchildren and one great granddaughter."
+    },
+    {
+      name: 'REBECCA SWINDLE',
+      image: rebeccaSwindleImage,
+      bio: "Rebecca is a native to Utah County. She spent much of her youth outdoors with her family working in a large yard, playing sports, or exploring the backside of Mt. Timpanogos. In her teens, she participated in many sports with most of her efforts being focused on Track and Field as a high jumper. After completing a mission for The Church of Jesus Christ of Latter-Day Saints in Montreal, Quebec, Rebecca received her Bachelor's Degree in Mass Media Communications from Brigham Young University. She married Seth Franklin Swindle and they enjoy being parents of five children. She has spent a joyful amount of time raising their kids! Rebecca has enjoyed working with groups ranging from a few people to thousands in schools, community activities, non-profits, and church settings. Currently, she is a real estate professional along the Wasatch Front in Utah and has found a lot of joy serving as a board member for the Timpanogos Storytelling Festival and the Now I Can Foundation."
+    },
+    {
+      name: 'LIZ LIVINGSTON',
+      image: lizLivingstonImage,
+      bio: "Liz Livingston is the mother of seven children. She graduated in Secondary and Special Education from BYU and has a particular interest in all things that impact children and the family. She has taught French, music and special education seminary. Liz enjoys partnering with her husband, Lane, in a small real estate business. She also loves to help literacy flourish in her \"Friendship Library Project.\" She is so grateful to be involved with the nurturing of the exciting physical growth and joy that happens at Now I Can!"
+    },
+    {
+      name: 'MELISSA CHALK',
+      image: melissaChalkImage,
+      bio: "Melissa Chalk grew up in Vista, CA. She moved to Utah to attend BYU and stayed. She loves to read, travel, cook, sing in the car, sit on the beach, and spend time with family and friends. She is happy to be a part of the Now I Can team!"
+    }
+  ];
+  
+  const filteredTherapists = selectedLocation === 'all' 
+    ? therapists 
+    : therapists.filter(therapist => therapist.location === selectedLocation);
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       <div className="container-custom mx-auto px-4">
-        <div className="mb-8 overflow-hidden rounded-lg">
-          <img 
-            src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
-            alt="Accommodations at Now I Can" 
-            className="w-full h-64 object-cover"
-          />
-        </div>
-        <h1 className="text-4xl font-bold font-heading mb-6">Accommodations</h1>
+        <h1 className="text-4xl font-bold font-heading mb-6">Our Team</h1>
+        <p className="text-lg mb-8">
+          Meet the dedicated professionals who make Now I Can's mission possible.
+        </p>
         
-        {/* Location Selector */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
-            {/* Utah Button */}
-            <button
-              className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
-                selectedLocation === 'utah' 
-                ? 'text-white' 
-                : 'text-gray-700'
-              }`}
-              onClick={() => setSelectedLocation('utah')}
-            >
-              Utah
-            </button>
-            
-            {/* Pennsylvania Button */}
-            <button
-              className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
-                selectedLocation === 'pennsylvania' 
-                ? 'text-white' 
-                : 'text-gray-700'
-              }`}
-              onClick={() => setSelectedLocation('pennsylvania')}
-            >
-              Pennsylvania
-            </button>
-            
-            {/* Sliding Background */}
-            <span 
-              className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
-                selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
-              }`}
-            ></span>
-          </div>
+        {/* Tab Navigation */}
+        <div className="flex flex-wrap border-b border-gray-200 mb-8">
+          <button
+            className={`mr-2 py-2 px-4 font-medium text-sm rounded-t-lg ${
+              activeTab === 'therapists'
+                ? 'bg-primary-blue-600 text-white'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+            onClick={() => setActiveTab('therapists')}
+          >
+            Therapy Team
+          </button>
+          <button
+            className={`py-2 px-4 font-medium text-sm rounded-t-lg ${
+              activeTab === 'board'
+                ? 'bg-primary-blue-600 text-white'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+            onClick={() => setActiveTab('board')}
+          >
+            Board of Directors
+          </button>
         </div>
         
-        <section className="mb-12">
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-bold mb-4">Comfortable Stays for Therapy Sessions</h2>
-            <p className="text-lg mb-6">
-              We understand that many families travel from out of town to attend our intensive therapy programs. 
-              Finding comfortable, convenient, and affordable accommodations is a key part of making your therapy 
-              experience successful and stress-free.
-            </p>
-            <p className="text-lg">
-              To help make your stay as comfortable as possible, we've compiled resources about accommodations near 
-              both our Utah and Pennsylvania locations. From on-site lodging options to nearby hotels and vacation 
-              rentals, we have information to suit every family's needs and budget.
-            </p>
-          </div>
-        </section>
-        
-        <section className="mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
-                  alt="Where to stay at Now I Can" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-bold mb-4">Where to Stay</h3>
-                <p className="text-lg mb-4">
-                  Finding the right place to stay is essential for making your family comfortable during your 
-                  child's intensive therapy. {selectedLocation === 'utah' ? 'We offer on-site accommodations at our Utah location' : 'We have partnered with nearby hotels'} to provide 
-                  comfortable and convenient options for our families.
-                </p>
-                <Link 
-                  to="/for-families/accommodations/where-to-stay" 
-                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 inline-block"
+        {/* Therapy Team Content */}
+        {activeTab === 'therapists' && (
+          <>
+            <div className="mb-8 flex justify-center">
+              <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
+                {/* Utah Button */}
+                <button
+                  className={`absolute left-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    selectedLocation === 'utah' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
+                  }`}
+                  onClick={() => setSelectedLocation('utah')}
                 >
-                  View Lodging Options
-                </Link>
+                  Utah
+                </button>
+                
+                {/* Pennsylvania Button */}
+                <button
+                  className={`absolute right-0 w-1/2 h-10 rounded-full transition-all duration-300 flex items-center justify-center font-medium z-10 ${
+                    selectedLocation === 'pennsylvania' 
+                    ? 'text-white' 
+                    : 'text-gray-700'
+                  }`}
+                  onClick={() => setSelectedLocation('pennsylvania')}
+                >
+                  Pennsylvania
+                </button>
+                
+                {/* Sliding Background */}
+                <span 
+                  className={`absolute h-10 w-1/2 rounded-full transition-all duration-300 ease-in-out ${
+                    selectedLocation === 'utah' ? 'left-1 bg-primary-blue-600' : 'left-40 bg-primary-orange-600'
+                  }`}
+                ></span>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/f9aff50e-900f-4b67-be05-40d54c2c187f/C-FAQ-LTZ.jpg" 
-                  alt="Local activities near Now I Can" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-bold mb-4">Local Activities</h3>
-                <p className="text-lg mb-4">
-                  During your stay for therapy, you'll want to make the most of your time in the area. 
-                  {selectedLocation === 'utah' ? ' Utah offers numerous family-friendly activities, restaurants, and attractions to enjoy during your free time.' : ' Pennsylvania offers charming towns, historical sites, and family-friendly attractions to enjoy during your free time.'}
-                </p>
-                <Link 
-                  to="/for-families/accommodations/local-activities" 
-                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 inline-block"
-                >
-                  Explore Local Activities
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section className="mb-12">
-          <div className={`${selectedLocation === 'utah' ? 'bg-primary-blue-50' : 'bg-primary-blue-50'} rounded-lg p-8 border ${selectedLocation === 'utah' ? 'border-primary-blue-100' : 'border-primary-blue-100'}`}>
-            <h2 className={`text-2xl font-bold ${selectedLocation === 'utah' ? 'text-primary-blue-800' : 'text-primary-blue-800'} mb-4`}>{locationContent.onSiteTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <p className="text-lg mb-4">
-                  {locationContent.onSiteDescription}
-                </p>
-                <h3 className="text-lg font-bold mb-3">Features of our {selectedLocation === 'utah' ? 'on-site suites' : 'recommended accommodations'}:</h3>
-                <ul className="list-disc pl-6 space-y-2">
-                  {locationContent.onSiteFeatures.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold mb-3">Reservation Information:</h3>
-                <ul className="list-disc pl-6 space-y-2 mb-4">
-                  {locationContent.onSiteReservation.map((info, index) => (
-                    <li key={index}>{info}</li>
-                  ))}
-                </ul>
-                <p className="text-lg italic">
-                  {locationContent.onSiteTestimonial}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Accommodations</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">{selectedLocation === 'utah' ? 'Utah' : 'Pennsylvania'} Location - Nearby Options</h3>
-              <ul className="space-y-4">
-                {locationContent.nearbyOptions.map((option, index) => (
-                  <li key={index}>
-                    <div className="font-bold">{option.name}</div>
-                    <div className="text-gray-700">{option.description}</div>
-                    {option.note && <div className="text-gray-700 italic">{option.note}</div>}
-                  </li>
-                ))}
-              </ul>
+              {filteredTherapists.map((therapist, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className={`h-3 ${therapist.location === 'utah' ? 'bg-primary-blue-600' : 'bg-primary-orange-600'}`}></div>
+                  <div className="p-6">
+                    <div className="flex flex-col md:flex-row gap-6">
+                      <div className="md:w-1/3 flex justify-center">
+                        {therapist.image ? (
+                          <img 
+                            src={therapist.image} 
+                            alt={`${therapist.name}`} 
+                            className="w-32 h-32 rounded-full object-cover"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src = defaultProfileImage;
+                            }}
+                          />
+                        ) : (
+                          <div className="bg-gray-100 w-32 h-32 rounded-full flex items-center justify-center text-gray-400 text-xs">
+                            No Photo
+                          </div>
+                        )}
+                      </div>
+                      <div className="md:w-2/3">
+                        <h2 className="text-xl font-bold mb-1">{therapist.name}</h2>
+                        <p className={`text-sm font-medium mb-4 ${therapist.location === 'utah' ? 'text-primary-blue-600' : 'text-primary-orange-600'}`}>
+                          {therapist.title}
+                        </p>
+                        <div className="space-y-3">
+                          {therapist.bio.map((paragraph, pIndex) => (
+                            <p key={pIndex} className="text-gray-700 text-sm">
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-bold mb-3">Transportation Options</h3>
-              <ul className="space-y-4">
-                <li>
-                  <div className="font-bold">Rental Cars</div>
-                  <div className="text-gray-700">
-                    The most flexible option for families, allowing you to explore the area during free time.
-                  </div>
-                </li>
-                <li>
-                  <div className="font-bold">Ride Services</div>
-                  <div className="text-gray-700">
-                    Uber and Lyft are available in our {selectedLocation} location, providing convenient transportation.
-                  </div>
-                </li>
-                <li>
-                  <div className="font-bold">Public Transportation</div>
-                  <div className="text-gray-700">
-                    {selectedLocation === 'utah' 
-                      ? 'Limited public transportation is available in Utah County. Our staff can provide more specific information.' 
-                      : 'The Amtrak train station is nearby in Lancaster. Local bus services are also available.'}
-                  </div>
-                </li>
-                {selectedLocation === 'pennsylvania' && (
-                  <li>
-                    <div className="font-bold">Airport Transportation</div>
-                    <div className="text-gray-700">
-                      From Philadelphia or Harrisburg airports, rental cars or pre-arranged shuttles are recommended.
-                    </div>
-                  </li>
-                )}
-              </ul>
-            </div>
-          </div>
-        </section>
-        
-        <section>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold mb-4">Need Help Planning Your Stay?</h2>
-            <p className="text-lg mb-6">
-              Our team is here to help you plan your accommodations during your child's therapy. We can provide 
-              recommendations based on your family's specific needs, preferred amenities, and budget.
-            </p>
-            <div className="flex justify-center">
+            <div className="mt-12 bg-primary-blue-50 rounded-lg p-8 text-center">
+              <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
+              <p className="text-lg mb-6">
+                We're always looking for talented and passionate physical therapists and staff<br></br>
+                who are dedicated to helping children reach their full potential.
+              </p>
               <Link 
                 to="/contact-us" 
-                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 text-lg px-8 py-3"
+                className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700"
               >
-                Contact Us for Assistance
+                Contact Us About Opportunities
               </Link>
             </div>
-          </div>
-        </section>
+          </>
+        )}
+        
+        {/* Board of Directors Content */}
+        {activeTab === 'board' && (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {boardMembers.map((member, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="h-3 bg-primary-blue-600"></div>
+                  <div className="p-6">
+                    <div className="flex flex-col gap-4">
+                      <div>
+                        <h2 className="text-xl font-bold mb-4">{member.name}</h2>
+                        {member.image ? (
+                          <img 
+                            src={member.image} 
+                            alt={`${member.name}`} 
+                            className="w-full h-48 rounded-lg object-contain mb-4"
+                            //className="w-50 h-50 rounded-full object-contain border-4 border-primary-blue-600"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src = defaultBoardImage;
+                            }}
+                          />
+                        ) : (
+                          <div className="bg-gray-100 w-full h-48 rounded-lg flex items-center justify-center text-gray-400 mb-4">
+                            No Photo
+                          </div>
+                        )}
+                        <p className="text-gray-700">
+                          {member.bio}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <div className="bg-primary-blue-50 rounded-lg p-8 text-center">
+              <h2 className="text-2xl font-bold mb-4">Join Our Mission</h2>
+              <p className="text-lg mb-6">
+                Our board members volunteer their time and expertise to help Now I Can Foundation fulfill its mission.<br></br>
+                We are grateful for their dedication and service.
+              </p>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
 };
 
-export default Accommodations;
+export default OurTeam;

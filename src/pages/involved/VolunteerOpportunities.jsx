@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import volunteerImg from '../../assets/images/volunteer.jpg';
 
 const VolunteerOpportunities = () => {
   const [location, setLocation] = useState('utah');
@@ -33,9 +34,10 @@ const VolunteerOpportunities = () => {
           <>
             <div className="mb-8 overflow-hidden rounded-lg">
               <img 
-                src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/d65809af-9b44-476b-94b9-3fc7d6723bd6/H-Volunteer.jpg" 
+                src={volunteerImg} 
                 alt="Volunteer Opportunities at Now I Can" 
-                className="w-full h-64 object-cover"
+                className="w-full h-96 object-cover"
+                style={{ objectPosition: '90% 20%' }}
               />
             </div>
             <h1 className="text-4xl font-bold font-heading mb-6">Volunteer Opportunities</h1>
@@ -57,126 +59,9 @@ const VolunteerOpportunities = () => {
             </section>
             
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6">Volunteer Opportunities</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Therapy Assistants</h3>
-                  <p className="text-gray-700 mb-4">
-                    Help our therapists during therapy sessions by assisting with equipment setup, engaging with children 
-                    during activities, and providing encouragement and motivation.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>No prior therapy experience required</li>
-                    <li>Training provided</li>
-                    <li>Regular weekly schedules preferred</li>
-                    <li>Great for students interested in healthcare</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Administrative Support</h3>
-                  <p className="text-gray-700 mb-4">
-                    Assist with office tasks such as answering phones, filing, data entry, and preparing materials 
-                    for therapy sessions and events.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Flexible scheduling available</li>
-                    <li>Basic computer skills helpful</li>
-                    <li>Perfect for detail-oriented volunteers</li>
-                    <li>Help with organizational tasks</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Special Events</h3>
-                  <p className="text-gray-700 mb-4">
-                    Help plan and execute fundraising events, awareness campaigns, and community outreach activities 
-                    to support Now I Can's mission.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Event-specific commitments</li>
-                    <li>Great for those with limited availability</li>
-                    <li>Utilize creative and organizational skills</li>
-                    <li>Help with setup, execution, and cleanup</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Facility Maintenance</h3>
-                  <p className="text-gray-700 mb-4">
-                    Help maintain our therapy facilities by assisting with cleaning, organization, minor repairs, 
-                    and equipment maintenance.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Ideal for those with practical skills</li>
-                    <li>Flexible scheduling possible</li>
-                    <li>Help create a safe, clean environment</li>
-                    <li>Projects can be scheduled around your availability</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Family Support</h3>
-                  <p className="text-gray-700 mb-4">
-                    Provide assistance to families during their stay, such as helping with transportation, running errands, 
-                    or providing meals for families during intensive therapy sessions.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Perfect for compassionate individuals</li>
-                    <li>Make a direct impact on families' experiences</li>
-                    <li>Flexible commitment options</li>
-                    <li>Welcome families to the area</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-bold mb-3">Professional Services</h3>
-                  <p className="text-gray-700 mb-4">
-                    Share your professional expertise in areas such as marketing, graphic design, photography, 
-                    legal services, accounting, or technology support.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
-                    <li>Project-based volunteering</li>
-                    <li>Use your professional skills for good</li>
-                    <li>Help with organizational needs</li>
-                    <li>Make a lasting impact</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            
-            <section className="mb-12">
-              <div className="bg-primary-blue-50 rounded-lg p-8 border border-primary-blue-100">
-                <h2 className="text-2xl font-bold text-primary-blue-800 mb-4">Volunteer Requirements</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-lg font-bold mb-3">General Requirements:</h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>Must be at least 16 years old (or 14-15 with parental supervision)</li>
-                      <li>Complete a background check (for volunteers 18 and older)</li>
-                      <li>Attend a volunteer orientation session</li>
-                      <li>Maintain confidentiality regarding patient information</li>
-                      <li>Reliable and punctual for scheduled volunteer times</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold mb-3">For Therapy Assistants:</h3>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>Comfort working with children with various disabilities</li>
-                      <li>Ability to follow therapist instructions precisely</li>
-                      <li>Physically able to assist with therapy activities</li>
-                      <li>Patience and positive attitude</li>
-                      <li>Commitment to a regular schedule</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6">Volunteer at Your Preferred Location</h2>
               
-              {/* NEW TOGGLE SWITCH */}
+              {/* TOGGLE SWITCH */}
               <div className="mb-8 flex justify-center">
                 <div className="relative inline-flex items-center bg-gray-200 rounded-full h-12 w-80">
                   {/* Utah Button */}
@@ -268,10 +153,10 @@ const VolunteerOpportunities = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Areas of Interest (Select all that apply) *
+                    <label className="block text-sm font-medium text-gray-700 mb-3">
+                      How would you like to help? (Select all that apply) *
                     </label>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       <div className="flex items-start">
                         <input
                           id="therapy-assistant"
@@ -280,7 +165,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="therapy-assistant" className="ml-2 block text-sm text-gray-700">
-                          Therapy Assistant
+                          Help during therapy sessions
                         </label>
                       </div>
                       <div className="flex items-start">
@@ -291,7 +176,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="administrative" className="ml-2 block text-sm text-gray-700">
-                          Administrative Support
+                          Office and administrative tasks
                         </label>
                       </div>
                       <div className="flex items-start">
@@ -302,7 +187,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="events" className="ml-2 block text-sm text-gray-700">
-                          Special Events
+                          Fundraising and special events
                         </label>
                       </div>
                       <div className="flex items-start">
@@ -313,7 +198,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="maintenance" className="ml-2 block text-sm text-gray-700">
-                          Facility Maintenance
+                          Facility cleaning and maintenance
                         </label>
                       </div>
                       <div className="flex items-start">
@@ -324,7 +209,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="family-support" className="ml-2 block text-sm text-gray-700">
-                          Family Support
+                          Support for families (meals, transportation)
                         </label>
                       </div>
                       <div className="flex items-start">
@@ -335,7 +220,7 @@ const VolunteerOpportunities = () => {
                           className="h-4 w-4 mt-1 text-primary-blue-600 focus:ring-primary-blue-500 border-gray-300 rounded"
                         />
                         <label htmlFor="professional" className="ml-2 block text-sm text-gray-700">
-                          Professional Services
+                          Professional skills (marketing, design, legal)
                         </label>
                       </div>
                     </div>
@@ -343,7 +228,7 @@ const VolunteerOpportunities = () => {
                   
                   <div className="mb-6">
                     <label htmlFor="availability" className="block text-sm font-medium text-gray-700 mb-1">
-                      Availability *
+                      How often can you volunteer? *
                     </label>
                     <select
                       id="availability"
@@ -360,25 +245,25 @@ const VolunteerOpportunities = () => {
                   
                   <div className="mb-6">
                     <label htmlFor="experience" className="block text-sm font-medium text-gray-700 mb-1">
-                      Relevant Experience or Skills
+                      What skills or experience can you bring?
                     </label>
                     <textarea
                       id="experience"
                       rows={4}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
-                      placeholder="Please share any relevant experience, skills, or qualifications you have."
+                      placeholder="Please share any skills or experience that might be helpful."
                     />
                   </div>
                   
                   <div className="mb-6">
                     <label htmlFor="motivation" className="block text-sm font-medium text-gray-700 mb-1">
-                      Why are you interested in volunteering with Now I Can? *
+                      Why do you want to volunteer with Now I Can? *
                     </label>
                     <textarea
                       id="motivation"
                       rows={4}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-blue-500 focus:border-primary-blue-500"
-                      placeholder="Please share your motivation for volunteering with us."
+                      placeholder="Please share your reasons for wanting to volunteer with us."
                       required
                     />
                   </div>
@@ -399,31 +284,7 @@ const VolunteerOpportunities = () => {
             
             <section>
               <div className="bg-white rounded-lg shadow-md p-8">
-                <h2 className="text-2xl font-bold mb-4 text-center">Volunteer Benefits</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Make a Difference</h3>
-                    <p>
-                      Directly contribute to improving the lives of children with disabilities and their families. 
-                      See firsthand the progress and joy that intensive therapy brings.
-                    </p>
-                  </div>
-                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Gain Experience</h3>
-                    <p>
-                      Develop valuable skills and experience in healthcare, nonprofit operations, or your area of 
-                      expertise. Perfect for students in related fields.
-                    </p>
-                  </div>
-                  <div className={`${location === 'utah' ? 'bg-primary-blue-50 border-primary-blue-100' : 'bg-primary-orange-50 border-primary-orange-100'} rounded-lg p-6 border`}>
-                    <h3 className={`text-lg font-bold mb-2 ${location === 'utah' ? 'text-primary-blue-800' : 'text-primary-orange-800'}`}>Join Our Community</h3>
-                    <p>
-                      Become part of the Now I Can family—a community of dedicated professionals, volunteers, 
-                      and families working together to change lives.
-                    </p>
-                  </div>
-                </div>
-                <p className="text-lg text-center mt-8">
+                <p className="text-lg text-center">
                   Have questions about volunteering? Contact us at{' '}
                   <a href={`mailto:${location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}`} className={`${location === 'utah' ? 'text-primary-blue-600 hover:text-primary-blue-800' : 'text-primary-orange-600 hover:text-primary-orange-800'}`}>
                     {location === 'utah' ? 'info@nowican.org' : 'allison@nowican.org'}

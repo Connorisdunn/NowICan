@@ -154,6 +154,9 @@ const FinancialSupport = () => {
                   While we always ask families to pay <span className="font-bold italic">some</span>, we are happy to 
                   lighten the burden and make it possible for more kids to say "now I can"!
                 </p>
+                <p className="text-gray-700">
+                A specific committee of board members reviews grant applications, and then carefully allocates the funds raised from events and donors to families based on need. Because we know the financial needs all of our families experience, we try to give some amount to all who ask. We want to make sure that money is never the reason a child cannot come to Now I Can for physical therapy!
+                </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

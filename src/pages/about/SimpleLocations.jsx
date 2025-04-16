@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AccommodationImage from '../../assets/images/suite2bed.jpg'; // Import the image
 
 const SimpleLocations = () => {
   return (
@@ -101,78 +102,28 @@ const SimpleLocations = () => {
             Schedule a Free Consultation
           </Link>
         </div>
-        
         <div className="bg-primary-blue-50 rounded-lg p-8 mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Accommodations & Local Information</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <div className="mb-4 h-48 overflow-hidden rounded-lg">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/968d33ae-3963-42ba-a691-8091fa1adfdb/suite2bed.jpg" 
-                  alt="On-site family suite at Utah location" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Where to Stay</h3>
-              <p className="text-gray-700 mb-4">
-                Both locations offer comfortable accommodation options to suit various budgets and preferences:
-              </p>
-              <ul className="list-disc pl-5 mb-4 text-gray-700">
-                <li>On-site family suites at our Utah location</li>
-                <li>Partner hotels with special rates</li>
-                <li>Extended stay options for longer therapy sessions</li>
-                <li>Accessible accommodations for families with special needs</li>
-              </ul>
-              <Link 
-                to="/for-families/accommodations" 
-                className="text-primary-blue-600 hover:text-primary-blue-800 font-medium flex items-center"
-              >
-                View All Accommodations
-                <svg className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+          <h2 className="text-2xl font-bold mb-6 text-left">Accommodations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div className="md:col-span-1">
+              <img 
+                src={AccommodationImage} 
+                alt="Accommodation" 
+                className="w-full h-auto rounded-lg shadow-md object-cover"
+              />
             </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <div className="mb-4 h-48 overflow-hidden rounded-lg">
-                <img 
-                  src="https://images.squarespace-cdn.com/content/v1/619bb52cb80989574ac52490/640dd434-8c50-4ddd-92b6-6390019b6355/C-FAQ-UT.jpg" 
-                  alt="Activities near Now I Can locations" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Things to Do</h3>
-              <p className="text-gray-700 mb-4">
-                Highlights of activities near our locations:
+            <div className="md:col-span-2 flex flex-col justify-center h-full">
+              <p className="text-gray-700 max-w-2xl mb-6">
+                We understand that traveling for therapy can be challenging.
+                <br></br>That's why we offer comprehensive accommodation solutions to make your stay comfortable and stress-free.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <h4 className="font-bold mb-2">Utah</h4>
-                  <ul className="list-disc pl-5 text-gray-700 text-sm">
-                    <li>Skiing and hiking</li>
-                    <li>Thanksgiving Point</li>
-                    <li>Provo/Orem Recreation</li>
-                    <li>BYU Campus</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2">Pennsylvania</h4>
-                  <ul className="list-disc pl-5 text-gray-700 text-sm">
-                    <li>Downtown Lititz</li>
-                    <li>Amish Country</li>
-                    <li>Chocolate factory tours</li>
-                    <li>Local parks and trails</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-4">
+              <div className="text-left">
                 <Link 
-                  to="/for-families/accommodations/local-activities" 
-                  className="text-primary-blue-600 hover:text-primary-blue-800 font-medium flex items-center"
+                  to="/for-families/accommodations" 
+                  className="btn bg-primary-blue-600 text-white hover:bg-primary-blue-700 px-6 py-2 rounded-lg inline-block font-medium shadow-md"
                 >
-                  Explore All Activities
-                  <svg className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  Explore Our Accommodations
+                  <svg className="h-4 w-4 ml-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>

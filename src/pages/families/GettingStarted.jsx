@@ -133,7 +133,7 @@ const GettingStarted = () => {
           </p>
           <div className="flex gap-4">
             <Link 
-              to="/for-families" 
+              to="/for-families/family-resources" 
               className="text-base btn bg-white border border-primary-blue-500 text-primary-blue-600 hover:bg-primary-blue-50 py-2 px-4"
             >
               FAQs
