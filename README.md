@@ -129,16 +129,16 @@ This section details how the project meets the specific requirements outlined in
 
 <img width="450" alt="Screenshot 2025-06-28 at 1 19 56 PM" src="https://github.com/user-attachments/assets/025056f9-3959-405e-a2d1-a2973d2cbfda" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 20 19 PM" src="https://github.com/user-attachments/assets/1fe0c732-3946-4667-9b90-0cdb34d556ea" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 20 19 PM" src="https://github.com/user-attachments/assets/1fe0c732-3946-4667-9b90-0cdb34d556ea" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 20 40 PM" src="https://github.com/user-attachments/assets/e79904e5-2bbb-4914-ab7e-420f8d20e5fd" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 20 40 PM" src="https://github.com/user-attachments/assets/e79904e5-2bbb-4914-ab7e-420f8d20e5fd" />
 
 ## Old Version
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 22 17 PM" src="https://github.com/user-attachments/assets/19f38099-b864-4991-97f1-d64be33e0571" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 22 17 PM" src="https://github.com/user-attachments/assets/19f38099-b864-4991-97f1-d64be33e0571" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 22 35 PM" src="https://github.com/user-attachments/assets/9c65d635-d0a7-4b10-8f5d-b9e7202801f1" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 22 35 PM" src="https://github.com/user-attachments/assets/9c65d635-d0a7-4b10-8f5d-b9e7202801f1" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 23 17 PM" src="https://github.com/user-attachments/assets/e40f93b3-30ec-40fc-a4b8-5ec8a97cacc6" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 23 17 PM" src="https://github.com/user-attachments/assets/e40f93b3-30ec-40fc-a4b8-5ec8a97cacc6" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 23 45 PM" src="https://github.com/user-attachments/assets/f2d3f5ef-c8e0-401b-b7e2-d3b5d8803d5f" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 23 45 PM" src="https://github.com/user-attachments/assets/f2d3f5ef-c8e0-401b-b7e2-d3b5d8803d5f" />
