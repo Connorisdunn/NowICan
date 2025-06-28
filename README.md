@@ -125,9 +125,9 @@ This section details how the project meets the specific requirements outlined in
 
 ## Our Updated Project
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 19 30 PM" src="https://github.com/user-attachments/assets/3689f896-71b4-40a8-b7f3-c47aa4863b39" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 19 30 PM" src="https://github.com/user-attachments/assets/3689f896-71b4-40a8-b7f3-c47aa4863b39" />
 
-<img width="720" alt="Screenshot 2025-06-28 at 1 19 56 PM" src="https://github.com/user-attachments/assets/025056f9-3959-405e-a2d1-a2973d2cbfda" />
+<img width="450" alt="Screenshot 2025-06-28 at 1 19 56 PM" src="https://github.com/user-attachments/assets/025056f9-3959-405e-a2d1-a2973d2cbfda" />
 
 <img width="720" alt="Screenshot 2025-06-28 at 1 20 19 PM" src="https://github.com/user-attachments/assets/1fe0c732-3946-4667-9b90-0cdb34d556ea" />
 
